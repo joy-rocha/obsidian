@@ -1,0 +1,214 @@
+{
+  "main": {
+    "id": "e43163ccb306f853",
+    "type": "split",
+    "children": [
+      {
+        "id": "140942c949e1bc4c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "882eb2d8edc2b4dc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MICRO/Cube MX - criação de projeto.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Cube MX - criação de projeto"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3c11accb70147f73",
+    "type": "split",
+    "children": [
+      {
+        "id": "c32f1afb25726628",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "95a6331880898175",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de arquivos"
+            }
+          },
+          {
+            "id": "36ca20abf1ca76f9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Procurar"
+            }
+          },
+          {
+            "id": "bf2176e82617597c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "f3e13d5fac2836db",
+    "type": "split",
+    "children": [
+      {
+        "id": "9dbd3be2252be687",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7f0946288274ba28",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Bem-vindo.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Links inversos para Bem-vindo"
+            }
+          },
+          {
+            "id": "93a7bdee0db3a6e2",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Bem-vindo.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Links de saída para Bem-vindo"
+            }
+          },
+          {
+            "id": "bb757e065b7474d7",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "0fce68e519ebd291",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas as propriedades"
+            }
+          },
+          {
+            "id": "2e11d9104852a11d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Bem-vindo.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Sumário de Bem-vindo"
+            }
+          },
+          {
+            "id": "c4b493f2f7b654d0",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Criar nova base": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "882eb2d8edc2b4dc",
+  "lastOpenFiles": [
+    "ROBÓTICA/kit EV3 - 45544.md",
+    "MICRO/Cube MX - criação de projeto.md",
+    "Pasted image 20260730091446.png",
+    "C++",
+    "SO",
+    "TEORIA DA COMPUTÇÃO.md",
+    "TEORIA DA COMP",
+    "MICRO",
+    "ROBÓTICA/Pasted image 20260730081424.png",
+    "ROBÓTICA/Pasted image 20260730081323.png",
+    "ROBÓTICA",
+    "BANCO DE DADOS/Modelagem Conceitual.md",
+    "BANCO DE DADOS",
+    "Bem-vindo.md"
+  ]
+}

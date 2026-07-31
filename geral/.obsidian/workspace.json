@@ -13,15 +13,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MICRO/Cube MX - criação de projeto.md",
+                "file": "LINGUAGENS PROG/C++/Comandos Básicos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cube MX - criação de projeto"
+              "title": "Comandos Básicos"
+            }
+          },
+          {
+            "id": "5d6d3d5cb22b5597",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "LINUX/Distribuições - distros.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Distribuições - distros"
+            }
+          },
+          {
+            "id": "40ebdfe6bbf52e9c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "LINUX/Instalação UBUNTU.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Instalação UBUNTU"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -41,7 +70,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Explorador de arquivos"
@@ -74,7 +105,8 @@
               "title": "Marcadores"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -180,7 +212,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -194,21 +226,28 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "882eb2d8edc2b4dc",
+  "active": "36ca20abf1ca76f9",
   "lastOpenFiles": [
-    "ROBÓTICA/kit EV3 - 45544.md",
+    "LINUX/Distribuições - distros.md",
+    "LINUX/Instalação UBUNTU.md",
+    "LINGUAGENS PROG/C++/Comandos Básicos.md",
+    "MICRO/Pasted image 20260730091446.png",
+    "LINUX",
     "MICRO/Cube MX - criação de projeto.md",
-    "Pasted image 20260730091446.png",
-    "C++",
+    "LINGUAGENS PROG/C",
+    "LINGUAGENS PROG/JS",
+    "LINGUAGENS PROG/PYTHON",
+    "LINGUAGENS PROG/JAVA",
+    "LINGUAGENS PROG/C++",
+    "ROBÓTICA/kit EV3 - 45544.md",
+    "LINGUAGENS PROG",
     "SO",
     "TEORIA DA COMPUTÇÃO.md",
     "TEORIA DA COMP",
     "MICRO",
     "ROBÓTICA/Pasted image 20260730081424.png",
     "ROBÓTICA/Pasted image 20260730081323.png",
-    "ROBÓTICA",
     "BANCO DE DADOS/Modelagem Conceitual.md",
-    "BANCO DE DADOS",
     "Bem-vindo.md"
   ]
 }

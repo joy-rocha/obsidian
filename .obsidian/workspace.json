@@ -4,53 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "cd3feb6402cea16b",
+        "id": "703a336cf77b64bc",
         "type": "tabs",
         "children": [
           {
-            "id": "b9129dab84df47ed",
+            "id": "c8b063a2abf381eb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Comandos Básicos Linux.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Comandos Básicos Linux"
-            }
-          },
-          {
-            "id": "5dc355680e8f4524",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Comandos GIT.md",
+                "file": "geral/Comandos GIT.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "Comandos GIT"
             }
-          },
-          {
-            "id": "ef3d5b1399d67bcb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Ambiente Virtual.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Ambiente Virtual"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -128,14 +99,14 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Comandos Básicos.md",
-                "collapseAll": false,
-                "extraContext": false,
+                "file": "Sem título.base",
+                "collapseAll": true,
+                "extraContext": true,
                 "sortOrder": "alphabetical",
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
               "title": "Links inversos"
@@ -147,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Comandos Básicos.md",
+                "file": "Sem título.base",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -190,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Comandos Básicos.md",
+                "file": "Sem título.base",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -198,13 +169,23 @@
               "icon": "lucide-list",
               "title": "Sumário"
             }
+          },
+          {
+            "id": "da28f35e30637da8",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -214,15 +195,35 @@
       "daily-notes:Abrir a nota de hoje": false,
       "templates:Inserir modelo": false,
       "command-palette:Abrir paleta de comandos": false,
-      "bases:Criar nova base": false
+      "bases:Criar nova base": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5dc355680e8f4524",
+  "active": "c8b063a2abf381eb",
   "lastOpenFiles": [
-    "Comandos Básicos Linux.md",
-    "Comandos GIT.md",
-    "Ambiente Virtual.md",
+    "geral/LINUX/Comandos Básicos Linux.md",
+    "geral/TEORIA DE COMP/Revisão Matemática.md",
+    "geral/Comandos GIT.md",
+    "geral/Ambiente Virtual.md",
     "Sem título.base",
+    "geral/TEORIA DE COMP/Introdução.md",
+    "geral/TEORIA DE COMP",
+    "geral/MICRO/Cube MX - criação de projeto.md",
+    "geral/LINUX/Instalação UBUNTU.md",
+    "geral/LINGUAGENS PROG/C++/Comandos Básicos.md",
+    "geral/ROBÓTICA/kit EV3 - 45544.md",
+    "geral/ROBÓTICA/Pasted image 20260730081424.png",
+    "geral/ROBÓTICA/Pasted image 20260730081323.png",
+    "geral/MICRO/Pasted image 20260730091446.png",
+    "geral/LINUX/Distribuições - distros.md",
+    "geral/LINGUAGENS PROG/C++",
+    "geral/BANCO DE DADOS/Modelagem Conceitual.md",
+    "geral/ROBÓTICA",
+    "geral/MICRO",
+    "geral/LINUX",
+    "geral/LINGUAGENS PROG",
+    "geral/BANCO DE DADOS",
+    "geral",
     "Bem-vindo.md",
     "2026-07-31.md",
     "Sem título.canvas",

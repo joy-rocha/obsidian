@@ -1,4 +1,5 @@
 
+
 # BOOT
 Temos 3 tipos de BOOT e podemos selecionar ele com base nesta tabela:
 

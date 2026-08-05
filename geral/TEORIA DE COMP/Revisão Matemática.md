@@ -66,6 +66,9 @@ Um **predicado** é um tipo especial de função muito importante para a lógica
 - **Exemplo:** Uma função que verifica se um número é primo. Se você der o número 7, ela devolve VERDADEIRO; se der o número 4, devolve FALSO.
 - Outro exemplo das fontes é o jogo **Pedra, Papel e Tesoura**, onde a função "bate" analisa dois elementos e diz se o primeiro vence o segundo (Ex: _bate(Papel, Pedra)_ = VERDADEIRO).
 
+https://youtu.be/ZgIwdHJhd5s?si=63aDYpxc49YOA3qR
+dominio e imagem de função
+
 ---
 
 # **CADEIAS E LINGUAGENS**

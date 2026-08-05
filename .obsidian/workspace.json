@@ -13,30 +13,27 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "geral/BANCO DE DADOS/SGBD.md",
+                "file": "geral/TEORIA DE COMP/Tipos de prova.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SGBD"
+              "title": "Tipos de prova"
             }
           },
           {
             "id": "59de4c83d0c2f741",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "geral/Comandos GIT.md",
-                "mode": "source",
-                "source": false
+                "file": "Excalidraw/Drawing 2026-08-04 19.37.59.excalidraw.md"
               },
-              "icon": "lucide-file",
-              "title": "Comandos GIT"
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-08-04 19.37.59.excalidraw"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -215,22 +212,26 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "59de4c83d0c2f741",
+  "active": "b51bd4e80820337c",
   "lastOpenFiles": [
+    "geral/TEORIA DE COMP/Revisão Matemática.md",
+    "geral/TEORIA DE COMP/Tipos de prova.md",
+    "geral/TEORIA DE COMP/Introdução.md",
+    "Excalidraw/Drawing 2026-08-04 19.37.59.excalidraw.md",
     "geral/BANCO DE DADOS/SGBD.md",
+    "Excalidraw/Drawing 2026-08-04 19.41.08.excalidraw.md",
+    "Excalidraw/Drawing 2026-08-04 19.36.19.excalidraw.md",
+    "geral/MICRO/teoria/BOOT, RESET E CLK.md",
+    "geral/Comandos GIT.md",
     "geral/BANCO DE DADOS/Modelos de dados.md",
     "geral/BANCO DE DADOS/Modelo ER.md",
     "geral/IMG/Pasted image 20260730091446.png",
-    "geral/MICRO/teoria/BOOT, RESET E CLK.md",
     "geral/IMG",
     "geral/IMG/Captura de tela de 2026-08-04 20-45-28.png",
     "geral/IMG/Captura de tela de 2026-08-04 20-50-35.png",
     "Captura de tela de 2026-08-04 20-10-20 1.png",
     "geral/IMG/Captura de tela de 2026-08-04 20-10-20.png",
     "geral/LATEX.md",
-    "Excalidraw/Drawing 2026-08-04 19.41.08.excalidraw.md",
-    "Excalidraw/Drawing 2026-08-04 19.36.19.excalidraw.md",
-    "Excalidraw/Drawing 2026-08-04 19.37.59.excalidraw.md",
     "Excalidraw",
     "Sem título.canvas",
     "geral/MICRO/práticas/Cube MX - criação de projeto.md",
@@ -242,10 +243,7 @@
     "geral/LINUX/Instalação UBUNTU.md",
     "geral/LINUX/Distribuições - distros.md",
     "geral/LINUX/Comandos Básicos Linux.md",
-    "geral/Comandos GIT.md",
     "geral/Ambiente Virtual.md",
-    "geral/TEORIA DE COMP/Revisão Matemática.md",
-    "geral/TEORIA DE COMP/Introdução.md",
     "Sem título.base",
     "geral/TEORIA DE COMP",
     "geral/LINGUAGENS PROG/C++/Comandos Básicos.md",

@@ -57,5 +57,27 @@ git checkout main
 git merge nome_da_sua_branch
 git push
 
+# RESTAURAR CONEXÃO COM UM REPOSITÓRIO QUE TEVE UM ARQUIVO CORROMPIDO NO OBSIDIAN
+
+1. **Feche o Obsidian** para que o plugin não tente salvar nada no meio do processo.
+
+2. **Abra o terminal** na pasta do seu cofre e digite:
+
+ - remove a pasta oculta corrompida do Git (**as notas não serão apagadas**):
+	`rm -rf .git`
+
+- reinicializa o Git e reconecta ao repositório:
+	`git init`
+	`git branch -M main`
+	`git remote add origin https://github.com/joy-rocha/obsidian.git`
+
+- baixa o histórico do GitHub sem alterar as notas locais:
+	`git fetch`
+	`git reset origin/main`
+
+-  faz o salvamento de recuperação e envie para o GitHub:
+	`git add .`
+	`git commit -m "Recuperando repositorio"`
+	`git push -u origin main`
 
 

@@ -13,3 +13,8 @@ $->$ Representação formal dos níveis de modelagem
 | lógico     | relacional | médio     | tabelas       |
 | físico     | SQL        | baixo     | código        |
 
+**LEI DO MUNDO**
+o mundo é cheio de coisas que possuem características próprias que se relacionam entre si
+
+
+

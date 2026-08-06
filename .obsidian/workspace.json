@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "geral/BANCO DE DADOS/Modelo ER.md",
+                "file": "geral/TEORIA DE COMP/Tipos de prova.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Modelo ER"
+              "title": "Tipos de prova"
             }
           }
         ]
@@ -202,11 +202,11 @@
   },
   "active": "59de4c83d0c2f741",
   "lastOpenFiles": [
+    "geral/BANCO DE DADOS/Modelo ER.md",
     "Captura de tela de 2026-08-06 11-55-15.png",
     "Excalidraw/Drawing 2026-08-06 11.41.44.excalidraw.md",
     "Excalidraw/Drawing 2026-08-06 11.18.57.excalidraw.md",
     "Excalidraw/Drawing 2026-08-04 19.37.59.excalidraw.md",
-    "geral/BANCO DE DADOS/Modelo ER.md",
     "Captura de tela de 2026-08-06 11-45-51.png",
     "Excalidraw/Drawing 2026-08-06 11.44.21.excalidraw.md",
     "geral/TEORIA DE COMP/Tipos de prova.md",
@@ -247,7 +247,6 @@
     "geral/ROBÓTICA",
     "Bem-vindo.md",
     "2026-07-31.md",
-    "Pasted image 20260731120005.png",
-    "Pasted image 20260731114058.png"
+    "Pasted image 20260731120005.png"
   ]
 }

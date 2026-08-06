@@ -50,5 +50,11 @@ possui dois passos:
 	**Caso Base:** Provar que o enunciado vale para o primeiro elemento (geralmente n=1 ou n=0)
 	**Passo Indutivo:** Você assume que vale para um número genérico k (**hipótese indutiva**) e usa isso para provar que, obrigatoriamente, terá que valer para o próximo número (k+1)
 
+entt o passo a passo sempreéfazer o caso base cm 11 e dps substituir a icógnita por K e resolver e dps subtituir por (k+1), se o k e o k+1 satisfazer o que se diz no enunciado a prova deu verdae. é isso ?
+
+**Formal:** O caso base deve ser o **menor valor** para o qual a afirmação afirma ser verdadeira. Se o teorema diz "para todo n≥0", seu caso base será n=0. Se disser "para todo n≥2", seu caso base será n=2
+
+$A² x A³ = A⁶$
+
 
 

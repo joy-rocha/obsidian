@@ -35,14 +35,14 @@ Na física, a notação é tudo. Você pode fazer a setinha tradicional em cima 
 
 Para as disciplinas de Álgebra Linear e Cálculo, você vai precisar muito desses símbolos para definir domínios. Aquele "R" estilizado dos Reais é feito com o comando `\mathbb`.
 
-|**O que você quer**|**Como digitar**|**Como fica no Obsidian**|
-|---|---|---|
-|**Números Reais**|`\mathbb{R}`|$\mathbb{R}$|
-|**Números Inteiros**|`\mathbb{Z}`|$\mathbb{Z}$|
-|**Pertence / Não pertence**|`\in` / `\notin`|$\in$ / $\notin$|
-|**Diferente**|`\neq`|$\neq$|
-|**Aproximadamente**|`\approx`|$\approx$|
-|**Infinito**|`\infty`|$\infty$|
+| **O que você quer**         | **Como digitar** | **Como fica no Obsidian** |
+| --------------------------- | ---------------- | ------------------------- |
+| **Números Reais**           | `\mathbb{R}`     | $\mathbb{R}$              |
+| **Números Inteiros**        | `\mathbb{Z}`     | $\mathbb{Z}$              |
+| **Pertence / Não pertence** | `\in` / `\notin` | $\in$ / $\notin$          |
+| **Diferente**               | `\neq`           | $\neq$                    |
+| **Aproximadamente**         | `\approx`        | $\approx$                 |
+| **Infinito**                | `\infty`         | $\infty$                  |
 
 ## 4. Funções Trigonométricas e Cálculo
 

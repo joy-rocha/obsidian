@@ -50,11 +50,37 @@ possui dois passos:
 	**Caso Base:** Provar que o enunciado vale para o primeiro elemento (geralmente n=1 ou n=0)
 	**Passo Indutivo:** Você assume que vale para um número genérico k (**hipótese indutiva**) e usa isso para provar que, obrigatoriamente, terá que valer para o próximo número (k+1)
 
-entt o passo a passo sempreéfazer o caso base cm 11 e dps substituir a icógnita por K e resolver e dps subtituir por (k+1), se o k e o k+1 satisfazer o que se diz no enunciado a prova deu verdae. é isso ?
+entt o passo a passo sempreéfazer o caso base com 1 e dps substituir a icógnita por K e resolver e dps subtituir por (k+1), se o k e o k+1 satisfazer o que se diz no enunciado a prova deu verdae. é isso ?
 
 **Formal:** O caso base deve ser o **menor valor** para o qual a afirmação afirma ser verdadeira. Se o teorema diz "para todo n≥0", seu caso base será n=0. Se disser "para todo n≥2", seu caso base será n=2
 
 $A² x A³ = A⁶$
 
+**primo**: série infinita de números maiores que 1 que só são divisíveis por um e por ele mesmo
+**racional**: a/b tal que a e b $\in$ aos $\mathbb{Z}$ e b $\neq$ 0
+**número par**: é um número inteiro que pode ser escrito na forma 2k, onde k é um número inteiro qualquer
 
+**CASO BASE**
+**analisamos os dois ladoscom o mesmo K se der igual ele satisfaz**
+ara verificar o caso base da afirmação $1 + 3 + 5 + \dots + (2n-1) = n^2$ para $n = 1$:
 
+- **Lado esquerdo (Soma):** O primeiro termo da soma é $1$ (que equivale a $2(1) - 1 = 1$).    
+- **Lado direito (Fórmula):** Substituindo $n = 1$ em $n^2$, temos $1^2 = 1$.
+
+Como ambos os lados resultam em $1$, temos que $\text{Lado Esquerdo} = \text{Lado Direito}$ ($1 = 1$).
+Portanto, **sim**, seu caso base está correto!
+
+**ATENÇÃO**
+- Note que os primeiros termos dessa nova soma correspondem exatamente à nossa **Hipótese de Indução**:
+    
+    $$\underbrace{1 + 3 + 5 + \dots + (2k - 1)}_{= k^2} + (2(k+1) - 1)$$
+    
+- Substituímos esse bloco inicial por $k^2$:
+    $$k^2 + (2(k+1) - 1)$$
+
+Quando o problema afirma que $\text{Soma}(n) = \text{Fórmula}(n)$, você assume como regra que a fórmula vale para $n = k$
+
+***ai so simplificar e ver se o resultado da igual a hipotese so que +1***
+
+**NUMERO PAR**
+todo número par podeser escrito como $2k$ 

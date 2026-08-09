@@ -27,7 +27,10 @@ uma coleção de objetos representada como unidade única que pode conter outros
    
 união -> A $\cup$ B = {2, 4, 5, 6}
 interseção ->  A $\cap$ B = {2, 5}
-produto cartesiano -> AXB é o conjunto de todos os pares ordenados (ou duplas) onde o primeiro elemento pertence a A e o segundo a B.
+
+**PRODUTO CARTESIANO**
+AXB é o conjunto de todos os pares ordenados (ou duplas) onde o primeiro elemento pertence a A e o segundo a B.
+- **antenção**: se temos o conjunto $A$ com $x$ elementos e o conjunto **$B$** com **$y$** a quantidade de pares que o seu produto cartesiano terá é $X*Y$
 
 
  - 2 ∈ A

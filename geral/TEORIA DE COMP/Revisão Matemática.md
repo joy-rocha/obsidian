@@ -125,3 +125,5 @@ São compostos por um conjunto de pontos chamados **VÉRTICES** e linhas chamada
 -  **TRILHA** : percurso, mas sem repetir arestas
 -  **CAMINHO** : thilha, mas sem repetir arestas nem vertices
 
+**ATENÇÃO:**
+a soma dos graus **deve ser sempre um número par**, porque cada aresta conta como "2" na soma total (uma ponta em cada nó). Quando a soma dos graus  resulta em **ímpar**, o grafo é **impossível** de ser construído

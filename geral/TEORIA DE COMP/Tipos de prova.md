@@ -110,6 +110,16 @@ $a^{x+y} = a^x \cdot a^y$
 
 A soma e a divisão de racionais geram outro racional
 
+**ATENÇÃO A ISSO:**
+### $A² = 2B²$
+
+**MULTI DE INTEIROS**
+-  A multiplicação de dois números inteiros sempre resulta em outro número inteiro
+
+
+
+
+
 
 ### 10 Questões Regulares
 

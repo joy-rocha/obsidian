@@ -10,4 +10,4 @@ desesbho aqui !!!1
 
 **EX de SGBD's :**
 Oracle, Mongo DB, Maria DB, MySql, IBM ...
-aaaaa
+

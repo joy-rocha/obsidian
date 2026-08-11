@@ -1,0 +1,1 @@
+`netsh wlan show profiles` (para listar as redes) `netsh wlan show profile name="NOME-DA-REDE" key=clear` (para exibir a senha na linha _Conteúdo da Chave_).

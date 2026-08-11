@@ -185,7 +185,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 332.265625
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -202,9 +202,10 @@
   },
   "active": "e5e7599961c34c2a",
   "lastOpenFiles": [
+    "geral/ROBAR WI-FI.md",
+    "geral/MANUTENÇÃO.md",
     "geral/COMANDOS GIT.md",
     "geral/AMBIENTE VIRTUAL.md",
-    "geral/MANUTENÇÃO.md",
     "geral/LATEX.md",
     "geral/LINUX/Comandos Básicos Linux.md",
     "geral/LINUX/Instalação UBUNTU.md",

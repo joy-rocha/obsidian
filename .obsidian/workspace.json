@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "geral/S.O./prática.md",
+                "file": "OpenJDK.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "prática"
+              "title": "OpenJDK"
             }
           }
         ]
@@ -202,9 +202,15 @@
   },
   "active": "e5e7599961c34c2a",
   "lastOpenFiles": [
+    "geral/Ambiente Virtual.md",
+    "geral/TEORIA DE COMP/DICAS.md",
+    "geral/Comandos GIT.md",
+    "OpenJDK.md",
+    "geral/BANCO DE DADOS/Modelo ER.md",
+    "Sem título",
+    "geral/S.O./prática.md",
     "geral/S.O./Threads.md",
     "geral/S.O./Processos.md",
-    "geral/S.O./prática.md",
     "geral/S.O./Estruturas.md",
     "geral/LINUX/Comandos Básicos Linux.md",
     "geral/LINUX/Instalação UBUNTU.md",
@@ -213,16 +219,13 @@
     "geral/MICRO/teoria/BOOT, RESET E CLK.md",
     "geral/FÍSICA/Vetores.md",
     "geral/BANCO DE DADOS/SGBD.md",
-    "geral/BANCO DE DADOS/Modelo ER.md",
     "geral/BANCO DE DADOS/Modelos de dados.md",
     "geral/TEORIA DE COMP/Tipos de prova.md",
     "geral/IMG/Pasted_image_20260801001711.png",
     "geral/S.O./Pasted_image_20260801001711.png",
     "geral/S.O.",
-    "geral/Comandos GIT.md",
     "geral/TEORIA DE COMP/Revisão Matemática.md",
     "geral/TEORIA DE COMP/Introdução.md",
-    "geral/TEORIA DE COMP/DICAS.md",
     "geral/LATEX.md",
     "Captura de tela de 2026-08-06 11-45-51.png",
     "Captura de tela de 2026-08-06 11-55-15.png",
@@ -231,7 +234,6 @@
     "Excalidraw/Drawing 2026-08-04 19.37.59.excalidraw.md",
     "Excalidraw/Drawing 2026-08-06 11.44.21.excalidraw.md",
     "Excalidraw/Drawing 2026-08-04 19.41.08.excalidraw.md",
-    "Excalidraw/Drawing 2026-08-04 19.36.19.excalidraw.md",
     "geral/IMG/Pasted image 20260730091446.png",
     "geral/IMG",
     "geral/IMG/Captura de tela de 2026-08-04 20-45-28.png",
@@ -244,10 +246,8 @@
     "geral/MICRO/práticas",
     "geral/LATEX",
     "geral/FÍSICA",
-    "geral/Ambiente Virtual.md",
     "Sem título.base",
     "geral/TEORIA DE COMP",
-    "geral/ROBÓTICA/Pasted image 20260730081424.png",
-    "geral/LINGUAGENS PROG/C++"
+    "geral/ROBÓTICA/Pasted image 20260730081424.png"
   ]
 }

@@ -11,5 +11,5 @@
 **find . -name** nome_do_arq -> busca os arquivos com o nome especificado
 
 
-
 https://youtu.be/QZ2nyxzZXPY?si=jsMY0dR7c0oLHJaG
+

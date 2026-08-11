@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OpenJDK.md",
+                "file": "geral/MANUTENÇÃO.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "OpenJDK"
+              "title": "MANUTENÇÃO"
             }
           }
         ]
@@ -202,19 +202,30 @@
   },
   "active": "e5e7599961c34c2a",
   "lastOpenFiles": [
-    "geral/Ambiente Virtual.md",
+    "geral/COMANDOS GIT.md",
+    "geral/AMBIENTE VIRTUAL.md",
+    "geral/MANUTENÇÃO.md",
+    "geral/LATEX.md",
+    "geral/LINUX/Comandos Básicos Linux.md",
+    "geral/LINUX/Instalação UBUNTU.md",
+    "geral/LINUX/Desktop - interface.md",
+    "geral/LINUX/Distribuições - distros.md",
+    "geral/IMG/Pasted image 20260811174610.png",
+    "Pasted image 20260811174403.png",
+    "geral/IMG/Pasted image 20260811174047.png",
+    "geral/IMG/Pasted image 20260811173457.png",
+    "Pasted image 20260811173418.png",
+    "geral/IMG/Pasted image 20260811173226.png",
+    "geral/IMG/Pasted image 20260811172858.png",
+    "geral/IMG/Pasted image 20260811172703.png",
+    "geral/IMG/Pasted image 20260811172454.png",
     "geral/TEORIA DE COMP/DICAS.md",
-    "geral/Comandos GIT.md",
-    "OpenJDK.md",
     "geral/BANCO DE DADOS/Modelo ER.md",
     "Sem título",
     "geral/S.O./prática.md",
     "geral/S.O./Threads.md",
     "geral/S.O./Processos.md",
     "geral/S.O./Estruturas.md",
-    "geral/LINUX/Comandos Básicos Linux.md",
-    "geral/LINUX/Instalação UBUNTU.md",
-    "geral/LINUX/Distribuições - distros.md",
     "geral/MICRO/práticas/Cube MX - criação de projeto.md",
     "geral/MICRO/teoria/BOOT, RESET E CLK.md",
     "geral/FÍSICA/Vetores.md",
@@ -222,24 +233,13 @@
     "geral/BANCO DE DADOS/Modelos de dados.md",
     "geral/TEORIA DE COMP/Tipos de prova.md",
     "geral/IMG/Pasted_image_20260801001711.png",
-    "geral/S.O./Pasted_image_20260801001711.png",
     "geral/S.O.",
     "geral/TEORIA DE COMP/Revisão Matemática.md",
     "geral/TEORIA DE COMP/Introdução.md",
-    "geral/LATEX.md",
-    "Captura de tela de 2026-08-06 11-45-51.png",
-    "Captura de tela de 2026-08-06 11-55-15.png",
     "Excalidraw/Drawing 2026-08-06 11.41.44.excalidraw.md",
     "Excalidraw/Drawing 2026-08-06 11.18.57.excalidraw.md",
     "Excalidraw/Drawing 2026-08-04 19.37.59.excalidraw.md",
-    "Excalidraw/Drawing 2026-08-06 11.44.21.excalidraw.md",
-    "Excalidraw/Drawing 2026-08-04 19.41.08.excalidraw.md",
-    "geral/IMG/Pasted image 20260730091446.png",
     "geral/IMG",
-    "geral/IMG/Captura de tela de 2026-08-04 20-45-28.png",
-    "geral/IMG/Captura de tela de 2026-08-04 20-50-35.png",
-    "Captura de tela de 2026-08-04 20-10-20 1.png",
-    "geral/IMG/Captura de tela de 2026-08-04 20-10-20.png",
     "Excalidraw",
     "Sem título.canvas",
     "geral/MICRO/teoria",
@@ -247,7 +247,6 @@
     "geral/LATEX",
     "geral/FÍSICA",
     "Sem título.base",
-    "geral/TEORIA DE COMP",
-    "geral/ROBÓTICA/Pasted image 20260730081424.png"
+    "geral/TEORIA DE COMP"
   ]
 }

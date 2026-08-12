@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "geral/MANUTENÇÃO.md",
+                "file": "geral/TEORIA DE COMP/Autômatos Finitos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MANUTENÇÃO"
+              "title": "Autômatos Finitos"
             }
           }
         ]
@@ -202,9 +202,11 @@
   },
   "active": "e5e7599961c34c2a",
   "lastOpenFiles": [
-    "geral/ROBAR WI-FI.md",
+    "geral/TEORIA DE COMP/Introdução.md",
+    "geral/TEORIA DE COMP/Autômatos Finitos.md",
     "geral/MANUTENÇÃO.md",
     "geral/COMANDOS GIT.md",
+    "geral/ROBAR WI-FI.md",
     "geral/AMBIENTE VIRTUAL.md",
     "geral/LATEX.md",
     "geral/LINUX/Comandos Básicos Linux.md",
@@ -236,10 +238,8 @@
     "geral/IMG/Pasted_image_20260801001711.png",
     "geral/S.O.",
     "geral/TEORIA DE COMP/Revisão Matemática.md",
-    "geral/TEORIA DE COMP/Introdução.md",
     "Excalidraw/Drawing 2026-08-06 11.41.44.excalidraw.md",
     "Excalidraw/Drawing 2026-08-06 11.18.57.excalidraw.md",
-    "Excalidraw/Drawing 2026-08-04 19.37.59.excalidraw.md",
     "geral/IMG",
     "Excalidraw",
     "Sem título.canvas",

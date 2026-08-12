@@ -82,9 +82,6 @@ Inspecionar o **DC Jack** (conector de energia da placa) para ver se há folga o
  
  Testar a saúde do componente (baterias possuem vida útil limitada em ciclos).
 
-
-
-
 ---
 
 #### ***REFERÊNCIAS***

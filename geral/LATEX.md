@@ -9,28 +9,27 @@
 
 A regra de ouro do LaTeX é que chaves `{ }` servem para agrupar as coisas. Se você vai elevar algo a mais de um caractere, coloque entre chaves.
 
-|**O que você quer**|**Como digitar**|**Como fica no Obsidian**|
-|---|---|---|
-|**Fração** (um sobre o outro)|`\frac{x}{y}`|$\frac{x}{y}$|
-|**Elevado** (Potência)|`x^{2}`|$x^{2}$|
-|**Subscrito** (Índice)|`v_{0}`|$v_{0}$|
-|**Raiz Quadrada**|`\sqrt{x}`|$\sqrt{x}$|
-|**Raiz n-ésima**|`\sqrt[3]{x}`|$\sqrt[3]{x}$|
-|**Mais ou Menos**|`\pm`|$\pm$|
+| **O que você quer**           | **Como digitar** | **Como fica no Obsidian** |
+| ----------------------------- | ---------------- | ------------------------- |
+| **Fração** (um sobre o outro) | `\frac{x}{y}`    | $\frac{x}{y}$             |
+| **Elevado** (Potência)        | `x^{2}`          | $x^{2}$                   |
+| **Subscrito** (Índice)        | `v_{0}`          | $v_{0}$                   |
+| **Raiz Quadrada**             | `\sqrt{x}`       | $\sqrt{x}$                |
+| **Raiz n-ésima**              | `\sqrt[3]{x}`    | $\sqrt[3]{x}$             |
+| **Mais ou Menos**             | `\pm`            | $\pm$                     |
 
 ## 2. Vetores e Física
 
 Na física, a notação é tudo. Você pode fazer a setinha tradicional em cima da letra ou usar o negrito, que é o padrão da maioria dos livros de Cálculo e Física (como o Halliday ou o Stewart).
 
-|**O que você quer**|**Como digitar**|**Como fica no Obsidian**|
-|---|---|---|
-|**Vetor com seta**|`\vec{v}`|$\vec{v}$|
-|**Vetor em negrito**|`\mathbf{v}`|$\mathbf{v}$|
-|**Versor** (Vetor unitário / Chapéu)|`\hat{i}`|$\hat{i}$|
-|**Produto Escalar** (Ponto)|`\cdot`|$\cdot$|
-|**Produto Vetorial** (Cruz)|`\times`|$\times$|
-|**Letras Gregas** (ex: Teta, Pi)|`\theta`, `\pi`, `\omega`|$\theta$, $\pi$, $\omega$|
-
+| **O que você quer**                  | **Como digitar**          | **Como fica no Obsidian** |
+| ------------------------------------ | ------------------------- | ------------------------- |
+| **Vetor com seta**                   | `\vec{v}`                 | $\vec{v}$                 |
+| **Vetor em negrito**                 | `\mathbf{v}`              | $\mathbf{v}$              |
+| **Versor** (Vetor unitário / Chapéu) | `\hat{i}`                 | $\hat{i}$                 |
+| **Produto Escalar** (Ponto)          | `\cdot`                   | $\cdot$                   |
+| **Produto Vetorial** (Cruz)          | `\times`                  | $\times$                  |
+| **Letras Gregas** (ex: Teta, Pi)     | `\theta`, `\pi`, `\omega` | $\theta$, $\pi$, $\omega$ |
 ## 3. Conjuntos Numéricos e Lógica
 
 Para as disciplinas de Álgebra Linear e Cálculo, você vai precisar muito desses símbolos para definir domínios. Aquele "R" estilizado dos Reais é feito com o comando `\mathbb`.
@@ -43,6 +42,8 @@ Para as disciplinas de Álgebra Linear e Cálculo, você vai precisar muito dess
 | **Diferente**               | `\neq`           | $\neq$                    |
 | **Aproximadamente**         | `\approx`        | $\approx$                 |
 | **Infinito**                | `\infty`         | $\infty$                  |
+| **vazio**                   | \emptyset        | $\emptyset$               |
+|                             |                  |                           |
 
 ## 4. Funções Trigonométricas e Cálculo
 

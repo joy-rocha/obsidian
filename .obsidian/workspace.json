@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "geral/S.O./Roteiros.md",
+                "file": "geral/BANCO DE DADOS/Modelo ER Estendido.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Roteiros"
+              "title": "Modelo ER Estendido"
             }
           }
         ],
@@ -217,8 +217,14 @@
   },
   "active": "4d1556ccb4aeee02",
   "lastOpenFiles": [
-    "geral/S.O./anotações.md",
+    "Pasted image 20260813113436.png",
+    "Excalidraw/Drawing 2026-08-13 11.26.53.excalidraw.md",
+    "Excalidraw/Drawing 2026-08-04 19.37.59.excalidraw.md",
+    "geral/BANCO DE DADOS/Modelo ER Estendido.md",
+    "Pasted image 20260813113115.png",
+    "geral/BANCO DE DADOS/Modelo ER.md",
     "geral/S.O./Roteiros.md",
+    "geral/S.O./anotações.md",
     "geral/S.O./Estruturas.md",
     "geral/TEORIA DE COMP/Autômatos Finitos.md",
     "geral/LATEX.md",
@@ -241,20 +247,14 @@
     "geral/IMG/Pasted image 20260811173226.png",
     "geral/IMG/Pasted image 20260811172858.png",
     "geral/IMG/Pasted image 20260811172703.png",
-    "geral/IMG/Pasted image 20260811172454.png",
     "geral/TEORIA DE COMP/DICAS.md",
-    "geral/BANCO DE DADOS/Modelo ER.md",
     "Sem título",
     "geral/S.O./Threads.md",
     "geral/S.O./Processos.md",
     "geral/MICRO/práticas/Cube MX - criação de projeto.md",
     "geral/MICRO/teoria/BOOT, RESET E CLK.md",
     "geral/FÍSICA/Vetores.md",
-    "geral/BANCO DE DADOS/SGBD.md",
-    "geral/BANCO DE DADOS/Modelos de dados.md",
-    "geral/TEORIA DE COMP/Tipos de prova.md",
     "geral/S.O.",
-    "geral/TEORIA DE COMP/Revisão Matemática.md",
     "geral/IMG",
     "Excalidraw",
     "Sem título.canvas",

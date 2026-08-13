@@ -41,3 +41,7 @@ Um professor pode ministrar de 1 a 4 disciplinas e uma disciplina pode ser minis
 
 ### **PARTICIPAÇÃO**
 Define a existência de uma entidade através do relacionamento
+
+
+
+

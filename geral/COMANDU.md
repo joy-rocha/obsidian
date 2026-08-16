@@ -1,6 +1,6 @@
 ifconfig ou ipconfig
 
-
+invadir servidor
 ## 🛠️ Passo a Passo para Instalar
 
 ## 1. Atualize a lista de pacotes
@@ -62,6 +62,11 @@ sudo nmap -O [IP_DO_DISPOSITIVO]
 ```
 
 
+
+
+# roubar  wifiiiiii
+
+`netsh wlan show profiles` (para listar as redes) `netsh wlan show profile name="NOME-DA-REDE" key=clear` (para exibir a senha na linha _Conteúdo da Chave_).
 
 ---
 

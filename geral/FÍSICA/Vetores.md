@@ -47,3 +47,20 @@ Em vez de olhar para o vetor como uma seta inteira inclinada na diagonal, nós o
     - Produto Escalar usa Cosseno ($\vec{a} \cdot \vec{b} = \vert{}\vec{a}\vert{} \vert{}\vec{b}\vert{} \cos\theta$).
         
     - Produto Vetorial usa Seno ($\vert{}\vec{a} \times \vec{b}\vert{} = \vert{}\vec{a}\vert{} \vert{}\vec{b}\vert{} \sin\theta$).
+
+### ORDEM:  Î - Ĵ - k
+ = $k$ 
+ = $-Ĵ$
+ = $-k$
+ = $î$
+ =  $ĵ$
+ = $-î$
+
+| muliplicação | resultado |
+| ------------ | --------- |
+| $Î$ X $Ĵ$    |           |
+| $Î$ X $K$    |           |
+| $ĵ$ X $Î$    |           |
+| $Ĵ$ X $K$    |           |
+| $k$ X $î$    |           |
+| $k$ X $Ĵ$    |           |

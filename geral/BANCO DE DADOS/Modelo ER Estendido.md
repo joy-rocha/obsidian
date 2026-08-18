@@ -16,9 +16,13 @@ RELACIONAMENTOS DO TIPO ***É UM***:
 
 ![[Pasted image 20260813145739.png|268]]
 
+## COBERTURA ou HERANÇA de propriedade:
 
-## GENERALIZAÇÃO / ESPECIALIZAÇÃO, tipos:
+>Nos mecanismos de Generalização e Especialização utiliza-se regras de negócio que representam condições envolvendo a especialização. Essas condições são chamadas de **cobertura** ou **herança** de propriedades. Ela é representada do lado da seta que indica a especialização/generalização por um par de valores (X,Y) onde X representa o conteúdo e Y representa a cobertura.
+	$->$ resumindo: **(conteúdo, cobertura)**
 
+
+## GENERALIZAÇÃO / ESPECIALIZAÇÃO, tipos de cobertura:
 $-$ ***TOTAL ($T$) :*** 
 **Obrigatório** - Todo registro da entidade "Pai" **TEM** que se encaixar em uma entidade "Filha".
 
@@ -42,7 +46,9 @@ Um registro da super-classe pode pertencer a **MÚLTIPLAS** sub-classes simultan
 
 ## AGREGAÇÃO -> Entidade Associativa
 
->**Agregação** é a abstração/conceito de **"empacotar"** um relacionamento existente (junto com as entidades que participam dele) e fingir que esse bloco inteiro é uma **única grande entidade**. (**Ela permite que a relação entre $A$ e $B$ se conecte com $C$**)
+>**Agregação** é a abstração/conceito de **"empacotar"** um relacionamento existente (junto com as entidades que participam dele) e fingir que esse bloco inteiro é uma **única grande entidade**. (**Ela permite que a relação entre $A$ e $B$ se conecte com $C$**) .
+>
+>**CONDIÇÃO**: Só pode ocorrer quando há relacionamentos de **muitos pra muitos**, cardinalidade $(n,n)$
 
 #### **ENTIDADE ASSOCIATIVA** 
 

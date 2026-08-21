@@ -1,11 +1,16 @@
 
-# PROCESSOS ---
+# PROCESSOS
 
 #### ATENÇÃO:
->**compila**:
-	gcc -Wall -o lab1_1 lab1_1.c
-  **executa**:
-	.\nome
+**compila**:
+```bash 
+gcc -Wall -o lab1_1 lab1_1.c
+```
+
+  **executa o lab**:
+```bash
+.\labX_Y
+```
 
 ---
 ## questão 01
@@ -65,10 +70,67 @@ tem um PID próprio e no mesmo $a$ armazena o retorno do fork (0 = certo; -1 = e
 ---
 ## questão 03
 
-**▪Q7. Os endereços impressos são iguais, mas os valores diferem. Como isso é possível? (Dica:**
-**memória virtual.)**
-**▪Q8. Pesquise o termo copy-on-write. O Linux realmente copia toda a memória no instante do**
-**fork()?**
-**▪Q9. Guarde este resultado: ele será contrastado com threads no Lab 2.3.**
+#### memória compartilhada
+>Um ponto central: após o fork(), pai e filho têm espaços de endereçamento separados. As
+   variáveis têm o mesmo nome e o mesmo endereço lógico, mas são cópias independentes.
 
-todo processo tem um pai identificado pelo PPID
+![[Pasted image 20260820104235.png|303]]
+
+**▪ Q7. Os endereços impressos são iguais, mas os valores diferem. Como isso é possível? (Dica:**
+**memória virtual.)**
+pois apesar de ser processos diferentes as variáveis são cópias idênticas
+
+**▪ Q8. Pesquise o termo copy-on-write. O Linux realmente copia toda a memória no instante do**
+**fork()?**
+
+**▪ Q9. Guarde este resultado: ele será contrastado com threads no Lab 2.3.**
+
+---
+## questão 04
+
+#### comando EXEC()
+>fork() cria um clone; para o filho executar um programa diferente, usamos uma função da família
+  exec() (execl, execv, execvp, ...). O exec() substitui a imagem do processo atual pelo novo
+  programa: mesmo PID, código completamente novo. Se o exec() der certo, nada depois dele
+  executa.
+
+**-> matém o mesmo PID e troca apenas o programa dentro do processo**
+
+faz o filho executar um prograa diferente do pai,  o **execlp()** sobrescreve um codigo objeto em um determinado processo.
+
+
+**▪ Q10. Por que fork() e exec() são chamadas separadas, em vez de uma única chamada "criar**
+**processo rodando programa X"? Que flexibilidade esse design dá?**
+
+**▪ Q11. O PID muda após o exec()? Verifique com getpid() antes e usando ps sobre o**
+**programa executado (troque ls -l por sleep 30 para dar tempo).**
+
+---
+## questão 05
+
+Um processo termina quando: retorna de main, chama exit(), ou é morto por um sinal. Ao
+terminar, ele deixa um status de saída que o pai deve coletar com wait()/waitpid().
+
+**KERNEL**
+>O **kernel** é o núcleo do sistema operacional que controla o hardware. A **thread de kernel** é uma linha de execução gerenciada diretamente pelo próprio sistema operacional para realizar tarefas internas ou processar comandos de programas
+
+**▪ Q12. O que acontece se o pai chamar wait() sem ter filhos vivos?**
+**▪ Q13. Por que o código de saída é limitado a 0–255?**
+**▪ Q14. Qual a diferença entre wait() e waitpid()?**
+
+---
+## questão 06
+
+**ZUMBI e ÓRFÃO**
+>Zumbi: o filho terminou, mas o pai ainda não chamou wait(). O kernel mantém uma entrada
+  mínima na tabela de processos (só para guardar o status de saída).
+  -
+  Órfão: o pai terminou antes do filho. O filho é "adotado" pelo init/systemd (PID 1) ou por um
+  subreaper
+
+**▪ Q15. Um zumbi consome CPU? Consome memória? O que exatamente o kernel mantém dele?**
+**▪ Q16. Por que zumbis em excesso são um problema real em servidores? Quem é o culpado: o filho ou o pai?**
+**▪ Q17. É possível matar um zumbi com kill -9? Teste e explique o resultado.**
+
+---
+## questão 07

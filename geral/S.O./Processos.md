@@ -33,5 +33,5 @@ create process
  - **pronto**: pronto para executar, mas ainda esta na fila do escalonador
  - **bloqueado**: não está pronto para ser executado
 
-![[Pasted image 20260801001711.png|285]]
+![[Pasted image 20260821064303.png|466]]
 

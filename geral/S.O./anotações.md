@@ -32,6 +32,8 @@ As marcações entre colchetes, como ****, indicam em qual parte do vídeo o ass
 
 ---
 
+https://notebook.google.com/notebook/63ff0f93-5406-4635-b832-48345c28cd74
+
 # 📚 Roteiro de Estudos: Entendendo Processos e Threads
 
 ## 1. Processos vs. Threads (A Base de Tudo)

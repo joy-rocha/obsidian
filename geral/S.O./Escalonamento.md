@@ -1,8 +1,11 @@
 Escalonamento é exatamente essa ação: a tomada de decisão contínua sobre qual processo ganha o direito de usar a CPU em um determinado momento. E como diferentes sistemas têm necessidades diferentes, o escalonador pode ser configurado para usar vários algoritmos.
 
-o que é um escalonador , é um software responsável pelo gerenciamento de ordem de processamento de processos e threads de um sistema operacional
+## escalonador  
+ é um software responsável pelo gerenciamento de ordem de processamento de processos e threads de um sistema operacional
 
-**multiprogramação** é mais de um programa rodando na memoria principal ao mesmo tempo, entõ os proceesos ficam competindo entre si pela cpu (**dois ou mais processos no estado de pronto competindo pela cpu ao mesmo tempo**)
+## **multiprogramação** 
+É mais de um programa rodando na memoria principal ao mesmo tempo, entõ os proceesos ficam competindo entre si pela cpu 
+(**dois ou mais processos no estado de pronto competindo pela cpu ao mesmo tempo**)
 
 # Tipos de espera
 durante o processamento dos dados de um s.o é comum haver espera por processos, quando a cpu termina todos os processos e não tem nehum pra ela executar no momento ela fica numa espera ocupada, fica perguntando toda hora se não há processos pra rodar, isso esquenta, e exige muito do hardware pois o escalonador fica desesperado para enviar alguém para o uso da cpu. Por isso, também temos a espera ociosa, que se trata da criação de um processo falso com baixa prioridade pelo s.o, só pra a cpu ter o que rodar e não ficar louca, com isso assim que um processo real chega como o nosso falso n tem prioridade ele é interrompido e o real é processado 
@@ -38,7 +41,10 @@ O "desperdício" de tempo (o _overhead_) é o processo burocrático de fazer a *
 - **Gerenciamento de interrupções:** O processamento que o sistema faz ao receber sinais de dispositivos de hardware.
 - **Organização de memória:** O controle que o S.O. precisa fazer para gerenciar o espaço de trabalho dos programas.
 
-### 1. Processos I/O Bound (Limitados por Entrada/Saída)
+# O que é o Quantum?
+Para que o computador não trave e você possa usar vários programas ao mesmo tempo, a CPU precisa ser dividida rapidamente. O **Quantum** é exatamente essa fatia fixa de tempo que o escalonador concede para cada processo usar a CPU. Pense nele como um cronômetro de contagem regressiva bem rápido (geralmente na casa dos milissegundos).
+
+# 1. Processos I/O Bound (Limitados por Entrada/Saída)
 
 São os programas que passam a maior parte do tempo em **surtos de E/S** e pouquíssimo tempo calculando coisas na CPU.
 - **O comportamento:** Eles usam a CPU por uma fração de segundo e já param, esperando algo externo.
@@ -47,7 +53,7 @@ São os programas que passam a maior parte do tempo em **surtos de E/S** e pouqu
     
 - **O gargalo:** A velocidade desses programas não depende de quão rápido é o seu processador, mas sim de quão rápido é o seu SSD ou a sua internet.
 
-### 2. Processos CPU Bound (Limitados pela CPU)
+# 2. Processos CPU Bound (Limitados pela CPU)
 
 São os programas que passam a maior parte do tempo no **surto de CPU**, fazendo cálculos matemáticos pesados e quase não precisam de operações externas
   
@@ -57,21 +63,21 @@ São os programas que passam a maior parte do tempo no **surto de CPU**, fazendo
     
 - **O gargalo:** Aqui o que limita a velocidade é puramente o poder de fogo do seu processador.
 
-### O Truque do Escalonador
+# O Truque do Escalonador
 Saber se um processo é _CPU Bound_ ou _I/O Bound_ é tão importante que os escalonadores modernos tentam "adivinhar" isso enquanto os programas estão rodando.
 
-  
 **O Sistema Operacional costuma dar prioridade muito maior para os processos I/O Bound.**
 Por quê? Porque o processo _I/O Bound_ só quer usar a CPU por 1 milissegundo para mandar um comando para a tela ou pro disco, e logo em seguida ele vai dormir de novo. Se o sistema deixar ele esperando na fila atrás de um processo _CPU Bound_ gigante, o seu mouse começa a travar, o teclado fica com atraso e o computador parece lento, mesmo que só uma aba do processador esteja sendo usada!
 
-**Os Objetivos do Escalonador:**
-
+# **Os Objetivos do Escalonador:**
 - **Justiça:** Garantir que todo processo tenha sua vez (evitando que algum morra de fome na fila).
 - **Aplicação da Política:** Respeitar as prioridades e regras estabelecidas pelo sistema ou pelo usuário.
 - **Equilíbrio:** Misturar bem processos _CPU Bound_ e _I/O Bound_ para manter tanto o processador quanto o disco rígido trabalhando de forma eficiente.
 
-# Classificação de algoritmos de escalonamento
+# Classificação dos sistemas de escalonamento
 precisamos dividir isso em duas partes: **como** o escalonador age (Preemptivo vs. Não Preemptivo) e **onde** ele está trabalhando (Lote, Interativo, Tempo Real).
+
+
 
 ## O Comportamento: Preemptivo vs. Não Preemptivo
 A palavra "preempção" vem do ato de _interromper_ ou _tomar o controle_. Isso define a "personalidade" do escalonador.
@@ -87,10 +93,57 @@ A palavra "preempção" vem do ato de _interromper_ ou _tomar o controle_. Isso 
     - _A vantagem:_ É o que permite que o seu computador moderno não trave por completo se um único programa parar de responder. É a base da multitarefa que usamos hoje
 
 ## Categorias
-então na questaõ das categorias....
+então na questão das categorias....
 
-os sistemas em lote são aqueles com processos predominantemente cpu bound, já que seu foco é a vazão, ou seja, o maior número de processamento em menos tempo, eles são algoritmos não-preemtivos
+### 1) sistemas em lote
+>São aqueles com processos predominantemente cpu bound, já que seu foco é a vazão, ou seja, o maior número de processamento em menos tempo, eles são algoritmos **não-preemtivos**.
+	O objetivo principal aqui é maximizar a **Vazão** (_Throughput_, número de tarefas concluídas por unidade de tempo) e minimizar o **Tempo de Retorno** (_Turnaround Time_, tempo total desde a submissão até a conclusão). Como não há necessidade de interatividade, o uso de algoritmos **não preemptivos** (ou com fatias de tempo extremamente longas) é ideal, pois elimina quase totalmente o _overhead_ gerado por sucessivas trocas de contexto.
 
-os sistemas interativos utiliza de uma algoritmo preemptivo, já que seu foco é a operacionalidade do sistema e capacidade de processamento "simultaneo", com a utilização do time sharing
+### 2) sistemas interativos
+>Utiliza de uma algoritmo **preemptivo**, já que seu foco é a operacionalidade do sistema e capacidade de processamento "simultaneo", com a utilização do time sharing
+	- A métrica principal é o **Tempo de Resposta** (_Response Time_). Como discutimos, a preempção aliada ao _Time Sharing_ é o requisito arquitetural que permite o processamento concorrente (a "simultaneidade" ilusória), evitando que processos _CPU Bound_ monopolizem o processador em detrimento das operações de Entrada/Saída iniciadas pelo usuário.
+### 3) sistemas em tempo real
+>Funcionam com um podelo de algoritmo **preemptivo**, pois neste tipo de sistema os dados devem ser processados e utilizadoos no tempo correto , já que neste casos dados avulsos ou fora de tempo, perdem totalmente sua utilidade ou sentido, assim, é necessário uma alto poder de gerenciamento da cpu a fim da entrega dos dados no tempo correto 
+	O seu conceito sobre a utilidade do dado no tempo correto está brilhante. Na literatura, isso define um sistema de **Tempo Real Crítico** (_Hard Real-Time_): um resultado logicamente correto, entregue após o prazo (_deadline_), é considerado uma falha fatal do sistema
 
-já os sistemas em tempo real, funcionam com um podelo de algoritmo preemptivo, pois neste tipo de sistema os dados devem ser processados e utilizadoos no tempo correto , já que neste casos dados avulsos ou fora de tempo, perdem totalmente sua utilidade ou sentido, assim, é necessário uma alto poder de gerenciamento da cpu a fim da entrega dos dados no tempo correto 
+
+# Classificação dos algoritmos de escalonamento
+
+### Algoritmos em Lote (Batch)
+Neste ambiente, a interatividade não importa, o **foco é o processamento.**
+
+> **First Come, First Served (FCFS):** É não preemptivo e atribui a CPU na exata ordem em que a requisição chega. Processos bloqueados vão para o fim da fila. A grande desvantagem é que uma sucessão de poucos processos _CPU bound_ pode travar muitos processos _I/O bound_.
+	- **ou seja, é uma clássica fila onde o primeiro a chegar é o primeiro a usar a CPU**
+
+>**Job Mais Curto Primeiro:** Também não preemptivo, escolhe sempre o processo de menor tempo restante. Para funcionar, exige que todos os tempos de execução sejam conhecidos previamente e os jobs estejam disponíveis simultaneamente.
+>	- **uma fila preferencial, onde os processos i/o bound primeiro (ele escolhe os "job" que precisam de menos tempona cpu primeiro)**
+    
+>**Escalonamento em 3 Níveis:** Divide o gerenciamento em três etapas funcionais: escalonador de admissão, escalonador de memória e escalonador de CPU.
+
+>**Escalonador de Admissão** (nível 1)
+  ele atua na liberação da memória para que os processos possam competir pela cpu (ele decide quem pode participa da fila)
+
+>**Escalonador de Memória** (nível 2)
+  ele gerencia a memória RAM, em casos de uso total do armazenamento o escalonador retira alguns processos para liberar espaço e os coloca no disco, quando houver espaço eles são trazidos de volta (controla o tamanho da fila pra não ficar grande demais)
+
+>**Escalonador de CPU** (nível 3)
+  atua diretamente na CPU, ele gerencia o uso do processador (atende os processos da fila)
+
+
+# Algoritmos Interativos
+Aqui, o foco é o tempo de resposta rápido usando preempção
+
+#### Round-Robin
+distribuição de fatias de tempo (quanta) em círculo. Este algoritmo é preemptivo. Isso significa que ele funciona na base da interrupção forçada, entt se um processo ta na vez de usar a CPU, faz o que precisava mas não gastou seu quanta todo ele libera a cpu voluntariamente para agilizar a execução do próximo processo, as se ele usou seu quanta todo e ainda não fez tudo que precisava o escalonador chuta ele pra fila de novo e libera a cpu pro próximo
+
+#### Próximo processo mais curto
+Se trata de uma estimativa, .... **me ajuda a entender melhor esse tópico aqui**
+
+#### Filas múltiplas (prioridade)
+processos com mais prioridade recebem mais quanta, mas depois de serem executados tem sua prioridade rebaixada, ou seja Separa os processos por níveis de importância (onde processos I/O bound costumam ter vantagem) e pode rebaixá-los de classe caso usem muita CPU.  
+
+#### Escalonamento garantido
+funciona como uma loteria, cada processo tem um bilhete e é realizado um sorteio, cujo o prêmio é a CPU. Aqui todos os processos tem a chance de $frac{1,n}$ de serem escolhidos, a Fração Justa (impede que um usuário com muitos processos monopolize o sistema em relação a um usuário com poucos processos).
+
+usuário cpu bound, ,ais uśavel
+kernel i/o

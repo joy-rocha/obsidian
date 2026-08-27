@@ -13,7 +13,12 @@
 -  Inclui todos os atributos dos relacionamento como atributos de $S$ 
 #### 4) Relacionamentos 1:n
 - identifica a relação $S$ que representa a entidadeque participa do lado $N$ do relacionamento
-- incluí-se como chave estrangeira  $S$ ...... (falta terminar de copiar essa parte aqui hein ) 
+- incluí-to, se como chave estrangeira  $S$ ...... (falta terminar de copiar essa parte aqui hein ) 
 #### 5) Relacionamentos n:1
 
 #### 6) Relacionamentos n:n
+-  Cria-se uma nova relação $S$  para representar o relacionamento
+-  Inclui como chave estrangeira de s as chaves promárias das relações que participam do relacionameno. A combinação dessas chaves formará a chave primária da relação $S$
+-  ...
+
+

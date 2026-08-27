@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "geral/S.O./Escalonamento.md",
+                "file": "geral/BANCO DE DADOS/Regras de Mapeamento.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Escalonamento"
+              "title": "Regras de Mapeamento"
             }
           }
         ],
@@ -98,7 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 281.01874923706055
+    "width": 232.19062423706055
   },
   "right": {
     "id": "c2eb1dba97099ac1",
@@ -217,8 +217,16 @@
   },
   "active": "55b4c0145496815a",
   "lastOpenFiles": [
-    "geral/S.O./Processos.md",
+    "geral/BANCO DE DADOS/Modelos de Dados.md",
+    "geral/BANCO DE DADOS/Modelo ER.md",
+    "geral/BANCO DE DADOS/Regras de Mapeamento.md",
+    "geral/BANCO DE DADOS/Modelo Relacional (MR).md",
+    "geral/BANCO DE DADOS/Modelo ER Estendido.md",
+    "geral/TEORIA DE COMP/Autômatos Finitos.md",
+    "Regras de Mapeamento",
+    "geral/BANCO DE DADOS/SGBD.md",
     "geral/S.O./Escalonamento.md",
+    "geral/S.O./Processos.md",
     "geral/S.O./Threads.md",
     "geral/S.O./Roteiros.md",
     "geral/S.O./Estruturas.md",
@@ -234,10 +242,6 @@
     "geral/S.O./anotações.md",
     "geral/IMG/Pasted image 20260819204845.png",
     "geral/FÍSICA/Vetores.md",
-    "geral/BANCO DE DADOS/Modelo ER Estendido.md",
-    "geral/BANCO DE DADOS/Modelo Relacional (MR).md",
-    "geral/BANCO DE DADOS/Modelos de Dados.md",
-    "geral/BANCO DE DADOS/SGBD.md",
     "geral/IMG/Pasted image 20260820104235.png",
     "geral/COMANDOS GIT.md",
     "geral/IMG/Pasted image 20260819200746.png",
@@ -249,11 +253,7 @@
     "geral/IMG/Pasted image 20260819200635.png",
     "geral/COMANDU.md",
     "geral/ROBAR WI-FI.md",
-    "geral/BANCO DE DADOS/Modelo ER.md",
     "Excalidraw/Drawing 2026-08-04 19.37.59.excalidraw.md",
-    "Excalidraw/Drawing 2026-08-06 11.18.57.excalidraw.md",
-    "Excalidraw/Drawing 2026-08-06 11.44.21.excalidraw.md",
-    "Sem título",
     "geral/S.O.",
     "geral/IMG",
     "Excalidraw",

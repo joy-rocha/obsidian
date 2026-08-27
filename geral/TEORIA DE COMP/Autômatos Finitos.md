@@ -50,3 +50,5 @@ $K =$ {**$\varepsilon$**} conjunto com cadeia vazia
 
 SEMPRE QUE O MEU ESTADO INICIAL É UM ESTADO DE ACEITAÇÃO ELE ACEITA VAZIO COMO UM DOS ELEMENTOS DE $F$
 
+
+

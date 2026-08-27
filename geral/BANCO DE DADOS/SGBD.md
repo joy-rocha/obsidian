@@ -1,8 +1,6 @@
 **Sistema Gerenciador de Banco de Dados**
 	É a aplicação responsável pelo controle e manipulação dos dados de um BD
 
-desesbho aqui !!!1
-
 **CARACTERÍSTICAS**
 - permite acesso concorrente ás bases de dados
 - realiza o gerenciamento de transações permite criar e aplicar regras para a segurança e integridade dos dados

@@ -11,17 +11,56 @@
             "id": "55b4c0145496815a",
             "type": "leaf",
             "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/movimento balistico.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "movimento balistico"
+            }
+          },
+          {
+            "id": "498efb906bed00da",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/uart.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "uart"
+            }
+          },
+          {
+            "id": "d5baa40c31352ff2",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "geral/BANCO DE DADOS/Regras de Mapeamento.md",
+                "file": "geral/ELETRÔNICA/Protocolos de Comunicação.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Regras de Mapeamento"
+              "title": "Protocolos de Comunicação"
+            }
+          },
+          {
+            "id": "4cd8ec477ccac39e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "geral/FÍSICA/Movimento Balístico.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Movimento Balístico"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -200,12 +239,33 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "55b4c0145496815a",
+  "active": "f7f8f733ceb7e326",
   "lastOpenFiles": [
+    "geral/ELETRÔNICA/Componentes/Básicos.md",
+    "geral/ELETRÔNICA/Componentes/Optoacoplador.md",
+    "geral/ELETRÔNICA/Componentes/Mosfete.md",
+    "geral/IMG/Pasted image 20260829210338.png",
+    "geral/IMG/Pasted image 20260829210316.png",
+    "geral/IMG/Pasted image 20260829210123.png",
+    "geral/IMG/Pasted image 20260829205926.png",
+    "geral/IMG/Pasted image 20260829205905.png",
+    "geral/IMG/Pasted image 20260829205833.png",
+    "geral/IMG/Pasted image 20260829205806.png",
+    "geral/IMG/Pasted image 20260829205706.png",
+    "geral/IMG/Pasted image 20260829205607.png",
+    "geral/IMG/Pasted image 20260829203741.png",
+    "geral/FÍSICA/Movimento Balístico.md",
+    "geral/ELETRÔNICA/Componentes",
+    "geral/ELETRÔNICA/Protocolos de Comunicação.md",
+    "Excalidraw/movimento balistico.md",
+    "Excalidraw/uart.md",
+    "Excalidraw/er.md",
+    "geral/ELETRÔNICA",
+    "geral/FÍSICA/Vetores.md",
+    "geral/BANCO DE DADOS/Regras de Mapeamento.md",
     "geral/COMANDOS GIT.md",
     "geral/COMANDU.md",
     "geral/MANUTENÇÃO.md",
-    "geral/BANCO DE DADOS/Regras de Mapeamento.md",
     "geral/BANCO DE DADOS/Modelos de Dados.md",
     "geral/BANCO DE DADOS/Modelo ER.md",
     "geral/BANCO DE DADOS/Modelo Relacional (MR).md",
@@ -218,27 +278,7 @@
     "geral/S.O./Threads.md",
     "geral/S.O./Roteiros.md",
     "geral/S.O./Estruturas.md",
-    "geral/IMG/Pasted image 20260821064303.png",
     "Excalidraw/etados(SO).md",
-    "Excalidraw/Drawing 2026-08-21 06.38.56.excalidraw.md",
-    "Excalidraw/agregação.md",
-    "Excalidraw/generalização.md",
-    "Excalidraw/bd.md",
-    "Excalidraw/diagrama de estados.md",
-    "Excalidraw/er.md",
-    "Excalidraw/stm.md",
-    "geral/S.O./anotações.md",
-    "geral/IMG/Pasted image 20260819204845.png",
-    "geral/FÍSICA/Vetores.md",
-    "geral/IMG/Pasted image 20260820104235.png",
-    "geral/IMG/Pasted image 20260819200746.png",
-    "Pasted image 20260819200720.png",
-    "geral/IMG/Pasted image 20260819200708.png",
-    "geral/IMG/Pasted image 20260819200705.png",
-    "geral/IMG/Pasted image 20260819200651.png",
-    "geral/IMG/Pasted image 20260819200645.png",
-    "geral/IMG/Pasted image 20260819200635.png",
-    "geral/ROBAR WI-FI.md",
     "geral/S.O.",
     "geral/IMG",
     "Excalidraw",
@@ -246,8 +286,6 @@
     "geral/MICRO/teoria",
     "geral/MICRO/práticas",
     "geral/LATEX",
-    "geral/FÍSICA",
-    "Sem título.base",
-    "geral/TEORIA DE COMP"
+    "geral/FÍSICA"
   ]
 }

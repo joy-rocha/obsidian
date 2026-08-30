@@ -11,14 +11,12 @@
             "id": "55b4c0145496815a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "geral/FÍSICA/Movimento Balístico.md",
-                "mode": "source",
-                "source": false
+                "file": "geral/IMG/Pasted image 20260829210851.png"
               },
-              "icon": "lucide-file",
-              "title": "Movimento Balístico"
+              "icon": "lucide-image",
+              "title": "Pasted image 20260829210851"
             }
           },
           {
@@ -61,7 +59,8 @@
               "title": "Movimento Balístico"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -240,15 +239,15 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "55b4c0145496815a",
+  "active": "498efb906bed00da",
   "lastOpenFiles": [
-    "Pasted image 20260829210851.png",
+    "geral/IMG/Pasted image 20260829210851.png",
+    "geral/FÍSICA/Movimento Balístico.md",
     "geral/ELETRÔNICA/Componentes/Básicos.md",
     "geral/ELETRÔNICA/Protocolos de Comunicação.md",
     "Excalidraw/movimento balistico.md",
     "geral/FÍSICA/Vetores.md",
-    "geral/FÍSICA/Movimento Balístico.md",
-    "Pasted image 20260829210803.png",
+    "geral/IMG/Pasted image 20260829210803.png",
     "Excalidraw/uart.md",
     "geral/IMG/Pasted image 20260829210338.png",
     "geral/ELETRÔNICA/Componentes/Optoacoplador.md",
@@ -260,7 +259,6 @@
     "geral/IMG/Pasted image 20260829205833.png",
     "geral/IMG/Pasted image 20260829205806.png",
     "geral/IMG/Pasted image 20260829205706.png",
-    "geral/IMG/Pasted image 20260829205607.png",
     "geral/ELETRÔNICA/Componentes",
     "Excalidraw/er.md",
     "geral/ELETRÔNICA",

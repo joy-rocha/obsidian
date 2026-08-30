@@ -11,12 +11,14 @@
             "id": "55b4c0145496815a",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/movimento balistico.md"
+                "file": "geral/FÍSICA/Movimento Balístico.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "movimento balistico"
+              "icon": "lucide-file",
+              "title": "Movimento Balístico"
             }
           },
           {
@@ -59,8 +61,7 @@
               "title": "Movimento Balístico"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -239,12 +240,19 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "f7f8f733ceb7e326",
+  "active": "55b4c0145496815a",
   "lastOpenFiles": [
+    "Pasted image 20260829210851.png",
     "geral/ELETRÔNICA/Componentes/Básicos.md",
+    "geral/ELETRÔNICA/Protocolos de Comunicação.md",
+    "Excalidraw/movimento balistico.md",
+    "geral/FÍSICA/Vetores.md",
+    "geral/FÍSICA/Movimento Balístico.md",
+    "Pasted image 20260829210803.png",
+    "Excalidraw/uart.md",
+    "geral/IMG/Pasted image 20260829210338.png",
     "geral/ELETRÔNICA/Componentes/Optoacoplador.md",
     "geral/ELETRÔNICA/Componentes/Mosfete.md",
-    "geral/IMG/Pasted image 20260829210338.png",
     "geral/IMG/Pasted image 20260829210316.png",
     "geral/IMG/Pasted image 20260829210123.png",
     "geral/IMG/Pasted image 20260829205926.png",
@@ -253,15 +261,9 @@
     "geral/IMG/Pasted image 20260829205806.png",
     "geral/IMG/Pasted image 20260829205706.png",
     "geral/IMG/Pasted image 20260829205607.png",
-    "geral/IMG/Pasted image 20260829203741.png",
-    "geral/FÍSICA/Movimento Balístico.md",
     "geral/ELETRÔNICA/Componentes",
-    "geral/ELETRÔNICA/Protocolos de Comunicação.md",
-    "Excalidraw/movimento balistico.md",
-    "Excalidraw/uart.md",
     "Excalidraw/er.md",
     "geral/ELETRÔNICA",
-    "geral/FÍSICA/Vetores.md",
     "geral/BANCO DE DADOS/Regras de Mapeamento.md",
     "geral/COMANDOS GIT.md",
     "geral/COMANDU.md",

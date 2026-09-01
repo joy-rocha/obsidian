@@ -19,7 +19,8 @@ RELACIONAMENTOS DO TIPO ***É UM***:
 ## COBERTURA ou HERANÇA de propriedade:
 
 >Nos mecanismos de Generalização e Especialização utiliza-se regras de negócio que representam condições envolvendo a especialização. Essas condições são chamadas de **cobertura** ou **herança** de propriedades. Ela é representada do lado da seta que indica a especialização/generalização por um par de valores (X,Y) onde X representa o conteúdo e Y representa a cobertura.
-	$->$ resumindo: **(conteúdo, cobertura)**
+	$->$ resumindo: **(conteúdo, cobertura)**   
+	 $->$ ou seja :**(exclusiva/sobreposição, total/parcial)**
 
 
 ## GENERALIZAÇÃO / ESPECIALIZAÇÃO, tipos de cobertura:

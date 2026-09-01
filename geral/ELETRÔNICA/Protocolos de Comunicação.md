@@ -28,7 +28,7 @@ cada dispositivo conecado precida do seu próprio fio de chip selector
 
 
 
-![[Pasted image 20260829192210.png|495]]
+![[Pasted image 20260829192210.png|293]]
 
 # I2C
 Inter Integrate Circuit - Circuito Inter-Intergrado

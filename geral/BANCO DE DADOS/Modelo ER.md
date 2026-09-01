@@ -17,8 +17,14 @@
 -  **Atributos do Relacionamento**: definido apenas pela existência do relacionamento
 eu não aguento mais, a tela fria desse celular, só versua ft não vai meesquentar... amar vc de longe é tão ruim, te quero ao vivo e a cores aqui
 
+### CHAVE CANDIDATA
+São todos os atributos possíveis para identificar de forma única uma entidade.
+###  CHAVE PRIMÁRIA
+Toda chave primária é uma chave candidata, já que a primária é a candidata oficial selecionada pelo projetista.
+### REGRAS DE NEGÓCIO
+Definem limites e condições para a existência dos dados 
 ### **RESTRIÇÕES DE INTEGRIDADE**
-Restrições nas quais os relacionamentos entre as entidades são submetidos(regras de ne gócio). São regras aplicadas a colunas de uma tabela, definindo limitespara os dados que podem ser inseridos nessas colunas. Estas regras garantem a integridade e consistência dos dados, evitando erros, duplicações e inconsistências.
+Restrições nas quais os relacionamentos entre as entidades são submetidos(regras de negócio). São regras aplicadas a colunas de uma tabela, definindo limites para os dados que podem ser inseridos nessas colunas. **Estas regras garantem a integridade e consistência dos dados, evitando erros, duplicações e inconsistências.**
 
 - EX: toda multa de trânsito deve estar associada a um veículo, o salário do empregado deve ser menos que o do gerente
 

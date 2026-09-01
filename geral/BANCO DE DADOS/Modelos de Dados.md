@@ -1,4 +1,4 @@
-$->$ Representação formal dos níveis de modelagem
+$->$ Representação formal dos níveis de modelagem;
 
 **NÍVEIS DE MODELAGEM:**
 -  CONCEITUAL: Os dados têm a representação fiel da **realidade observada**

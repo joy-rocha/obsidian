@@ -1,7 +1,6 @@
 #### ENTIDADES
 -  **Forte**: não tem dependência para existir
 -  **Fraca**: depende de outra entidade para existir (retângulo com moldura)
-
 #### RELACIONAMENTOS
 -  **Binário**: une 2 entidades
 -  **Ternário**: une 3 entidades
@@ -15,7 +14,6 @@
 -  **Derivados**: Podem ser determindos a partir de outros atributos ou entidades (EX: data de nascimento, idade)
 -  **Identificador**: é um atributo cujo os valores são distintos de (bolinha preenchida)(EX: ID)
 -  **Atributos do Relacionamento**: definido apenas pela existência do relacionamento
-eu não aguento mais, a tela fria desse celular, só versua ft não vai meesquentar... amar vc de longe é tão ruim, te quero ao vivo e a cores aqui
 
 ### CHAVE CANDIDATA
 São todos os atributos possíveis para identificar de forma única uma entidade.

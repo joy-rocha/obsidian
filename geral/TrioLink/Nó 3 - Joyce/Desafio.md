@@ -1,4 +1,4 @@
-
+https://github.com/joy-rocha/TrioLink
 ---
 #### Desafio 3 — Consolidação / Interface
 Responsável pelo nó de consolidação, com o display TFT 2.4". Este aluno assina os dados agregados do Nó 2 (fusion/bmp_mpu), processa e gera o estado final do sistema, e é dono do framework de exibição/consolidação — a parte visível do sistema como um todo.

@@ -15,9 +15,24 @@ _Nota: O pino **TX** do dispositivo A conecta-se obrigatoriamente ao pino **RX**
 point to point - só pode conectar dois dispositivos por vez
 não possui coreçãode erros integrada, ou seja é necessário a adção de verificações próprias para identificar quando dados forem transmitidos
 
+# MQTT
+É um protocolo de *comunicaçãode de rede* que utiliza um modelo de publicação e assinatura, criado especialmente para a Internet das Coisas (IoT)
+
+Apesar do MQTT não precisar de conexões físicas ele não conecta diretamente um sispositivo a outro, ele usa um intermediador chamado **broker**
+
+![[Pasted image 20260902111451.png|323]]
+
+**Broker**: A cental de mensagens. Ele é responsável poraorganizar e enviar a mensagem para seu destinatário.
+**Publisher** (publicador): São os sensores que enviam valores para o broker.
+**Subscriber** (leitor): Avisa ao broker que quer ler determinado sensor.
+
+**O MQTT é um protocolo (uma norma de comunicação), não um programa.** Por isso, ele não vem como um aplicativo pré-instalado único: você precisa escolher e instalar um software que faça o papel de Broker ou utilizar um servidor Broker na nuvem.
+
+TCP/IP
 # SPI
 Serial Periphenal Interface - Interface Periférica Serial
 
+protocloco de comunicação física
 utiliza 4 fios
 um de clck, que mantém os dispositivos sinncronizados
 um MOSI (Master Out Salve In - mestre de saída, escravo de entrada) que envia os dados mestre para o escravo (ou COPI)
@@ -58,13 +73,6 @@ conecta dois dispositivos numa conexão point topoint simples
 os dados são transmitidos por niveis de tensão para reprensetar 0 e 1
 o zero (nivél baixo) é representado por uma tensão POSITIVA +15V
 o um (nível alto) é representado por uma tensão NEGATIVA -15V
-
-
-
-
-
-
-
 
 
 https://youtu.be/2LaiScfoYGQ?si=RXuyfi7Q0a1e18k8

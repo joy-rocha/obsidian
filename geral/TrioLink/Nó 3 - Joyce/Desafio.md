@@ -139,3 +139,29 @@ mosquitto_pub -t "teste/topico" -m "Mosquitto funcionando!"
 ```
 
 Se a mensagem aparecer instantaneamente no Terminal 1, o servidor estará pronto para receber os dados dos seus sensores físicos.
+
+
+---
+
+# Desing da case do projeto
+
+[# Ventilador MINI PC](https://pt.aliexpress.com/item/1005009992360134.html?src=google&src=google&albch=shopping&acnt=297-491-5278&isdl=y&slnk=&plac=&mtctp=&albbt=Google_7_shopping&aff_platform=google&aff_short_key=_oFgTQeV&gclsrc=aw.ds&albagn=888888&ds_e_adid=&ds_e_matchtype=&ds_e_device=c&ds_e_network=x&ds_e_product_group_id=&ds_e_product_id=pt1005009992360134&ds_e_product_merchant_id=5657929593&ds_e_product_country=BR&ds_e_product_language=pt&ds_e_product_channel=online&ds_e_product_store_id=&ds_url_v=2&albcp=23461193190&albag=&isSmbAutoCall=false&needSmbHouyi=false&gad_source=1&gad_campaignid=23466249500&gclid=Cj0KCQjw2OnUBhC2ARIsACKyfaG-VB3FjyVGWYRi6VQggB0IEb2Kf8y0v5pMY3sYj0GZeMJolezhnE0aAjPmEALw_wcB)
+
+| ![[Pasted image 20260904093554.png\|305]] | ![[Pasted image 20260904095515.png\|242]] |
+| ----------------------------------------- | ----------------------------------------- |
+
+![[Pasted image 20260904095750.png]]
+
+
+# Backlog - traduzindo:
+**Product Backlog:** É a **lista de afazeres** completa do projeto. Tudo o que precisa ser planejado, programado ou testado até a entrega final fica listado aí.
+
+**Sprint:** É uma **maratona curta de trabalho**. Em vez de tentar fazer o projeto inteiro de uma vez, o tempo é dividido em ciclos fixos (neste caso, de 15 dias). Em cada Sprint, a equipe foca apenas em entregar um pedaço específico do sistema.
+
+**US (User Story / História de Usuário):** É uma **funcionalidade** contada da perspectiva de quem vai usar o sistema.
+- Exemplo:_ US-01 pode ser _"Como usuário, quero selecionar o modelo de IA em uma lista para poder testá-lo."_
+
+*RNF (Requisito Não-Funcional):** É uma **regra de desempenho ou limitação técnica**, e não uma tela ou botão.
+- Exemplo:_ RNF-03 pode ser _"O programa não pode consumir mais de 2 GB de memória RAM durante a execução."_
+
+**Stack:** É a **caixa de ferramentas** do projeto. Refere-se ao conjunto de linguagens, programas e bibliotecas que foram escolhidos para construir o software.

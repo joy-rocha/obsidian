@@ -21,24 +21,35 @@ https://youtu.be/I41wIyXG8Bc?si=Z8xgmacocaHxzvcF
 
 ==Atenção: o uso de ambiente virtual é obrigatório!==
 
-1) Antes de instalar a luma vamos criar um <u>ambiente virtual</u>:
+1) Instale o pacote do `venv`:
+```bash
+sudo apt update
+sudo apt install python3.14-venv -y
+```
+
+2) Antes de instalar a luma vamos criar um <u>ambiente virtual</u>:
 ```bash
 python3 -m venv ~/luma-env
 ```
 
 Isso cria um ambiente virtual no diretório inicial chamado `luma-env`e um Python executável em `~/luma-env/bin/python`.
 
-2) Ativação do ambiente virtual:
+3) Ativação do ambiente virtual:
 ```bash
 source ~/luma-env/bin/activate
 ```
 
-3) instalação da lib e da biblioteca gráfica Pillow e dependências automaticamente:
+4) instalação da lib e da biblioteca gráfica Pillow e dependências automaticamente:
    ```bash
    	pip install --upgrade luma.lcd
    ```
 
-*se a instalação (comando 3) falhar, significa que vc precia instalar as dependencias separadamente, então execute o segunte:*
+5) Instale a biblioteca do display e a de MQTT para Python:
+```bash
+pip install luma.lcd paho-mqtt
+```
+
+*se a instalação (comando 4) falhar, significa que vc precia instalar as dependencias separadamente, então execute o segunte:*
 ```bash
 sudo apt-get update
 sudo apt-get install python3-dev libjpeg-dev zlib1g-dev libfreetype6-dev
@@ -124,8 +135,41 @@ allow_anonymous true
 sudo systemctl restart mosquitto
 ```
 
+5. Se a saída indicar **`active (running)`** em verde, seu broker MQTT está totalmente configurado e pronto para se comunicar com os sensores da rede.
+```bash
+sudo systemctl status mosquitto
+```
 
-## Como testar se funcionou
+
+---
+
+## Como usar o Mosquitto no terminal (teste)
+
+#### Escutar um tópico (Subscriber)
+```bash
+mosquitto_sub -h localhost -t "casa/temperatura" -v
+```
+
+#### Enviar uma mensagem para o tópico (Publisher)
+```bash
+mosquitto_pub -h localhost -t "casa/temperatura" -m "24.5"
+```
+
+#### Significado dos parâmetros:
+- **`-h`** _(host)_: Endereço IP do servidor do Mosquitto (use `localhost` se estiver na mesma máquina, ou o IP do computador se for acessar de um microcontrolador como ESP32/Arduino).
+- **`-t`** _(topic)_: O canal de comunicação (ex: `casa/quarto/luz`, `sensores/umidade`).
+- **`-m`** _(message)_: O texto ou dado a ser enviado.
+- **`-v`** _(verbose)_: Exibe o nome do tópico junto com a mensagem ao receber.
+
+- **`#` (Curinga multinível):** Escuta o tópico atual e todos os seus subtópicos.
+	 `mosquitto_sub -h localhost -t "casa/#" -v`
+	 (Recebe mensagens de `casa/sala`, `casa/quarto/temperatura`, etc.)_
+    
+- **`+` (Curinga de nível único):** Substitui apenas uma camada da hierarquia.
+    `mosquitto_sub -h localhost -t "casa/+/temperatura" -v`
+    (Recebe de `casa/sala/temperatura` e `casa/quarto/temperatura`, mas ignora `casa/sala/luz`)
+
+#### EXEMPLO
 Abra dois terminais na sua placa:
 
 - **Terminal 1 (Leitor/Subscriber):** Escute um tópico de teste:
@@ -140,9 +184,67 @@ mosquitto_pub -t "teste/topico" -m "Mosquitto funcionando!"
 
 Se a mensagem aparecer instantaneamente no Terminal 1, o servidor estará pronto para receber os dados dos seus sensores físicos.
 
+---
+
+# Intalação da libmosquitto no linux
+
+Biblioteca em C para a utilização do Mosquitto em códigos
+```bash
+sudo apt install libmosquitto-dev
+```
+
+Garantir que tem o compilador instalado:
+```bash
+  sudo apt install build-essential
+```
+
+Incluir no início do seu código C:
+```
+#include <mosquitto.h>
+```
+
+Compilar passando o parâmetro `-lmosquitto` no final:
+```bash
+gcc programa.c -o programa -lmosquitto
+```
+(A flag `-lmosquitto` é essencial para dizer ao compilador `gcc` que ele deve linkar a biblioteca do Mosquitto ao criar o executável)
+
 
 ---
 
+# Instalando a  biblioteca para parser de JSON em C - *cJSON*
+
+```bash
+sudo apt-get install libcjson-dev
+```
+
+No início do arquivo C:
+```
+#include <cjson/cJSON.h>
+```
+
+ Na hora de compilar no terminal:
+```bash
+gcc programa.c -o programa -lcjson
+```
+
+#### **Principais Funções:**
+
+- **`cJSON_Parse(string)`**: Lê a string e cria a estrutura JSON na memória.
+    
+- **`cJSON_GetObjectItemCaseSensitive(json, "chave")`**: Busca um campo específico pelo nome da chave.
+    
+- **`cJSON_IsNumber(item)`**: Verifica se o campo encontrado é realmente um número.
+    
+- **`item->valueint`**: Acessa o valor armazenado como número inteiro (`int`).
+    
+- **`item->valuedouble`**: Acessa o valor armazenado como decimal (`double` ou `float`).
+    
+- **`cJSON_Delete(json)`**: Apaga a estrutura da memória após o uso (obrigatório para evitar vazamento de memória).
+
+
+
+- - - 
 # Desing da case do projeto
 
 [# Ventilador MINI PC](https://pt.aliexpress.com/item/1005009992360134.html?src=google&src=google&albch=shopping&acnt=297-491-5278&isdl=y&slnk=&plac=&mtctp=&albbt=Google_7_shopping&aff_platform=google&aff_short_key=_oFgTQeV&gclsrc=aw.ds&albagn=888888&ds_e_adid=&ds_e_matchtype=&ds_e_device=c&ds_e_network=x&ds_e_product_group_id=&ds_e_product_id=pt1005009992360134&ds_e_product_merchant_id=5657929593&ds_e_product_country=BR&ds_e_product_language=pt&ds_e_product_channel=online&ds_e_product_store_id=&ds_url_v=2&albcp=23461193190&albag=&isSmbAutoCall=false&needSmbHouyi=false&gad_source=1&gad_campaignid=23466249500&gclid=Cj0KCQjw2OnUBhC2ARIsACKyfaG-VB3FjyVGWYRi6VQggB0IEb2Kf8y0v5pMY3sYj0GZeMJolezhnE0aAjPmEALw_wcB)
@@ -153,15 +255,8 @@ Se a mensagem aparecer instantaneamente no Terminal 1, o servidor estará pronto
 ![[Pasted image 20260904095750.png]]
 
 
-# Backlog - traduzindo:
-**Product Backlog:** É a **lista de afazeres** completa do projeto. Tudo o que precisa ser planejado, programado ou testado até a entrega final fica listado aí.
+---
 
-**Sprint:** É uma **maratona curta de trabalho**. Em vez de tentar fazer o projeto inteiro de uma vez, o tempo é dividido em ciclos fixos (neste caso, de 15 dias). Em cada Sprint, a equipe foca apenas em entregar um pedaço específico do sistema.
 
-**US (User Story / História de Usuário):** É uma **funcionalidade** contada da perspectiva de quem vai usar o sistema.
-- Exemplo:_ US-01 pode ser _"Como usuário, quero selecionar o modelo de IA em uma lista para poder testá-lo."_
 
-*RNF (Requisito Não-Funcional):** É uma **regra de desempenho ou limitação técnica**, e não uma tela ou botão.
-- Exemplo:_ RNF-03 pode ser _"O programa não pode consumir mais de 2 GB de memória RAM durante a execução."_
 
-**Stack:** É a **caixa de ferramentas** do projeto. Refere-se ao conjunto de linguagens, programas e bibliotecas que foram escolhidos para construir o software.

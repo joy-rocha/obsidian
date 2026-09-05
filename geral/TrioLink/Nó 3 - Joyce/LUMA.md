@@ -72,3 +72,33 @@ device.show() # Religam os pixels
 
 
 ![[Pasted image 20260904212702.png|201]]
+
+
+- - -
+
+
+- **`fill` (Preenchimento):** Define a cor de dentro da caixa.
+    
+    - `fill="white"` (preenche de branco)
+        
+    - `fill="#333333"` (preenche de cinza escuro)
+        
+    - `fill=None` (deixa o fundo transparente)
+        
+- **`outline` (Borda):** Define a cor da linha de contorno da caixa (opcional).
+    
+    - `outline="black"` (desenha uma borda preta ao redor)
+
+
+
+
+# Fontes do display
+
+Rode os comandos abaixo no terminal do seu VS Code para baixar duas fontes gratuitas do Google/OpenSource que combinam com o estilo do painel:
+```bash
+# Fonte Pixel/Retro (para as letras e textos do painel)
+wget https://github.com/google/fonts/raw/main/ofl/vt323/VT323-Regular.ttf
+```
+
+
+

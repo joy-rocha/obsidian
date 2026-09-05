@@ -55,6 +55,18 @@ sudo apt-get update
 sudo apt-get install python3-dev libjpeg-dev zlib1g-dev libfreetype6-dev
 ```
 
+- - - 
+# para testar só como pc sema rpi5
+
+Rode o comando do gerenciador de pacotes do Linux para baixar as ferramentas de gráficos:
+```bash
+sudo apt update && sudo apt install -y libsdl2-dev libsdl2-image-dev libsdl2-ttf-dev
+```
+
+Instale o emulador no ambiente virtual:
+```bash
+pip install luma.emulator
+```
 ---
 
 # Diplay - Driver IC ILI9341

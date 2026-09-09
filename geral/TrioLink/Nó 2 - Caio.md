@@ -20,3 +20,5 @@ O MPU6050 é um sensor de movimento de 6 eixos (IMU - _Inertial Measurement Unit
 |**XCL**|Saída|Linha de clock do barramento I2C auxiliar.|
 |**AD0**|Entrada|Seletor de endereço I2C. Conectado ao GND define o endereço como `0x68`; conectado ao VCC define como `0x69`.|
 |**INT**|Saída|Pino de interrupção para notificar o microcontrolador quando novos dados estão prontos para leitura.|
+
+tls - criptografia

@@ -10,15 +10,18 @@ O MPU6050 é um sensor de movimento de 6 eixos (IMU - _Inertial Measurement Unit
 
 ![[Pasted image 20260908160834.png|141]]
 
-|**Pino**|**Tipo**|**Função / Descrição**|
-|---|---|---|
-|**VCC**|Alimentação|Entrada de energia (geralmente 3,3V a 5V devido ao regulador integrado).|
-|**GND**|Alimentação|Conexão de terra / referência (0V).|
-|**SCL**|Entrada|Linha de clock para a comunicação I2C principal com o microcontrolador.|
-|**SDA**|Entrada / Saída|Linha de dados para a comunicação I2C principal com o microcontrolador.|
-|**XDA**|Entrada / Saída|Linha de dados do barramento I2C auxiliar (usado para conectar sensores externos, como magnetômetros).|
-|**XCL**|Saída|Linha de clock do barramento I2C auxiliar.|
-|**AD0**|Entrada|Seletor de endereço I2C. Conectado ao GND define o endereço como `0x68`; conectado ao VCC define como `0x69`.|
-|**INT**|Saída|Pino de interrupção para notificar o microcontrolador quando novos dados estão prontos para leitura.|
+
+# PINAGEM
+
+| **Pino** | **Tipo**        | **Função / Descrição**                                                                                        |
+| -------- | --------------- | ------------------------------------------------------------------------------------------------------------- |
+| **VCC**  | Alimentação     | Entrada de energia (geralmente 3,3V a 5V devido ao regulador integrado).                                      |
+| **GND**  | Alimentação     | Conexão de terra / referência (0V).                                                                           |
+| **SCL**  | Entrada         | Linha de clock para a comunicação I2C principal com o microcontrolador.                                       |
+| **SDA**  | Entrada / Saída | Linha de dados para a comunicação I2C principal com o microcontrolador.                                       |
+| **XDA**  | Entrada / Saída | Linha de dados do barramento I2C auxiliar (usado para conectar sensores externos, como magnetômetros).        |
+| **XCL**  | Saída           | Linha de clock do barramento I2C auxiliar.                                                                    |
+| **AD0**  | Entrada         | Seletor de endereço I2C. Conectado ao GND define o endereço como `0x68`; conectado ao VCC define como `0x69`. |
+| **INT**  | Saída           | Pino de interrupção para notificar o microcontrolador quando novos dados estão prontos para leitura.          |
 
 tls - criptografia

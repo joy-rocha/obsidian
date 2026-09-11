@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "geral/BANCO DE DADOS/FÍSICO/Modelo Físico.md",
+                "file": "geral/S.O./unidade02/Monitores.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Modelo Físico"
+              "title": "Monitores"
             }
           }
         ]
@@ -202,6 +202,20 @@
   },
   "active": "a1f26adf810b8dff",
   "lastOpenFiles": [
+    "geral/S.O./unidade02/Semáforos.md",
+    "geral/S.O./unidade02/Monitores.md",
+    "geral/S.O./unidade02/Comunicação Iterprocessos.md",
+    "geral/S.O./unidade01/Roteiros_01.md",
+    "geral/S.O./unidade02",
+    "geral/S.O./unidade01/Escalonamento.md",
+    "geral/S.O./unidade01/Threads.md",
+    "geral/S.O./unidade01",
+    "geral/S.O./anotações.md",
+    "geral/S.O./unidade01/Processos.md",
+    "geral/S.O./Estruturas.md",
+    "normasAssert.md",
+    "geral/ELETRÔNICA/Protocolos de Comunicação.md",
+    "geral/BANCO DE DADOS/FÍSICO/Modelo Físico.md",
     "geral/BANCO DE DADOS/SGBD.md",
     "geral/BANCO DE DADOS/Modelos de Dados.md",
     "geral/BANCO DE DADOS/MR/Regras de Mapeamento - MR.md",
@@ -211,7 +225,6 @@
     "geral/BANCO DE DADOS/ER/Modelo ER Estendido.md",
     "geral/BANCO DE DADOS/ER",
     "geral/BANCO DE DADOS/MR/Modelo Relacional (MR).md",
-    "geral/BANCO DE DADOS/FÍSICO/Modelo Físico.md",
     "geral/AMBIENTE VIRTUAL.md",
     "geral/TrioLink/Nó 2 - Caio.md",
     "geral/TrioLink/Nó 3 - Joyce/LUMA.md",
@@ -230,23 +243,11 @@
     "geral/TrioLink/Nó 3 - Joyce/Sem título 1.md",
     "geral/TrioLink/Nó 3 - Joyce",
     "geral/IMG/Pasted image 20260902112158.png",
-    "Excalidraw/mqtt.md",
-    "geral/ELETRÔNICA/Protocolos de Comunicação.md",
-    "Excalidraw/uart.md",
-    "Excalidraw/stm.md",
-    "Excalidraw/generalização.md",
-    "Excalidraw/movimento balistico.md",
     "geral/IMG/Pasted image 20260902111451.png",
-    "normasAssert.md",
     "Nó 2 - Caio",
-    "geral/TrioLink/Normas Assert.md",
     "geral/TrioLink",
-    "geral/FÍSICA/Vetores.md",
-    "geral/FÍSICA/Movimento Balístico.md",
     "geral/ELETRÔNICA/Componentes",
     "geral/ELETRÔNICA",
-    "Regras de Mapeamento",
-    "geral/S.O.",
     "Sem título.canvas"
   ]
 }

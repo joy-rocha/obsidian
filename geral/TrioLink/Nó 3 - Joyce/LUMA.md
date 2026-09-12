@@ -100,5 +100,10 @@ Rode os comandos abaixo no terminal do seu VS Code para baixar duas fontes gratu
 wget https://github.com/google/fonts/raw/main/ofl/vt323/VT323-Regular.ttf
 ```
 
+# ANTES
+![[Pasted image 20260912091802.png|263]]
 
+
+# EXPECTATIVA
+![[Pasted image 20260911143621.png|482]]
 

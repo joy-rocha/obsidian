@@ -52,3 +52,31 @@ Após a tradução, a sua função pega esses números convertidos e os grava na
 
 
 **Filtro de Kalman:** É um algoritmo matemático usado para corrigir o erro do acelerômetro usando os outros sensores.
+
+---
+# INSTLAR O S.O PADRÃO DO RPI5
+[(intalar_SO](https://www.raspberrypi.com/software/) 
+
+Ativar lib pra abrir o so
+```shell
+sudo apt install libfuse2t64
+sudo apt install libopengl0
+```
+
+Faça toda a configuraçãodo SO
+
+Próximos passos assim que terminar de gravar:
+1. Desplugue o pendrive do computador e **coloque em uma das portas USB azuis** (USB 3.0) do Raspberry [Pi 5](https://www.google.com/search?ibp=oshop&prds=pvt:hg,pvo:29,mid:576462898614778390,imageDocid:14153299127839318940,gpcid:5175251518436011891,headlineOfferDocid:17447758671785192383,catalogid:17143439992391461761,productDocid:4884427582560886702,rds:PC_5175251518436011891%7CPROD_PC_5175251518436011891&q=product&sa=X&ved=2ahUKEwiQ28ve_eaWAxWlLrkGHS_5KZAQxa4PegYIAAgVEAI) para o sistema rodar bem mais rápido.
+2. Ligue o cabo de energia (USB-C) no [Raspberry Pi](https://www.google.com/search?ibp=oshop&prds=pvt:hg,pvo:29,mid:576462898614778390,imageDocid:14153299127839318940,gpcid:5175251518436011891,headlineOfferDocid:17447758671785192383,catalogid:17143439992391461761,productDocid:4884427582560886702,rds:PC_5175251518436011891%7CPROD_PC_5175251518436011891&q=product&sa=X&ved=2ahUKEwiQ28ve_eaWAxWlLrkGHS_5KZAQxa4PegYIAAgVEAQ).
+3. Aguarde cerca de **2 minutos** na primeira inicialização para ele configurar o sistema e conectar no seu Wi-Fi.
+
+Quando passar esse tempo, abra o terminal do seu computador e digite este comando para se conectar a ele:
+``` bash
+ssh joycinha@raspberrypi.local
+```
+
+---
+
+BMP280 (pressão, temperatura, altitude)
+MPU6050 (acelerômetro e giroscópio)
+

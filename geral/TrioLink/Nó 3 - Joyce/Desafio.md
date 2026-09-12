@@ -67,8 +67,22 @@ Instale o emulador no ambiente virtual:
 ```bash
 pip install luma.emulator
 ```
----
 
+---
+# Intalação da *EVDEV* (lib para capturar o touch do display)
+
+intalação da lib
+```bash
+pip install evdev
+```
+
+Permissão de Leitura (Fundamental no Linux/Raspberry Pi)
+```bash
+sudo usermod -aG input $USER
+```
+
+
+---
 # Diplay - Driver IC ILI9341
 [Documentação_ILI9341](https://www.lcdwiki.com/2.4inch_Arduino_Display)
 

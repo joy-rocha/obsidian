@@ -119,3 +119,22 @@ Conecte os 8 pinos de dados dos conectores **J1** e **J2** do display:
 
 ## **5.Energizar e validar a luz de fundo:**
 Reconecte o cabo de alimentação USB-C na Raspberry Pi 5.
+
+- - -
+
+# Personalização do S.O raspibian
+
+![[Pasted image 20260915152033.png|270]]
+
+palavra-passe: triolink
+
+# Passando o so para o rpi5
+
+**Conectar via SSH:** No terminal do seu computador (conectado à rede Wi-Fi `Assert`), execute:
+```bash
+ssh joyce@RPIjoy.local
+```
+
+
+INCLINAÇÃO
+

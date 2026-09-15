@@ -1,4 +1,4 @@
-## 3.1 Tabela de Backlogs
+	## 3.1 Tabela de Backlogs
 
 | ID Backlog    | User Story                                                                                           | Critérios de aceitação                                                                                                                                                               | Prioridade | STATUS |
 | ------------- | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | ------ |
@@ -29,3 +29,27 @@ Eu vou receber um Json do "fusion/bmp_mpu" com os dados dos sensores vindo de ou
 - Exemplo:_ RNF-03 pode ser _"O programa não pode consumir mais de 2 GB de memória RAM durante a execução."_
 
 **Stack:** É a **caixa de ferramentas** do projeto. Refere-se ao conjunto de linguagens, programas e bibliotecas que foram escolhidos para construir o software. 
+
+
+- - -
+# ATUALL
+
+
+#### 3.1 Tabela de Épicos
+
+|**ID**|**Épico**|**Descrição**|
+|---|---|---|
+|**EP-01**|**Consolidação de Dados e Lógica de Negócio**|Consumo via MQTT, tratamento de timeout/falhas e publicação do estado final.|
+|**EP-02**|**Interface Gráfica (`luma.lcd` / ILI9341)**|Desenvolvimento do Dashboard em Python para renderização em tempo real no display TFT.|
+|**EP-03**|**Integração no Yocto e Inicialização**|Empacotamento da aplicação Python, dependências e habilitagem de SPI/`evdev` no Yocto.|
+
+#### 3.2 Tabela de Backlog Simplificada e Completa
+
+| **ID Backlog**    | **User Story (História de Usuário)**                    | **Critérios de Aceitação**                                                                                                                                                                                                                                                                      | **Prioridade** |
+| ----------------- | ------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- |
+| **EP-01 / US-01** | **Receber e decodificar dados MQTT do Nó 2**            | • Conectar ao broker via wrapper padronizado (com segurança).<br><br>• Assinar o tópico `fusion/bmp_mpu`.<br><br>• Realizar parser do JSON (temperatura, pressão, aceleração, timestamp).<br><br>• Tratar erros de pacotes corrompidos sem interromper a aplicação.                             | **Alta**       |
+| **EP-01 / US-02** | **Processar estado do sistema e gerenciar timeout**     | • Aplicar regras para classificar o estado: _Normal_, _Alerta_ ou _Crítico_<br><br>• Implementar timer de resiliência: se o Nó 2 parar de enviar por X segundos, alterar estado para _"Sem Sinal / Offline"_ sem travar o script.                                                               | **Alta**       |
+| **EP-01 / US-03** | **Publicar o estado consolidado (`fusion/final`)**      | • Estruturar o payload final em JSON.<br><br>  <br>  <br><br>• Publicar no tópico `fusion/final` de forma periódica/por evento para consumo externo.                                                                                                                                            | **Média**      |
+| **EP-02 / US-04** | **Desenvolver a Interface Gráfica com `luma.lcd`**      | • Criar script Python utilizando `luma.lcd` (drivers ILI9341) na resolução 320x240.<br>  <br>• Projetar layout limpo com cabeçalho, áreas de leitura numérica e caixa de status.<br><br><br>• Renderizar os dados na tela em tempo real a cada atualização.                                     | **Alta**       |
+| **EP-02 / US-05** | **Exibir alertas visuais de falha e mudança de estado** | • Alterar cores/elementos visuais da tela em estados de _Alerta_ ou _Crítico_.<br><br>• Exibir aviso de erro visual no display caso o timeout de dados (US-02) seja atingido.<br><br>• Restaurar a tela normal automaticamente ao reestabelecer a conexão.                                      | **Média**      |
+| **EP-03 / US-06** | **Criar receita Yocto e auto-inicialização do Nó 3**    | • Habilitar suporte a SPI e periféricos no Yocto (Device Tree/kernel).<br><br>• Criar receita BitBake para a aplicação Python incluindo dependências (`python3`, `luma.lcd`, `spidev`, `evdev`).<br><br>• Configurar a aplicação Python para iniciar automaticamente no boot do Raspberry Pi 5. | **Alta**       |

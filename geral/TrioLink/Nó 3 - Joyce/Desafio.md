@@ -86,29 +86,37 @@ sudo usermod -aG input $USER
 # Diplay - Driver IC ILI9341
 [Documentação_ILI9341](https://www.lcdwiki.com/2.4inch_Arduino_Display)
 
-| Operating Voltage                        | 5V/3.3V                                                                               |
-| ---------------------------------------- | ------------------------------------------------------------------------------------- |
-| **Type**                                 | TFT                                                                                   |
-| **Resolução Nativa**                     | 320 x 240 pixels                                                                      |
-| **Interface de Comunicação**             | SPI                                                                                   |
-| **Frequência de Clock SPI (Velocidade)** | 32 MHz a 48 MHz (`bus_speed_hz=32000000` a `48000000`)                                |
-| **Orientação (Rotate)**                  | 0 (Retrato), 1 (Paisagem - 90°), 2 (Retrato invertido), 3 (Paisagem invertida - 270°) |
-| **Profundidade de Cor**                  | RGB565 (16-bit / 65.536 cores)                                                        |
+| **Parâmetro**                | **Especificação Correta**                                                             |
+| ---------------------------- | ------------------------------------------------------------------------------------- |
+| **Driver IC**                | ILI9341                                                                               |
+| **Tensão de Operação**       | 5V (Backlight) / 3.3V (Lógica)                                                        |
+| **Tipo de Display**          | TFT LCD (2.4")                                                                        |
+| **Resolução Nativa**         | 320 x 240 pixels                                                                      |
+| **Interface de Comunicação** | **Paralela de 8 bits** (Barramento D0 a D7)                                           |
+| **Sinais de Controle**       | LCD_WR, LCD_RD, LCD_RS, LCD_CS, LCD_RST                                               |
+| **Orientação (Rotate)**      | 0 (Retrato), 1 (Paisagem - 90°), 2 (Retrato Invertido), 3 (Paisagem Invertida - 270°) |
+| **Profundidade de Cor**      | RGB565 (16-bit / 65.536 cores)                                                        |
 
 # Mapeanemto de pinos - GPIO do RPI5
 
-| **Pino do Display ILI9341** | **Função**                 | **Pino na Barra GPIO do Pi 5**           |
-| --------------------------- | -------------------------- | ---------------------------------------- |
-| **VCC**                     | Alimentação                | Pino 1 (3.3V)                            |
-| **GND**                     | Terra                      | Pino 6 (GND)                             |
-| **CS (Chip Select)**        | Seleção de dispositivo SPI | Pino 24 (GPIO 8 / SPI0_CE0)              |
-| **RESET**                   | Reset do chip              | Pino 22 (GPIO 25)                        |
-| **DC / RS**                 | Data / Command             | Pino 18 (GPIO 24)                        |
-| **SDI / MOSI**              | Saída de Dados SPI         | Pino 19 (GPIO 10 / SPI0_MOSI)            |
-| **SCK / SCLK**              | Clock do SPI               | Pino 23 (GPIO 11 / SPI0_SCLK)            |
-| **LED / BL**                | Backlight (Iluminação)     | Pino 1 (3.3V) ou Pino 12 (GPIO 18 / PWM) |
-
----
+| **Pino no Display** | **Função / Tipo do Pino**     | **Pino Físico (RPi 5)** | **Nome da GPIO** | **Posição no Conector da RPi 5**  |
+| ------------------- | ----------------------------- | ----------------------- | ---------------- | --------------------------------- |
+| **3V3**             | Alimentação Lógica (3.3V)     | Pino 1                  | 3.3V             | 1ª Coluna — Fileira de **CIMA**   |
+| **5V**              | Alimentação Backlight (5V)    | Pino 2                  | 5V               | 1ª Coluna — Fileira de **BAIXO**  |
+| **GND**             | Terra (0V / Ground)           | Pino 6                  | GND              | 3ª Coluna — Fileira de **BAIXO**  |
+| **LCD_RD**          | Sinal de Leitura (Read)       | Pino 11                 | GPIO 17          | 6ª Coluna — Fileira de **CIMA**   |
+| **LCD_WR**          | Sinal de Escrita (Write)      | Pino 13                 | GPIO 27          | 7ª Coluna — Fileira de **CIMA**   |
+| **LCD_RS**          | Seleção Dado / Comando        | Pino 18                 | GPIO 24          | 9ª Coluna — Fileira de **BAIXO**  |
+| **LCD_RST**         | Reset do Display              | Pino 22                 | GPIO 25          | 11ª Coluna — Fileira de **BAIXO** |
+| **LCD_CS**          | Seleção do Chip (Chip Select) | Pino 24                 | GPIO 8           | 12ª Coluna — Fileira de **BAIXO** |
+| **LCD_D0**          | Entrada de Dados (Bit 0)      | Pino 3                  | GPIO 2           | 2ª Coluna — Fileira de **CIMA**   |
+| **LCD_D1**          | Entrada de Dados (Bit 1)      | Pino 5                  | GPIO 3           | 3ª Coluna — Fileira de **CIMA**   |
+| **LCD_D2**          | Entrada de Dados (Bit 2)      | Pino 7                  | GPIO 4           | 4ª Coluna — Fileira de **CIMA**   |
+| **LCD_D3**          | Entrada de Dados (Bit 3)      | Pino 29                 | GPIO 5           | 15ª Coluna — Fileira de **CIMA**  |
+| **LCD_D4**          | Entrada de Dados (Bit 4)      | Pino 31                 | GPIO 6           | 16ª Coluna — Fileira de **CIMA**  |
+| **LCD_D5**          | Entrada de Dados (Bit 5)      | Pino 26                 | GPIO 7           | 13ª Coluna — Fileira de **BAIXO** |
+| **LCD_D6**          | Entrada de Dados (Bit 6)      | Pino 21                 | GPIO 9           | 11ª Coluna — Fileira de **CIMA**  |
+| **LCD_D7**          | Entrada de Dados (Bit 7)      | Pino 19                 | GPIO 10          | 10ª Coluna — Fileira de **CIMA**  |
 
 # Protocolos de comunicação usados
 

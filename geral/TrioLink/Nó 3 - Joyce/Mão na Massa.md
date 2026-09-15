@@ -80,3 +80,42 @@ ssh joycinha@raspberrypi.local
 BMP280 (pressão, temperatura, altitude)
 MPU6050 (acelerômetro e giroscópio)
 
+
+
+# DIA 15/09 - conectar o display com a RPI
+
+Aviso de Segurança Elétrica
+Desligue totalmente a fonte de alimentação da Raspberry Pi 5 antes de conectar ou mover qualquer cabo. O contato acidental do pino de 5V com pinos de GPIO de 3.3V pode danificar permanentemente o chip de E/S (RP1) da placa.
+
+# Conexão paraela
+## **1.Desligar e posicionar a Raspberry Pi 5:
+Remova a fonte de alimentação USB-C e posicione a placa em uma superfície isolante (não metálica), com as portas USB viradas para a direita e a barra preta de 40 pinos no topo.
+
+## **2.Conectar a alimentação e terra:**
+Conecte os 3 pinos de energia do conector **J4** do display aos pinos do canto esquerdo da Raspberry Pi:
+- **3V3** (Display) ➔ **Pino 1** (3.3V - 1ª coluna, fileira de CIMA)
+- **5V** (Display) ➔ **Pino 2** (5V - 1ª coluna, fileira de BAIXO)
+- **GND** (Display) ➔ **Pino 6** (GND - 3ª coluna, fileira de BAIXO)
+
+## **3.Conectar as linhas de controle do display:**
+Ligue os 5 cabos de sinal do conector **J3** do display aos pinos GPIO correspondentes:
+- **LCD_RD** ➔ **Pino 11** (GPIO 17 - 6ª coluna, CIMA)
+- **LCD_WR** ➔ **Pino 13** (GPIO 27 - 7ª coluna, CIMA)
+- **LCD_RS** ➔ **Pino 18** (GPIO 24 - 9ª coluna, BAIXO)
+- **LCD_RST** ➔ **Pino 22** (GPIO 25 - 11ª coluna, BAIXO)
+- **LCD_CS** ➔ **Pino 24** (GPIO 8 - 12ª coluna, BAIXO)
+
+## **4.Conectar o barramento paralelo de dados (8 bits):**
+Conecte os 8 pinos de dados dos conectores **J1** e **J2** do display:
+
+- **LCD_D0** ➔ **Pino 3** (GPIO 2 - 2ª coluna, CIMA)
+- **LCD_D1** ➔ **Pino 5** (GPIO 3 - 3ª coluna, CIMA)
+- **LCD_D2** ➔ **Pino 7** (GPIO 4 - 4ª coluna, CIMA)
+- **LCD_D3** ➔ **Pino 29** (GPIO 5 - 15ª coluna, CIMA)
+- **LCD_D4** ➔ **Pino 31** (GPIO 6 - 16ª coluna, CIMA)
+- **LCD_D5** ➔ **Pino 26** (GPIO 7 - 13ª coluna, BAIXO)
+- **LCD_D6** ➔ **Pino 21** (GPIO 9 - 11ª coluna, CIMA)
+- **LCD_D7** ➔ **Pino 19** (GPIO 10 - 10ª coluna, CIMA)
+
+## **5.Energizar e validar a luz de fundo:**
+Reconecte o cabo de alimentação USB-C na Raspberry Pi 5.

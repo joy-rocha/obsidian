@@ -124,7 +124,7 @@ Reconecte o cabo de alimentação USB-C na Raspberry Pi 5.
 
 # Personalização do S.O raspibian
 
-![[Pasted image 20260915152033.png|270]]
+![[Pasted image 20260916081802.png|400]]
 
 palavra-passe: triolink
 
@@ -132,9 +132,27 @@ palavra-passe: triolink
 
 **Conectar via SSH:** No terminal do seu computador (conectado à rede Wi-Fi `Assert`), execute:
 ```bash
-ssh joyce@RPIjoy.local
+ssh joyce@rasp.local
 ```
 
 
 INCLINAÇÃO
+
+
+
+**primeiro abre o vs code, abre a pasta do SD e dps cria um arquivo "ssh", dps salva, fecha  e ejeta, aí pluga na rpi5**
+
+![[Pasted image 20260916154246.png|551]]
+
+
+**senha: rasp** 
+
+```bash
+ssh rasp@raspberrypi.local
+
+ip neighbor
+
+ssh rasp@10.42.0.
+```
+
 

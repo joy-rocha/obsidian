@@ -95,11 +95,16 @@ device.show() # Religam os pixels
 # Fontes do display
 
 Rode os comandos abaixo no terminal do seu VS Code para baixar duas fontes gratuitas do Google/OpenSource que combinam com o estilo do painel:
+### Retrô (modelo 1)
 ```bash
 # Fonte Pixel/Retro (para as letras e textos do painel)
 wget https://github.com/google/fonts/raw/main/ofl/vt323/VT323-Regular.ttf
 ```
 
+### Fonte - Ubuntu (modelo 1)
+```bash
+wget https://raw.githubusercontent.com/google/fonts/main/ufl/ubuntu/Ubuntu-Regular.ttf -O Ubuntu-Regular.ttf
+```
 # ANTES
 ![[Pasted image 20260912091802.png|263]]
 
@@ -107,40 +112,14 @@ wget https://github.com/google/fonts/raw/main/ofl/vt323/VT323-Regular.ttf
 # EXPECTATIVA
 ![[Pasted image 20260911143621.png|482]]
 
-# Ativação do ambiente virtual
-```bash
-source ~/luma-env/bin/activate
-```
+
+| ![[Pasted image 20260916200132.png]] | ![[Pasted image 20260916200209.png]] |
+| ------------------------------------ | ------------------------------------ |
+| ![[Pasted image 20260916200145.png]] | ![[Pasted image 20260916200157.png]] |
 
 
-# INTALANDO O S.O LÁ NA LUTAAAA
-
-```bash
-sudo apt update && sudo apt install arp-scan -y
-
-sudo dpkg --configure -a
-
-sudo apt install arp-scan -y
-
-sudo arp-scan --localnet | grep -i "Raspberry"
-
-sudo arp-scan --localnet
-
-```
-
-# pra conectar no rpi
-```bash
-for i in {1..254}; do (timeout 1 bash -c "echo > /dev/tcp/192.168.10.$i/22" 2>/dev/null && echo "SSH Aberto no IP: 192.168.10.$i") & done
-
-ssh joyce@192.168.10.50
-
-sudo apt install arp-scan -y && sudo arp-scan --localnet
+# Outro modelo de Interface
+![[Pasted image 20260916201026.png|571]]
 
 
-```
-# IP RPI5
-O endereço IP do seu Raspberry Pi 5 é **`192.168.10.50`**
 
-
-![[Pasted image 20260916152804.png]]
-anres era apenas conexão local

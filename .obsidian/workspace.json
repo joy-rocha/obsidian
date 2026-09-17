@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "2f5f1a6c4327c978",
+        "id": "57e713b5fceee815",
         "type": "tabs",
         "children": [
           {
-            "id": "a1f26adf810b8dff",
+            "id": "f537178c43368e2b",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -83,8 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 232.19062423706055,
-    "collapsed": true
+    "width": 232.19062423706055
   },
   "right": {
     "id": "c2eb1dba97099ac1",
@@ -201,21 +200,28 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "a1f26adf810b8dff",
+  "active": "f537178c43368e2b",
   "lastOpenFiles": [
+    "geral/IMG/Pasted image 20260911143621.png",
+    "geral/COMANDOS GIT.md",
+    "geral/COMANDU.md",
+    "geral/TrioLink/Nó 3 - Joyce/Mão na Massa.md",
+    "geral/IMG/Pasted image 20260916211924.png",
+    "geral/TrioLink/Nó 3 - Joyce/LUMA.md",
+    "geral/IMG/Pasted image 20260916201026.png",
+    "geral/IMG/Pasted image 20260916200209.png",
+    "geral/IMG/Pasted image 20260916200157.png",
+    "geral/IMG/Pasted image 20260916200145.png",
+    "geral/IMG/Pasted image 20260916200132.png",
     "geral/TrioLink/Nó 3 - Joyce/Desafio.md",
     "geral/TrioLink/Nó 3 - Joyce/Backlog nó 3.md",
     "geral/TrioLink/Nó 2 - Caio.md",
     "geral/TrioLink/Nó 1 - Luis.md",
-    "geral/TrioLink/Nó 3 - Joyce/Mão na Massa.md",
-    "Pasted image 20260916154246.png",
-    "geral/COMANDU.md",
-    "geral/TrioLink/Nó 3 - Joyce/LUMA.md",
-    "Pasted image 20260916152804.png",
+    "geral/IMG/Pasted image 20260916154246.png",
+    "geral/IMG/Pasted image 20260916152804.png",
     "geral/TrioLink/Normas Assert.md",
-    "Pasted image 20260916081802.png",
-    "Pasted image 20260915152033.png",
-    "Pasted image 20260915151817.png",
+    "geral/IMG/Pasted image 20260916081802.png",
+    "geral/IMG/Pasted image 20260915152033.png",
     "geral/BANCO DE DADOS/MR/Regras de Mapeamento - MR.md",
     "geral/BANCO DE DADOS/MR/Modelo Relacional (MR).md",
     "geral/BANCO DE DADOS/SGBD.md",
@@ -223,9 +229,6 @@
     "geral/BANCO DE DADOS/FÍSICO/Modelo Físico.md",
     "geral/BANCO DE DADOS/ER/Modelo ER.md",
     "geral/BANCO DE DADOS/ER/Modelo ER Estendido.md",
-    "Pasted image 20260912091802.png",
-    "Pasted image 20260911143621.png",
-    "Pasted image 20260911141410.png",
     "geral/FÍSICA/Leis de newton.md",
     "geral/S.O./unidade02/Monitores.md",
     "geral/S.O./unidade02/Semáforos.md",
@@ -237,13 +240,9 @@
     "geral/S.O./unidade01",
     "geral/S.O./anotações.md",
     "geral/S.O./unidade01/Processos.md",
-    "geral/S.O./Estruturas.md",
-    "normasAssert.md",
     "geral/BANCO DE DADOS/FÍSICO",
     "geral/BANCO DE DADOS/MR",
     "geral/BANCO DE DADOS/ER",
-    "geral/IMG/Pasted image 20260908160834.png",
-    "geral/IMG/Pasted image 20260908154726.png",
     "geral/TrioLink/Nó 3 - Joyce",
     "Nó 2 - Caio",
     "geral/TrioLink",

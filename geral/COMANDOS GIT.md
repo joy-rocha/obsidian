@@ -21,7 +21,7 @@
 
   
 # 1) CRIAR UM NOVO REPOSITÓRIO
-
+```shell
 git init
 git add README.md
 git commit -m "first commit"
@@ -29,34 +29,37 @@ git branch -M main
 git remote add origin https://github.com/joy-rocha/grafos.git
 git push -u origin main
  
- **OU**
+ OU
 
 git init
 echo "# Meu Projeto" >> README.md
 git add README.md
 git commit -m "first commit"
 git branch -m main
-
+```
 # 2) USAR UM REPOSITÓRIO EXISTENTE  
 
+```shell
 git remote add origin https://github.com/joy-rocha/grafos.git
 git branch -M main
 git push -u origin main
+```
 
 # 3) PARA CADA ALTERAÇÃO QUE EU QUEIRA SALVAR PRECISO DE:  
 
+```shell
 git add .
 git commit -m "sua mensagem aqui"
 git push
-
+```
 # 4)  MERGE, JUNÇÃO DA MAIN COM BRANCH
 
 - para esse comando funcionar, temos que estar na main! aí juntamos com um merge e damos push para atualizar o github
-
+```shell
 git checkout main
 git merge nome_da_sua_branch
 git push
-
+```
 # RESTAURAR CONEXÃO COM UM REPOSITÓRIO QUE TEVE UM ARQUIVO CORROMPIDO NO OBSIDIAN
 
 1. **Feche o Obsidian** para que o plugin não tente salvar nada no meio do processo.
@@ -64,20 +67,34 @@ git push
 2. **Abra o terminal** na pasta do seu cofre e digite:
 
  - remove a pasta oculta corrompida do Git (**as notas não serão apagadas**):
-	`rm -rf .git`
+```shell
+rm -rf .git`
+```
 
 - reinicializa o Git e reconecta ao repositório:
-	`git init`
-	`git branch -M main`
-	`git remote add origin https://github.com/joy-rocha/obsidian.git`
+```shell
+git init
+git branch -M main
+git remote add origin https://github.com/joy-rocha/obsidian.git
+```
 
 - baixa o histórico do GitHub sem alterar as notas locais:
-	`git fetch`
-	`git reset origin/main`
+```shell
+git fetch
+git reset origin/main
+```
 
 -  faz o salvamento de recuperação e envie para o GitHub:
-	`git add .`
-	`git commit -m "Recuperando repositorio"`
-	`git push -u origin main`
+```shell
+git add .
+git commit -m "Recuperando repositorio"
+git push -u origin main
+```
 
-
+# 5) Atualizar uma branch que já existe
+```shell
+git checkout nome-da-branch
+git add nome-da-pasta/
+git commit -m "mensagem"
+git push
+```

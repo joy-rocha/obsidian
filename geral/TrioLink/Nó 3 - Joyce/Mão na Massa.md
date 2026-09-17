@@ -120,6 +120,48 @@ Conecte os 8 pinos de dados dos conectores **J1** e **J2** do display:
 ## **5.Energizar e validar a luz de fundo:**
 Reconecte o cabo de alimentação USB-C na Raspberry Pi 5.
 
+
+- - - 
+
+# DIA 16/09 - tentando instalar um s.o teste no rpi
+
+# Ativação do ambiente virtual
+```bash
+source ~/luma-env/bin/activate
+```
+
+
+# INTALANDO O S.O LÁ NA LUTAAAA
+
+```bash
+sudo apt update && sudo apt install arp-scan -y
+
+sudo dpkg --configure -a
+
+sudo apt install arp-scan -y
+
+sudo arp-scan --localnet | grep -i "Raspberry"
+
+sudo arp-scan --localnet
+
+```
+
+# pra conectar no rpi
+```bash
+for i in {1..254}; do (timeout 1 bash -c "echo > /dev/tcp/192.168.10.$i/22" 2>/dev/null && echo "SSH Aberto no IP: 192.168.10.$i") & done
+
+ssh joyce@192.168.10.50
+
+sudo apt install arp-scan -y && sudo arp-scan --localnet
+
+
+```
+# IP RPI5
+O endereço IP do seu Raspberry Pi 5 é **`192.168.10.50`**
+
+
+![[Pasted image 20260916152804.png]]
+anres era apenas conexão local
 - - -
 
 # Personalização do S.O raspibian
@@ -155,4 +197,17 @@ ip neighbor
 ssh rasp@10.42.0.
 ```
 
+
+---
+
+# ATUALIZAR BRANCH EXISTENTE
+
+![[Pasted image 20260916211924.png|426]]
+
+```shell
+git checkout nome-da-branch
+git add nome-da-pasta/
+git commit -m "mensagem"
+git push
+```
 

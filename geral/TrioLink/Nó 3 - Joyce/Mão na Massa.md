@@ -151,7 +151,7 @@ sudo arp-scan --localnet
 for i in {1..254}; do (timeout 1 bash -c "echo > /dev/tcp/192.168.10.$i/22" 2>/dev/null && echo "SSH Aberto no IP: 192.168.10.$i") & done
 
 ssh joyce@192.168.10.50
-
+![[Pasted image 20260916152804.png]]
 sudo apt install arp-scan -y && sudo arp-scan --localnet
 
 
@@ -209,5 +209,26 @@ git checkout nome-da-branch
 git add nome-da-pasta/
 git commit -m "mensagem"
 git push
+```
+
+
+
+---
+
+# DIA 17/09 - Fazendo os arquivos .C pra ler o json que o NO2 mandar
+
+
+**COMUNICAÇÃO DO *.c* COM O *.py****
+- **Lado do C:** O programa compilado executa a lógica e envia a string JSON para o terminal usando o `printf()`.
+    
+- **Lado do Python:** O `subprocess.run` executa o binário, intercepta a saída de texto (`capture_output=True`) e a armazena em `resultado.stdout`.
+    
+- **A Conversão:** O `json.loads()` pega essa string de texto e a transforma em um dicionário ou lista nativa do Python.
+
+
+
+#### **Como compilar:** Compile no terminal executando:
+``` bash
+gcc main.c DecodeBMP.C DecodeMPU.C cJSON.c -lm -o meu_programa
 ```
 

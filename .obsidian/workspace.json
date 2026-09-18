@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "geral/BANCO DE DADOS/FÍSICO/Modelo Físico.md",
+                "file": "geral/TrioLink/Nó 3 - Joyce/Desafio.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Modelo Físico"
+              "title": "Desafio"
             }
           },
           {
@@ -35,7 +35,8 @@
               "title": "Mão na Massa"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -214,12 +215,17 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "f537178c43368e2b",
+  "active": "2371206bf3c81a48",
   "lastOpenFiles": [
-    "geral/TrioLink/Nó 3 - Joyce/Mão na Massa.md",
-    "geral/BANCO DE DADOS/FÍSICO/Modelo Físico.md",
     "geral/TrioLink/Nó 3 - Joyce/Desafio.md",
+    "geral/TrioLink/Nó 3 - Joyce/Mão na Massa.md",
     "geral/TrioLink/Nó 3 - Joyce/LUMA.md",
+    "Pasted image 20260917172944.png",
+    "Pasted image 20260917172640.png",
+    "Pasted image 20260917165842.png",
+    "Pasted image 20260917165742.png",
+    "Pasted image 20260917133456.png",
+    "geral/BANCO DE DADOS/FÍSICO/Modelo Físico.md",
     "geral/COMANDOS GIT.md",
     "geral/TrioLink/Nó 3 - Joyce/Backlog nó 3.md",
     "geral/IMG/Pasted image 20260911143621.png",
@@ -228,14 +234,9 @@
     "geral/IMG/Pasted image 20260916201026.png",
     "geral/IMG/Pasted image 20260916200209.png",
     "geral/IMG/Pasted image 20260916200157.png",
-    "geral/IMG/Pasted image 20260916200145.png",
-    "geral/IMG/Pasted image 20260916200132.png",
     "geral/TrioLink/Nó 2 - Caio.md",
     "geral/TrioLink/Nó 1 - Luis.md",
-    "geral/IMG/Pasted image 20260916154246.png",
-    "geral/IMG/Pasted image 20260916152804.png",
     "geral/TrioLink/Normas Assert.md",
-    "geral/IMG/Pasted image 20260916081802.png",
     "geral/BANCO DE DADOS/MR/Regras de Mapeamento - MR.md",
     "geral/BANCO DE DADOS/MR/Modelo Relacional (MR).md",
     "geral/BANCO DE DADOS/SGBD.md",

@@ -232,3 +232,51 @@ git push
 gcc main.c DecodeBMP.C DecodeMPU.C cJSON.c -lm -o meu_programa
 ```
 
+
+# TENTANDO INSTALAR O S.O DE NOVO
+![[Pasted image 20260917133456.png|265]]
+**senha: 1234**
+# **DEU CERTO!**
+
+## USAMOS O CABO
+![[Pasted image 20260917172640.png|606]]
+
+
+# Enviando código do NO3 para a rpi5-joyce
+
+```shell
+scp -r ~/Documentos/TrioLink/cod joyce@rpi5-joyce.local:~/
+```
+
+![[Pasted image 20260917172944.png]]
+
+
+# Instalação de Libs e dependências no rpi5-joyce
+****Dependências:** python, venv, luma.lcd, C, pillow, cJSON, env*
+
+```shell
+//  instala o venv
+sudo apt update && sudo apt install -y python3-pip python3-venv
+
+//  Crie uma pasta de ambiente virtual chamada `env` e ative-a
+python3 -m venv env
+source env/bin/activate
+
+// instala a luma e a evdev
+pip install --upgrade luma.lcd evdev
+
+//instala a cJSON
+sudo apt install -y libcjson-dev build-essential
+
+```
+
+
+## Usar o rpi5 pra rodar códigos:
+**ativa o ambiente virtual e chama o código**
+```bash
+source env/bin/activate
+python3 teu_codigo.py
+```
+
+
+

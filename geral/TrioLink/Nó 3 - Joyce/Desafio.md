@@ -23,8 +23,7 @@ https://youtu.be/I41wIyXG8Bc?si=Z8xgmacocaHxzvcF
 
 1) Instale o pacote do `venv`:
 ```bash
-sudo apt update
-sudo apt install python3.14-venv -y
+sudo apt update && sudo apt install python3.14-venv -y
 ```
 
 2) Antes de instalar a luma vamos criar um <u>ambiente virtual</u>:
@@ -99,6 +98,18 @@ sudo usermod -aG input $USER
 
 # Mapeanemto de pinos - GPIO do RPI5
 
+com o scoectores pra baixo :
+1\[o o\]2
+3\[o o\]4
+5\[o o\]6
+7\[o o\]8
+
+cima par
+baixo impar
+
+![[Pasted image 20260917165842.png|400]]
+
+
 | **Pino no Display** | **Função / Tipo do Pino**     | **Pino Físico (RPi 5)** | **Nome da GPIO** | **Posição no Conector da RPi 5**  |
 | ------------------- | ----------------------------- | ----------------------- | ---------------- | --------------------------------- |
 | **3V3**             | Alimentação Lógica (3.3V)     | Pino 1                  | 3.3V             | 1ª Coluna — Fileira de **CIMA**   |
@@ -117,7 +128,7 @@ sudo usermod -aG input $USER
 | **LCD_D5**          | Entrada de Dados (Bit 5)      | Pino 26                 | GPIO 7           | 13ª Coluna — Fileira de **BAIXO** |
 | **LCD_D6**          | Entrada de Dados (Bit 6)      | Pino 21                 | GPIO 9           | 11ª Coluna — Fileira de **CIMA**  |
 | **LCD_D7**          | Entrada de Dados (Bit 7)      | Pino 19                 | GPIO 10          | 10ª Coluna — Fileira de **CIMA**  |
-
+![[Pasted image 20260917165742.png]]
 # Protocolos de comunicação usados
 
 # MQTT

@@ -109,6 +109,7 @@ baixo impar
 
 ![[Pasted image 20260917165842.png|400]]
 
+d
 
 | **Pino no Display** | **Função / Tipo do Pino**     | **Pino Físico (RPi 5)** | **Nome da GPIO** | **Posição no Conector da RPi 5**  |
 | ------------------- | ----------------------------- | ----------------------- | ---------------- | --------------------------------- |
@@ -301,6 +302,18 @@ gcc programa.c -o programa -lcjson
 
 
 ---
+
+# Biblioteca lgpio - para usar os pinos da rpi5
+A biblioteca `lgpio` é a recomendada para a RPi 5 porque o sistema precisa dela para controlar os pinos através do novo chip de E/S (RP1)
+
+## isntalação
+```bash
+sudo apt update 
+sudo apt install python3-lgpio
+rm -rf venv
+python3 -m venv --system-site-packages venv
+python3 -c 'import lgpio; print("Biblioteca lgpio pronta a usar")'
+```
 
 
 

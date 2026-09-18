@@ -268,6 +268,11 @@ pip install --upgrade luma.lcd evdev
 //instala a cJSON
 sudo apt install -y libcjson-dev build-essential
 
+//instala o Pygame
+pip install pygame
+
+//instala a lgpio
+pip install lgpio
 ```
 
 
@@ -276,6 +281,43 @@ sudo apt install -y libcjson-dev build-essential
 ```bash
 source env/bin/activate
 python3 teu_codigo.py
+```
+
+
+
+- - - 
+
+# DIA 18/09 - Tentando rodar o código no display
+
+##### -  *tive que trocar a lib luma pela lgpio, pois a luma não suporta comunicação paralela, apenas spi que não é compatível com o display*
+
+
+- **Instalar uma biblioteca GPIO compatível:** Adotar uma biblioteca atualizada para o hardware da RPi 5, como a `lgpio` (C/C++) ou a `gpiod` (Python).
+    
+- **Mapear os pinos no código:** Declarar as variáveis associando-as aos GPIOs exatos da sua tabela (os sinais de controlo CS, RS, WR, RD, RST e os bits de dados D0 a D7).
+    
+- **Criar as rotinas de comunicação (Bit-banging):** Programar funções básicas para enviar _comandos_ e _dados_, ativando e desativando os pinos na ordem correta para transferir os 8 bits para o display.
+    
+- **Fazer a inicialização do hardware:** Executar a sequência que ativa o pino de reset e, logo a seguir, enviar a lista de comandos hexadecimais específicos do chip ILI9341 para o ligar, definir o padrão de cores e a orientação da tela.
+    
+- **Criar as funções de desenho:** Fazer as rotinas finais para definir as coordenadas (X, Y) na tela e enviar as cores correspondentes, permitindo desenhar píxeis individuais, formas geométricas ou carregar imagens.
+
+==(fazer essas instalações dentro do ambiente virtual da rpi)==
+# Instalação da lib lgpio
+``` BASH
+sudo apt install -y liblgpio-dev
+```
+
+# biblioteca **numpy** 
+**para que o código consiga processar a imagem do Pygame antes de a enviar para o ecrã.**
+```shell
+pip install numpy lgpio
+```
+**(isso aqui faz o rpi5 )**
+
+# Acessa as conexões de net do rpi5
+```shell
+sudo mntui
 ```
 
 

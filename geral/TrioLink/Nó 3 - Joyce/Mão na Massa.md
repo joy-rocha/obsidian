@@ -322,3 +322,4 @@ sudo mntui
 
 
 
+scp -r ~/Documentos/TrioLink/cod joyce@rpi5-joyce.local:~

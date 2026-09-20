@@ -69,3 +69,44 @@ UNIVERSITARIA(<u>CNPJ_Editora_FK</u>, Cod_regimento);
 PARTICULAR(<u>CNPJ_Editora_FK</u>, Tipo_tributacao);
 
 
+----
+# ==RESUMO PRA AVALIAÇÃO==
+
+# regras
+- todo atributo composto deve ser dividido em partes simples (atômicas)
+- toda relação precisa obrigatoriamente de uma PK
+- a PK jamais pode ser nula
+- em relacionamentos 1:n recebe os atributos simples e a FK o lado N
+- em relacionamentos 1:1 rece os atributos e a FK a relação com participação total
+- em relacionamentos m:n, cria-se uma nova relação que recebe as FK das entidades da relação e a PK é a junção das suas FK, tipo assim: PK(<U>FK1 , FK2</U>)
+- no mapeamento de entidades fortes cria-se uma relação e a ela é atribuída todos os atributos simples
+- para entidades fracas cria-se um relação que tem como PK a junção da sua prórpria chave identificadora com a PK da entidade forte, já a FK é vindo da entidade forte o seu atributo identificador e se mantém com os atributos simples
+-  em atributos multivalorados, cria-se uma nova relação que recebe a FK normal, mas sua PK é composta pela PK da relação e seu nome (do próprio atributo multivalorado)
+
+# terminologia
+- relação é a tabela, as entidades
+- coluna, são os atributos
+- tuplas são as linhas
+- toda tupla possui uma PK
+- definição de relação: é um conjunto de tuplas
+- aridade ou grau é a quantidade de atributos (colunas) de uma relação
+- cardinalidade é o número de tuplas (linhas) de uma relação
+- domínio é o conjunto de valores válidos e atômicos que um atributo pode receber
+- estado ou Instância da Relação, são os dados reais populados lá dentro (conjunto dos valores dentro dos atributo)
+- intenção da relação é o formato relação(A1, A2, .., An)
+- extensão da relação é a mesma coisa da instancia, são as tuplas, ('João', 'M', 202302, 22)
+
+
+- - - 
+
+- especialização exclusiva criamos uma ÚNICA tabela com todos os atributos das tabelas e a adição do atributo tipo
+- especialização de sobreposição 
+- especialização total, quando toda pessoa é aluno ou professor, por exemplo, nos deixamos a penas as SUBclasses e apagando a super classe e distribuímos seu astributos para as sub
+
+- **Especialização Exclusiva (Disjunta):** Exatamente o que você disse! Cria-se uma ÚNICA tabela com todos os atributos + a adição do atributo **"tipo"** para saber quem é quem.
+
+- **Especialização de Sobreposição:** Cria-se uma ÚNICA tabela com todos os atributos + a adição de colunas **Booleanas (Verdadeiro/Falso)** para cada papel (ex: _é_aluno_, _é_professor_), já que a pessoa pode ser os dois ao mesmo tempo.
+
+- **Especialização Total:** Na mosca! Apaga a superclasse (pai), deixa APENAS as subclasses e distribui os atributos do pai para dentro delas.
+
+- **Especialização Padrão (Tabelas separadas):** Mantém tudo! Cria uma tabela para o Pai e uma para cada Filho. A chave primária do Pai desce para os filhos.

@@ -323,3 +323,24 @@ sudo mntui
 
 
 scp -r ~/Documentos/TrioLink/cod joyce@rpi5-joyce.local:~
+
+
+- - - 
+
+# DIA 21/09 - Tentando rodar o código no display de novo
+
+==o display ligouuuu, deu white screen==
+
+O fluxo funcionará da seguinte maneira:
+1. As funções no `Screnns.py` desenham a interface gráfica na memória utilizando o `canvas(device)`.
+    
+2. Quando o bloco de desenho termina, o `luma` chama automaticamente o método `.display()` do novo `FisicoDevice`.
+    
+3. O `FisicoDevice` pega nessa imagem, converte a matriz de cores para RGB565 e dispara a função `enviar_para_display_fisico()`, enviando os dados pino a pino via `lgpio` para o controlador ILI9341 do seu ecrã.
+
+# Instalando LIBs
+instalando todas as lib de novo pq tava dando uns erros estranhos aaaaa
+```bash
+pip install luma.core luma.emulator luma.lcd lgpio pygame Pillow
+```
+

@@ -50,10 +50,6 @@
 - AS CHAVES PRIMÁRIAS DAS RELAÇÕES QUE SE REACIONAM COMO CHAVE ESTRANGEIRA
 - ATRIBUTOS DOS RELACIONAMENTOS SÃO ACOLHIDOS PELA NOVA RELAÇÃO
 - POSSUEM CHAVE PRIMÁRIA COMPOSTA
-- 
-
-
-
 
 
 # ATIVIDADE 04 
@@ -90,6 +86,9 @@ PARTICULAR(<u>CNPJ_Editora_FK</u>, Tipo_tributacao);
 - especialização exclusiva criamos uma ÚNICA tabela com todos os atributos das tabelas e a adição do atributo tipo
 - especialização de sobreposição 
 - especialização total, quando toda pessoa é aluno ou professor, por exemplo, nos deixamos a penas as SUBclasses e apagando a super classe e distribuímos seu astributos para as sub
+
+
+
 
 - **Especialização Exclusiva (Disjunta):** Exatamente o que você disse! Cria-se uma ÚNICA tabela com todos os atributos + a adição do atributo **"tipo"** para saber quem é quem.
 

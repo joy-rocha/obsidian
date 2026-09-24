@@ -3,7 +3,7 @@ IPC - Interprocess Comunicat ...
 # Conceitos principais:
 
 ### Condição de corrida (Race Condition)
->
+> |Resultado do programa depende da ordem de intercalação (_interleaving_) das threads.|
 
 ### Recurso compartilhado
 > É qualquer coisa que pode ser compartilhada ao mesmo tempo. ex: memória, arquivos...

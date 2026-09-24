@@ -35,7 +35,8 @@
               "title": "sla S.O"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -214,11 +215,11 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "2371206bf3c81a48",
+  "active": "0d357d76e293f673",
   "lastOpenFiles": [
+    "geral/BANCO DE DADOS/MR/Regras de Mapeamento - MR.md",
     "geral/BANCO DE DADOS/ER/Modelo ER Estendido.md",
     "geral/BANCO DE DADOS/MR/Modelo Relacional (MR).md",
-    "geral/BANCO DE DADOS/MR/Regras de Mapeamento - MR.md",
     "geral/S.O./unidade02/Comunicação Iterprocessos.md",
     "geral/S.O./unidade02/sla S.O.md",
     "geral/S.O./unidade02/Semáforos.md",

@@ -504,5 +504,6 @@ Perfeito. Isso fecha mais uma etapa: **o GPIO 22 (WR) também está sendo contro
 |`group_write()`|✅|
 |WR (GPIO 22)|✅|
 |LCD exibindo pixels|❌|
-# LINK DE MEDIDAS PARA A CASE
-https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#raspberry-pi-5
+# AJUDANTEE - chat
+https://chatgpt.com/c/6ab970ea-eb68-83e9-9674-0e1f3bca5531
+

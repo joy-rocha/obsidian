@@ -300,6 +300,8 @@ gcc programa.c -o programa -lcjson
 
 ![[Pasted image 20260904095750.png|576]]
 
+# LINK DE MEDIDAS PARA A CASE
+https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#raspberry-pi-5
 
 ---
 

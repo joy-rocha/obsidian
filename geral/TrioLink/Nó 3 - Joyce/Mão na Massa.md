@@ -344,3 +344,165 @@ instalando todas as lib de novo pq tava dando uns erros estranhos aaaaa
 pip install luma.core luma.emulator luma.lcd lgpio pygame Pillow
 ```
 
+
+---
+# DIA 25/09 - trocando a conexão do display pra ver se pega
+
+nova pinagem de conexão
+[chat da pinagem](https://chatgpt.com/share/6ab67e1a-ffac-83e9-832c-e31cf1229470)
+
+| MAR2406       | Função            |                GPIO BCM RPi 5 | Pino físico |
+| ------------- | ----------------- | ----------------------------: | ----------: |
+| **1 LCD_RST** | Reset             |                       GPIO 17 |          11 |
+| **2 LCD_CS**  | Chip Select       |                       GPIO 27 |          13 |
+| **3 LCD_RS**  | Comando/Dados     |                       GPIO 22 |          15 |
+| **4 LCD_WR**  | Write             |                       GPIO 23 |          16 |
+| **5 LCD_RD**  | Read              |                       GPIO 24 |          18 |
+| **6 GND**     | Terra             |                           GND |          20 |
+| **7 5V**      | Alimentação       |                            5V |           2 |
+| **8 3V3**     | Alimentação 3,3 V | **não conectar inicialmente** |          -- |
+| **9 LCD_D0**  | Data 0            |                        GPIO 5 |          29 |
+| **10 LCD_D1** | Data 1            |                        GPIO 6 |          31 |
+| **11 LCD_D2** | Data 2            |                       GPIO 12 |          32 |
+| **12 LCD_D3** | Data 3            |                       GPIO 13 |          33 |
+| **13 LCD_D4** | Data 4            |                       GPIO 16 |          36 |
+| **14 LCD_D5** | Data 5            |                       GPIO 19 |          35 |
+| **15 LCD_D6** | Data 6            |                       GPIO 20 |          38 |
+| **16 LCD_D7** | Data 7            |                       GPIO 21 |          40 |
+
+![[Pasted image 20260925213840.png]]
+
+NADA FUNCIONA MDS DO CÉU
+
+![[Pasted image 20260925214326.png]]
+
+---
+
+# DIA 27/09 - trocando a conexão do display pra ver se pega
+https://claude.ai/chat/13fb2f2e-85d5-49c0-b4f0-2a85a57703c3
+
+
+## Pinagem — Shield → Raspberry Pi 5
+
+| Pino do shield  | Função             | GPIO (BCM)                                   | Pino físico |
+| --------------- | ------------------ | -------------------------------------------- | ----------- |
+| LCD_RST         | Reset              | GPIO4                                        | 7           |
+| LCD_CS          | Chip Select        | GPIO17                                       | 11          |
+| LCD_RS          | D/C (comando/dado) | GPIO27                                       | 13          |
+| LCD_WR          | Write              | GPIO22                                       | 15          |
+| LCD_RD          | Read               | **ligar direto no 3V3** (não usamos leitura) | —           |
+| LCD_D0          | Data 0             | GPIO5                                        | 29          |
+| LCD_D1          | Data 1             | GPIO6                                        | 31          |
+| LCD_D2          | Data 2             | GPIO12                                       | 32          |
+| LCD_D3          | Data 3             | GPIO13                                       | 33          |
+| LCD_D4          | Data 4             | GPIO16                                       | 36          |
+| LCD_D5          | Data 5             | GPIO19                                       | 35          |
+| LCD_D6          | Data 6             | GPIO20                                       | 38          |
+| LCD_D7          | Data 7             | GPIO21                                       | 40          |
+| GND             | Terra              | GND                                          | 6           |
+| 5V              | Alimentação        | 5V                                           | 2           |
+| 3V3             | —                  | deixar desconectado                          | —           |
+| SD_SS/DI/DO/SCK | Cartão SD          | não usados, deixar sem ligar                 | —           |
+
+**Botões físicos:**
+
+| Botão                        | GPIO (BCM) | Pino físico | Outra perna |
+| ---------------------------- | ---------- | ----------- | ----------- |
+| NAVEGAR (percorre as opções) | GPIO23     | 16          | GND         |
+| ENTER (confirma)             | GPIO24     | 18          | GND         |
+
+Um detalhe importante sobre software: na **Raspberry Pi 5** o chip que controla a GPIO mudou (o novo chip **RP1**), então bibliotecas antigas (`RPi.GPIO`, `wiringPi`, `bcm2835`) não funcionam mais direto. Vamos usar a `lgpio`, que é a que o Raspberry Pi OS Bookworm já traz pronta e que oficialmente suporta a Pi 5 (via `/dev/gpiochip4`).
+
+Instale o necessário:
+
+```bash
+sudo apt install python3-lgpio python3-pil
+pip install luma.core --break-system-packages
+```
+
+Agora os arquivos:Agora a aplicação principal com a máquina de estados e leitura dos botões:**O que cada arquivo faz:**
+
+- **`ili9341_parallel.py`** — o driver do display: fala diretamente com o barramento paralelo de 8 bits via GPIO (usando `lgpio`), faz a inicialização do ILI9341 e expõe um objeto `device` compatível com o `canvas()` do luma, então o `Screnns.py` funciona quase sem mudanças.
+- **`Screnns.py`** — o seu arquivo original, só com um parâmetro `selecionado` adicionado nas funções de tela que tinham múltiplas opções (`Display_MainScreen`, `Display_ScrennOFF`), para desenhar uma borda azul destacando a opção atual — já que sem touch, você precisa de algum feedback visual de "onde o cursor está".
+- **`main.py`** — o loop principal: lê os dois botões com debounce, controla a máquina de estados (ON → MAIN → BPM/MPU/DESLIGAR) e chama as telas do `Screnns.py`.
+
+**Antes de rodar:**
+
+1. Confira `LCD_RD` ligado direto no `3V3` do shield (fisicamente, sem passar por GPIO).
+2. Troque `ler_dados_sensores()` em `main.py` pela integração real com a parte de captura (arquivo, socket, fila etc.) — hoje ela só devolve valores fixos para você testar a interface isolada.
+3. Se a imagem aparecer espelhada/rotacionada errado, ajuste o valor `rotation` em `ILI9341Parallel()` (tente `0x28`, `0x48` ou `0x88` além do `0xE8` padrão).
+4. Rode com `python3 main.py` (não precisa de sudo se seu usuário tiver acesso ao grupo `gpio`).
+
+
+### O mais importante
+Você está usando:
+```shell
+GPIOCHIP = 4
+```
+
+E o seu teste:
+```shell
+python3 -c "import lgpio; h=lgpio.gpiochip_open(4); print('GPIO CHIP ABERTO:', h); lgpio.gpiochip_close(h)"
+```
+
+retornou:
+```shell
+GPIO CHIP ABERTO: 262145
+```
+
+Então **a sua instalação está conseguindo acessar o controlador GPIO**.
+
+
+![[Pasted image 20260927174213.png|393]]
+
+
+| Parte             | Resultado              |
+| ----------------- | ---------------------- |
+| Python/venv       | ✅                      |
+| NumPy             | ✅                      |
+| `lgpio`           | ✅                      |
+| `gpiochip4`       | ✅ alias de `gpiochip0` |
+| GPIO RP1          | ✅                      |
+| Driver inicializa | ✅                      |
+| LCD mostra imagem | ❌                      |
+
+Python
+   ↓
+lgpio
+   ↓
+gpiochip4 → RP1
+   ↓
+GPIO 5
+sem erro. ✅
+
+Então, como seu grupo é:
+```shell
+PINS_DATA = [5, 6, 12, 13, 16, 19, 20, 21]
+```
+
+o byte deveria ser enviado assim:
+```shell
+bit 0 → GPIO 5
+bit 1 → GPIO 6
+bit 2 → GPIO 12
+bit 3 → GPIO 13
+bit 4 → GPIO 16
+bit 5 → GPIO 19
+bit 6 → GPIO 20
+bit 7 → GPIO 21
+```
+
+
+---
+Perfeito. Isso fecha mais uma etapa: **o GPIO 22 (WR) também está sendo controlado normalmente pelo `lgpio`**.
+
+|Teste|Resultado|
+|---|---|
+|`gpiochip4` / RP1|✅|
+|GPIO individual|✅|
+|Barramento D0–D7|✅|
+|`group_write()`|✅|
+|WR (GPIO 22)|✅|
+|LCD exibindo pixels|❌|
+# LINK DE MEDIDAS PARA A CASE
+https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#raspberry-pi-5

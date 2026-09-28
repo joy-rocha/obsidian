@@ -496,14 +496,38 @@ bit 7 → GPIO 21
 ---
 Perfeito. Isso fecha mais uma etapa: **o GPIO 22 (WR) também está sendo controlado normalmente pelo `lgpio`**.
 
-|Teste|Resultado|
-|---|---|
-|`gpiochip4` / RP1|✅|
-|GPIO individual|✅|
-|Barramento D0–D7|✅|
-|`group_write()`|✅|
-|WR (GPIO 22)|✅|
-|LCD exibindo pixels|❌|
+| Teste               | Resultado |
+| ------------------- | --------- |
+| `gpiochip4` / RP1   | ✅         |
+| GPIO individual     | ✅         |
+| Barramento D0–D7    | ✅         |
+| `group_write()`     | ✅         |
+| WR (GPIO 22)        | ✅         |
+| LCD exibindo pixels | ❌         |
 # AJUDANTEE - chat
 https://chatgpt.com/c/6ab970ea-eb68-83e9-9674-0e1f3bca5531
 
+---
+
+
+# DIA 28/09 
+
+### 2. Tabela de Pinagem (Raspberry Pi 5 $\leftrightarrow$ Display Shield)
+
+| **Sinal do Display** | **Pino no Shield** | **GPIO da Raspberry Pi 5** | **Pino Físico na Pi** |
+| -------------------- | ------------------ | -------------------------- | --------------------- |
+| **VCC**              | 5V                 | 5V Power                   | Pino 2 ou 4           |
+| **GND**              | GND                | GND                        | Pino 6 ou 14          |
+| **LCD_RST**          | RESET / A4         | **GPIO 25**                | Pino 22               |
+| **LCD_CS**           | A3                 | **GPIO 8**                 | Pino 24               |
+| **LCD_RS (DC)**      | A2                 | **GPIO 24**                | Pino 18               |
+| **LCD_WR**           | A1                 | **GPIO 23**                | Pino 16               |
+| **LCD_RD**           | A0                 | **3.3V (fixo)**            | Pino 1 ou 17          |
+| **LCD_D0**           | Digital 8          | **GPIO 12**                | Pino 32               |
+| **LCD_D1**           | Digital 9          | **GPIO 13**                | Pino 33               |
+| **LCD_D2**           | Digital 2          | **GPIO 16**                | Pino 36               |
+| **LCD_D3**           | Digital 3          | **GPIO 19**                | Pino 35               |
+| **LCD_D4**           | Digital 4          | **GPIO 20**                | Pino 38               |
+| **LCD_D5**           | Digital 5          | **GPIO 21**                | Pino 40               |
+| **LCD_D6**           | Digital 6          | **GPIO 26**                | Pino 37               |
+| **LCD_D7**           | Digital 7          | **GPIO 27**                | Pino 13               |

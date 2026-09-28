@@ -543,4 +543,19 @@ wget https://raw.githubusercontent.com/DaveGamble/cJSON/master/cJSON.h
 
 -> **não tem como usar o touch entt vou usar botões para a seleção** 
 
+| **Botão**    | **Função no Código**     | **Pino Físico na Pi 5** |
+| ------------ | ------------------------ | ----------------------- |
+| **Preto**    | Navegar (Trocar Seleção) | **Pino 31**             |
+| **Vermelho** | Enter (Confirmar)        | **Pino 26**             |
+| **Ambos**    | Referência (negativo)    | **Pino 6**              |
+
+---
+
+# DIA / -
+
+**LISTA DE TAREFAS:**
+- animação rapida
+- registor de pull up
+- tela de ligar
+- arrumaer o "desligando"
 

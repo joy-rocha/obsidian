@@ -510,7 +510,7 @@ https://chatgpt.com/c/6ab970ea-eb68-83e9-9674-0e1f3bca5531
 ---
 
 
-# DIA 28/09 
+# DIA 28/09 - tentando fazer a interface aparecer no display
 
 ### 2. Tabela de Pinagem (Raspberry Pi 5 $\leftrightarrow$ Display Shield)
 
@@ -531,3 +531,16 @@ https://chatgpt.com/c/6ab970ea-eb68-83e9-9674-0e1f3bca5531
 | **LCD_D5**           | Digital 5          | **GPIO 21**                | Pino 40               |
 | **LCD_D6**           | Digital 6          | **GPIO 26**                | Pino 37               |
 | **LCD_D7**           | Digital 7          | **GPIO 27**                | Pino 13               |
+
+```bash
+sudo apt update
+sudo apt install -y build-essential liblgpio-dev libfreetype6-dev pkg-config fonts-dejavu
+wget https://raw.githubusercontent.com/DaveGamble/cJSON/master/cJSON.c
+wget https://raw.githubusercontent.com/DaveGamble/cJSON/master/cJSON.h
+```
+# Deu certo !
+[ajudanteIA_código](https://gemini.google.com/u/1/app/c5c4c47248475869?utm_source=app_launcher&utm_medium=owned&utm_campaign=base_all)
+
+-> **não tem como usar o touch entt vou usar botões para a seleção** 
+
+

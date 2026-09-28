@@ -21,7 +21,6 @@ IPC - Interprocess Comunicat ...
 
 
 # 4 Critérios para *GARANTIR* a Exclusão Mútua
-
 -  Nunca 2 processos podem estar em região crítica simultaneamente
 -  Deve funcionar independente da CPU ou memória
 -  Nenhum processo deve esperar eternamente para ser executado
@@ -32,7 +31,7 @@ IPC - Interprocess Comunicat ...
 sobrescrição de variável, logo, dois processos em região crítica
 
 # Test and Set Lock -> TSL
-tem espera ociosa e perde tempo (beat wait) , MAS resolve a exclusão mútua e tem o auxílio do hardware.
+tem espera ociosa e perde tempo (bease wait) , MAS resolve a exclusão mútua e tem o auxílio do hardware. PARA AS INTERRUPÇÕES PRA O OUTRO PROCESSO.
 
 ==termos:==
  - **Dead Lock**: um processo entra em loop esperando outro

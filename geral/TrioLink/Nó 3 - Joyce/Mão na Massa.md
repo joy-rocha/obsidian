@@ -551,11 +551,140 @@ wget https://raw.githubusercontent.com/DaveGamble/cJSON/master/cJSON.h
 
 ---
 
-# DIA / -
+# DIA 30 /09 - Estudando o novo código e padronizando com as normas do Assert
 
-**LISTA DE TAREFAS:**
+**LISTA DE TAREFAS:** **✅FEITO***
 - animação rapida
 - registor de pull up
 - tela de ligar
 - arrumaer o "desligando"
+ 
+
+# Visão Geral do Projeto ===========================
+
+O sistema lê dados telemétricos de dois sensores (um barômetro/termômetro **BMP280** e um acelerômetro/giroscópio **MPU6050**), processa essas informações no formato JSON e as exibe em uma interface gráfica customizada no display. A navegação entre as telas (Menu Principal, Tela BMP, Tela MPU e Desligamento) é controlada por botões físicos conectados aos pinos GPIO.
+
+  
+## Linguagens de Programação Utilizadas
+
+- **C (C99/C11):** Linguagem principal do projeto. Escolhida pelo alto desempenho, controle direto de memória e acesso de baixo nível aos periféricos de hardware (GPIO e Framebuffer do display).
+    
+- **GNU Make / Shell Script (Bash):** Utilizados para automação do processo de compilação (`Makefile`) e criação/execução dos scripts no sistema operacional Raspberry Pi OS.
+
+
+## Bibliotecas Utilizadas
+
+#### Bibliotecas Externas
+1. **`lgpio` (`<lgpio.h>`):** Biblioteca moderna de manipulação de GPIOs para a Raspberry Pi (específica para lidar com o novo chip controlador RP1 da Raspberry Pi 5). É usada para ler o estado dos botões físicos com resistores de _pull-up_ internos.
+    
+2. **`FreeType` (`-lfreetype`):** Biblioteca de renderização de fontes vetoriais. Permite desenhar textos de alta qualidade na tela carregando arquivos TrueType (`DejaVuSansMono-Bold.ttf`).
+    
+3. **`cJSON` (`cJSON.h` / `cJSON.c`):** Parser leve de JSON em C. Converte strings de dados vindas dos sensores em objetos C manipuláveis.
+    
+4. **`libm` (`-lm`):** Biblioteca matemática padrão do C para cálculos numéricos.
+    
+5. **`libpng` (`libpng16`):** Suporte à manipulação e renderização de formatos de imagem na memória gráfica.
+
+#### Bibliotecas Padrão do C
+- `<stdio.h>`, `<stdlib.h>`, `<string.h>`: Manipulação de strings, memória e E/S.
+    
+- `<signal.h>`, `<time.h>`, `<unistd.h>`: Gestão de interrupções de sistema (SIGINT/SIGTERM), contagem de tempo em milissegundos e controle de _sleep/loops_.
+
+### Tipos de Conexão e Comunicação
+
+1. **Entradas Digitais GPIO (Botões Físicos):**
+    - **Modo:** Entrada com Pull-Up interno (`LG_SET_PULL_UP`). O pino fica em nível ALTO (1) por padrão e vai para nível BAIXO (0) quando o botão é pressionado contra o GND.
+        
+    - **Botão Preto (Navegar/Trocar Opção):** Ligado ao **GPIO 12** (Pino Físico 32).
+        
+    - **Botão Vermelho (Confirmar/Enter):** Ligado ao **GPIO 7** (Pino Físico 26).
+        
+
+2. **Interface com o Display TFT (Interface Gráfica):**
+    - **Conexão:** Mapeamento de memória via **Framebuffer** (`/dev/fb0` ou similar via driver do display). O código escreve os pixels diretamente no _buffer_ de memória RAM e aplica o envio (`lcd_flush`).
+
+3. **Comunicação com Sensores (BMP280 / MPU6050):**
+    - **Protocolo físico real:** Tipicamente bus **I2C** ou **SPI**.
+        
+    - **Abstração no software:** Os sensores entregam dados em formato string **JSON** contendo temperatura, pressão, altitude (BMP) e aceleração/velocidade (MPU), decodificados pelas funções de parse.
+
+
+## Arquivos do Projeto e Como se Conectam
+A estrutura é organizada de forma modular, separando hardware, lógica de interface, decodificação e controle principal:
+
+```
+                  ┌──────────────┐
+                  │   main.c     │  (Loop Principal / Eventos)
+                  └──────┬───────┘
+                         │
+        ┌────────────────┼────────────────┬──────────────┐
+        ▼                ▼                ▼              ▼
+┌──────────────┐ ┌──────────────┐ ┌──────────────┐ ┌───────────┐
+│   ui.c/.h    │ │  gfx.c/.h    │ │  lcd.c/.h    │ │Decoders.c │
+└──────┬───────┘ └──────┬───────┘ └──────────────┘ └─────┬─────┘
+       │                │                                │
+       └────────────────┴────────────────────────────────┘
+                                │
+                         ┌──────▼──────┐
+                         │  cJSON.c/.h │
+                         └─────────────┘
+```
+
+#### Detalhamento de Cada Arquivo
+
+1. **`main.c` (Ponto de Entrada e Loop do Sistema):**
+    
+    - **Função:** Gerencia o ciclo de vida da aplicação.
+        
+    - **O que faz:** Inicializa a tela e os GPIOs, faz polling dos botões físicos a cada loop, atualiza os sensores a cada 1 segundo e simula toques para acionar a máquina de estados da UI.
+  
+2. **`ui.c` / `ui.h` (Interface de Usuário e Máquina de Estados):**
+    
+    - **Função:** Controla o que aparece na tela e a lógica de navegação.
+        
+    - **O que faz:** Desenha os cartões do menu principal, as telas detalhadas de cada sensor e a tela de desligamento (`ui_render`). Traduz as coordenadas de clique/botão em ações como mudar de tela ou desligar (`ui_tap`).
+  
+3. **`gfx.c` / `gfx.h` (Motor Gráfico 2D):**
+    
+      
+    - **Função:** Abstração de desenho vetorial.
+        
+    - **O que faz:** Desenha retângulos, limpa a tela, converte cores para o formato do display (`rgb()`) e usa a biblioteca _FreeType_ para desenhar textos alinhados na tela.
+
+4. **`lcd.c` / `lcd.h` (Hardware da Tela e Touch):**
+    
+    - **Função:** Driver de baixo nível do display e da camada de toque.
+        
+    - **O que faz:** Abre a memória do display (`lcd_init`), envia o buffer desenhado para o painel físico (`lcd_flush`) e faz a leitura bruta/convertida do painel touch (`touch_read`).
+
+5. **`DecodeBMP.c` e `DecodeMPU.c` / `Decoders.h` (Decodificadores de Sensores):**
+      
+    - **Função:** Camada de dados/telemetria.
+          
+    - **O que faz:** Recebem as strings JSON brutas dos sensores BMP280 e MPU6050, usam o `cJSON` para extrair os valores numéricos e retornam estruturas C prontas com os dados formatados para exibição.  
+
+6. **`cJSON.c` / `cJSON.h` (Parser JSON):**
+    
+    - **Função:** Biblioteca utilitária para leitura e manipulação de objetos no formato JSON.
+
+7. **`Makefile` (Script de Compilação):**
+      
+    - **Função:** Automatiza a compilação de todo o projeto.
+        
+    - **O que faz:** Chama o compilador `gcc` com todas as flags de otimização (`-O2`), avisos (`-Wall -Wextra`), inclusões de cabeçalhos (`FreeType`, `libpng`) e linka com as bibliotecas do sistema (`-llgpio -lfreetype -lm`).
+
+
+### Fluxo de Execução Simplificado
+
+1. O `main.c` roda `gfx_init()`, `lcd_init()` e descobre automaticamente o `gpiochip` ativo na Raspberry Pi 5.
+    
+2. Configura os pinos do **Botão Preto (GPIO 12)** e **Botão Vermelho (GPIO 7)** como entradas _pull-up_.
+    
+3. Entra em um loop contínuo:
+      
+    - A cada **1 segundo**, lê os dados JSON dos sensores e decodifica via `Decoders.c`.
+        
+    - Lê o estado dos **botões físicos**. Se o botão preto for pressionado, avança a opção destacada. Se o vermelho for pressionado, aciona a tela correspondente.
+        
+    - Se houver alteração de tela ou novos dados, chama `ui_render()` que usa o `gfx.c` para redesenhar a memória e `lcd_flush()` para enviar a imagem final ao display TFT.
 

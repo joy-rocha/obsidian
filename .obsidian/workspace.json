@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "geral/BANCO DE DADOS/MR/Regras de Mapeamento - MR.md",
+                "file": "geral/S.O./unidade02/Comunicação Iterprocessos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Regras de Mapeamento - MR"
+              "title": "Comunicação Iterprocessos"
             }
           },
           {
@@ -41,16 +41,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "geral/S.O./unidade02/Problemas.md",
+                "file": "geral/S.O./unidade02/roteito02.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Problemas"
+              "title": "roteito02"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -229,27 +229,33 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "b94a1cfed608bddd",
+  "active": "dc1fa653f357042e",
   "lastOpenFiles": [
+    "geral/S.O./unidade02/Comunicação Iterprocessos.md",
+    "geral/S.O./unidade02/roteito02.md",
+    "geral/BANCO DE DADOS/FÍSICO/Modelo Físico.md",
+    "geral/TrioLink/Nó 3 - Joyce/Mão na Massa.md",
+    "geral/S.O./unidade02/roteiro01.md",
+    "geral/S.O./unidade02/Problemas.md",
+    "geral/S.O./unidade02/Monitores.md",
+    "geral/BANCO DE DADOS/MR/Regras de Mapeamento - MR.md",
+    "geral/BANCO DE DADOS/FÍSICO/instalando SQL.md",
+    "geral/IMG/Pasted image 20261002103416.png",
+    "Excalidraw/subgrupos SQL.md",
+    "geral/IMG/Pasted image 20261002101538.png",
     "geral/COMANDOS GIT.md",
     "normasAssert.md",
     "geral/LATEX.md",
     "geral/COMANDU.md",
     "geral/AMBIENTE VIRTUAL.md",
-    "geral/TrioLink/Nó 3 - Joyce/Mão na Massa.md",
     "geral/TrioLink/Nó 3 - Joyce/LUMA.md",
     "geral/TrioLink/Nó 3 - Joyce/Desafio.md",
     "geral/IMG/Pasted image 20260925213840.png",
     "geral/IMG/Pasted image 20260927174122.png",
     "geral/IMG/Pasted image 20260925214326.png",
     "geral/IMG/Pasted image 20260927174213.png",
-    "geral/S.O./unidade02/Problemas.md",
-    "geral/S.O./unidade02/roteiro01.md",
-    "geral/S.O./unidade02/Comunicação Iterprocessos.md",
-    "geral/S.O./unidade02/Monitores.md",
     "geral/TrioLink/Nó 3 - Joyce/Backlog nó 3.md",
     "geral/TrioLink/Nó 1 - Luis.md",
-    "geral/BANCO DE DADOS/MR/Regras de Mapeamento - MR.md",
     "geral/BANCO DE DADOS/ER/Modelo ER Estendido.md",
     "geral/BANCO DE DADOS/MR/Modelo Relacional (MR).md",
     "geral/S.O./unidade02/Semáforos.md",
@@ -258,15 +264,9 @@
     "geral/IMG/Pasted image 20260917172944.png",
     "geral/IMG/Pasted image 20260917172640.png",
     "geral/IMG/Pasted image 20260917165842.png",
-    "geral/IMG/Pasted image 20260917165742.png",
-    "geral/BANCO DE DADOS/FÍSICO/Modelo Físico.md",
-    "geral/IMG/Pasted image 20260911143621.png",
     "geral/TrioLink/Nó 2 - Caio.md",
     "geral/BANCO DE DADOS/SGBD.md",
     "geral/BANCO DE DADOS/Modelos de Dados.md",
-    "geral/BANCO DE DADOS/ER/Modelo ER.md",
-    "geral/FÍSICA/Leis de newton.md",
-    "geral/S.O./unidade01/Roteiros_01.md",
     "geral/S.O./unidade02",
     "geral/S.O./unidade01",
     "geral/BANCO DE DADOS/FÍSICO",

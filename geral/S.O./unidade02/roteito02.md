@@ -146,9 +146,9 @@ Um buffer circular usa `if` em vez de `while` para testar a condição de espera
 
 **Pergunta:** que tipo de erro aparece no console (se aparecer)? Relacione com o papel do `notifyAll()` acordando várias threads de uma vez.
 
-==resposta:== 
+==resposta:== o consumidor olha se o buffer ta cheio se não tiver ele dorme e o produtor entra em cena, produtor faz 1 aí volta pro consumidore o buffer continua não cheio entt ele dorme e o produtor produz, isso té o buffer encher e o notfyall acordar as threads que dormiam e ela poderem consumir agr
 
-==problema: ==
+==problema:== a verificação se o bufferta cheio tem que ser constante (while) pra manter os processos dormindo até que o buffer esteja cheio e pronto pra ser consumido
 
 ---
 
@@ -158,9 +158,9 @@ Uma função de transferência entre contas usa dois `synchronized` aninhados.
 
 **Pergunta:** por que a ordem dos parâmetros nas duas chamadas concorrentes é o que causa o problema aqui, e não a lógica de `transferir` em si?
 
-==resposta: ==
+***==resposta: ==Sim, exatamente***
 
-==problema: ==
+***==problema:==  é a ordem, porque as threads trancam antes da outra pegar ai ficam esperando uma pela outra entrando em um deadlock. problema de CATEGORIA C***
 
 ---
 
@@ -172,7 +172,7 @@ Uma fila chama `wait()` em um objeto fora de um bloco `synchronized` sobre esse 
 
 ==resposta: ==
 
-==problema: ==
+***==problema:== ***Chamada de `lock.wait()` realizada fora de um bloco `synchronized(lock)`. Em Java, é obrigatório possuir a trava do monitor do objeto para chamar `wait()` ou `notify()`, caso contrário a JVM lança a exceção `IllegalMonitorStateException`.** ***CATEGORIA F — Configuração / Uso Incorreto do Monitor** (falha na posse do lock ao invocar primitivas de sincronização).***
 
 ---
 
@@ -182,9 +182,9 @@ Mesma carga de threads do Trecho 8, mas com a espera condicional implementada co
 
 **Pergunta:** rode várias vezes. Ele nunca falha? O que isso mostra em contraste com o Trecho 8, já que os dois programas são praticamente idênticos?
 
-==resposta: ==
+***==resposta:== categoria CERTOOOOO***
 
-==problema: ==
+***==problema: ==NEHUM***
 
 ---
 ## Para discutir depois

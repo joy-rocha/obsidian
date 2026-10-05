@@ -81,23 +81,4 @@ Gerencia a execução e o controle de transações dentro do banco de dados:
 
 ---
 
-💡 Quer praticar escrevendo o comando `CREATE TABLE` em SQL de uma das tabelas da sua lista de exercícios para aplicar essas restrições e tipos de dados?**
-
-
-
-# Comandos básico SQL
-$-$ CREATE
-$-$ ALTER
-$-$ DROP
-(definição dedados em SQL)
-
-# Criaçãode tabelas
-CREATE TABLE tabela_base (atribuos tabela_base + constains);
-
-#### **Formato dos Atributos** 
-nome_atributo tipo_dado \[not null \[unique\] ou default\]
-#### **Restrições**
-de coluna, de tabela
-
-**primay key (nome_atributo);**
 

@@ -417,7 +417,10 @@ make base
 
 > **Pergunta 12.** Rode algumas vezes. Os erros aparecem mesmo existindo a função `testar()`, que verifica se os vizinhos estão comendo. Por que essa verificação **sozinha** não garante nada? (Dica: o que acontece hoje, no código base, quando `testar(i)` **não** consegue colocar o filósofo `i` em `COMENDO`? Ele espera?)
 
-  ==resposta:== 
+  ==resposta:==
+   - **Por que não se perde em C?** Semáforos possuem **memória (contador interno)**. O `sem_post` incrementa esse contador (guarda o "crédito"), permitindo que o `sem_wait` posterior consuma o valor e passe direto sem bloquear.
+    
+- **Funcionaria em Java (`wait`/`notify`)?** **Não.** O `notify()` em Java **não tem memória**. Se for enviado antes de haver uma thread no `wait()`, o sinal é perdido (_lost wakeup_) e a thread travará esperando um aviso que já passou.
 
 ### 7.2 Preenchendo os TODOs
   
@@ -448,30 +451,24 @@ Valores iniciais corretos (TODO 0b): `mutex = 1` e `s[i] = 0` para todo `i`.
 
 > **Pergunta 13.** Rode 5 vezes (e depois 200 vezes com o laço da Seção 4). Nenhum erro e nenhum travamento devem aparecer, e `Max. filosofos comendo juntos` deve ser 2.
 
-==resposta:== 
+==resposta:== OK
 
 > **Pergunta 14.** Repare em um detalhe curioso: quando o filósofo consegue os garfos **logo de cara**, quem faz o `sem_post(&s[i])` é **ele mesmo** (dentro de `testar(i)`), e o `sem_wait(&s[i])` logo depois passa direto. Quando ele **não** consegue, quem faz o `sem_post` é um **vizinho**, dentro de `devolver_garfos`. Por que é importante que o `sem_post` "adiantado" não se perca, mesmo sendo feito **antes** do `sem_wait`? Isso funcionaria com `wait()`/`notify()` de Java?
 
-  
+==resposta:== 
 
 ### 7.3 Experimentos — inserindo atrasos e provocando erros
-
-  
-
 Mesmo procedimento: altere, rode, observe e **restaure** antes do próximo.
 
-  
-
 **E6 — Atraso dentro da região crítica, com sincronização correta.**
-
 Mude `#define ATRASO_TESTAR_US 0` para `1000` (1 ms). Esse atraso fica **entre** a verificação dos vizinhos e a atribuição `estado[i] = COMENDO`.
 
 > **Pergunta 15.** O resultado continua correto? O que mudou no tempo total? Explique por que esse atraso não causa erro **enquanto o `mutex` estiver lá**.
 
+==resposta:== 
   
 
 **E7 — Removendo o `mutex`, mantendo `s[i]`.**
-
 Mantenha `ATRASO_TESTAR_US = 1000` e comente as quatro linhas `sem_wait(&mutex)` / `sem_post(&mutex)` (TODOs 2, 3, 5 e 6).
 
 > **Pergunta 16.** Aparecem `*** ERRO ***`? Reconstrua o cenário: os filósofos 1 e 2 (vizinhos) executam `testar` ao mesmo tempo; cada um verifica que o outro **ainda não** está `COMENDO`, os dois esperam 1 ms, e então… Compare com o experimento E4 do laboratório anterior (produtor-consumidor sem `mutex`): é a mesma categoria de erro?
@@ -479,34 +476,30 @@ Mantenha `ATRASO_TESTAR_US = 1000` e comente as quatro linhas `sem_wait(&mutex)`
   
 
 **E8 — Inicialização errada de `s[i]`.**
-
 Inicialize os semáforos dos filósofos com 1 em vez de 0: `sem_init(&s[i], 0, 1);`
 
 > **Pergunta 17.** O que acontece? Qual é o significado de `s[i] = 1` "no início do jantar", em termos do problema? Por que o primeiro `sem_wait(&s[i])` de cada filósofo deixa de bloquear quando deveria?
 
-  
+==resposta:== 
 
 **E9 — Esquecendo de avisar um vizinho.**
-
 Em `devolver_garfos`, comente a linha `testar(ESQUERDO(i));`.
 
 > **Pergunta 18.** Rode algumas vezes (o problema não aparece em toda execução). Leia a fotografia do watchdog: algum filósofo está `COM_FOME`, bloqueado em `pegar_garfos()`, com **os dois vizinhos `PENSANDO`** (ou já satisfeitos)? Por que ninguém o acorda? Esse é um caso de deadlock ou de *lost wakeup*? Justifique.
 
-  
+==resposta:== 
 
 **E10 — Bloqueando segurando o `mutex`.**
-
 Em `pegar_garfos`, mova o `sem_wait(&s[i]);` (TODO 4) para **antes** do `sem_post(&mutex);` (TODO 3).
 
 > **Pergunta 19.** O programa trava? Explique o ciclo de espera: o filósofo que não conseguiu os garfos dorme em `s[i]` **segurando o `mutex`**; quem poderia acordá-lo precisa de quê? Compare com o experimento E2 do laboratório anterior (`mutex` antes de `vazio` no produtor): qual é a regra geral que os dois experimentos ensinam?
 
-  
+==resposta:==   
 
-**Inanição.**
-
+#### **Inanição.**
 > **Pergunta 20.** Olhe a coluna `Maior espera (ms)` na saída da solução correta. A solução de Tanenbaum é livre de deadlock, mas **não** é livre de inanição. Descreva uma sequência em que os filósofos 0 e 2 se revezam de tal forma que o filósofo 1 nunca encontra os dois vizinhos sem comer. Por que isso é difícil de observar na prática, mas é possível em teoria?
 
-  
+==resposta:== 
 
 ### 7.4 Consultando a solução de referência
 

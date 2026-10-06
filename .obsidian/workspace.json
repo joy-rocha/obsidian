@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "geral/S.O./unidade02/Semáforos.md",
+                "file": "geral/S.O./unidade02/roteiro03.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Semáforos"
+              "title": "roteiro03"
             }
           }
         ],
@@ -126,8 +126,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 232.19062423706055,
-    "collapsed": true
+    "width": 232.19062423706055
   },
   "right": {
     "id": "c2eb1dba97099ac1",
@@ -246,9 +245,9 @@
   },
   "active": "dc1fa653f357042e",
   "lastOpenFiles": [
-    "geral/S.O./unidade02/Problemas.md",
     "geral/S.O./unidade02/Semáforos.md",
     "geral/S.O./unidade02/roteiro03.md",
+    "geral/S.O./unidade02/Problemas.md",
     "geral/TrioLink/Nó 3 - Joyce/Mão na Massa.md",
     "geral/TrioLink/Nó 3 - Joyce/LUMA.md",
     "geral/BANCO DE DADOS/FÍSICO/Modelo Físico.md",

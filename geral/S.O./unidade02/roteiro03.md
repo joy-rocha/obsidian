@@ -356,7 +356,11 @@ printf("[Filosofo %d] precisou de %d tentativas\n", i, tentativas);
 
 > **Pergunta 10.** Rode 3 vezes. Observe quantas tentativas alguns filósofos precisam (em nossos testes, até ~30) e o tempo total. Em algumas execuções o watchdog pode até disparar — mas **os filósofos não estão bloqueados**. Qual condição de Coffman essa estratégia elimina? Por que, mesmo assim, o sistema pode ficar sem progresso? Explique a diferença entre **deadlock** e **livelock**.
 
-==resposta:== 
+==resposta:== a condição de posse e aspera pois um garfo não é mais retido por um filófoso ao esperar outro garfo, ele tenta e só pega se os 2 tiver disponível. O Deadlock é a espera infinita por um recurso que jamais será disponibilizado pra o processo, entrando em colapso numa espera sem fim pelo recurso, já o Livelock nele as threads funcionam usando a cpu mas continuam entrando em um cilco  de espera e ocorre o deadlock. ***Resumindo:*** deadlock é a epera fora da cpu pelo recurso compartilhado. O livelock é a espera por um recurso enquanto usa a cpu
+
+### ==🟢ATENÇÃO: ==
+>- **Deadlock (Impasse):** As threads ficam **bloqueadas/dormindo** no sistema operacional, sem consumir CPU, travadas indefinidamente esperando por um recurso.
+>- **Livelock:** As threads permanecem **ativas e consumindo CPU**, alternando estados e executando instruções, mas presas num ciclo contínuo de tentativas e desistências sem realizar progresso real."
 
 > **Pergunta 11.** Troque a **segunda** linha `if (ATRASO_ENTRE_GARFOS_US > 0) usleep(ATRASO_ENTRE_GARFOS_US);` (a que vem depois de devolver o garfo) por uma espera **aleatória**:
 
@@ -366,19 +370,12 @@ usleep(rand_r(&semente) % (ATRASO_ENTRE_GARFOS_US + 1));
 
 > O número máximo de tentativas cai? Por que a aleatoriedade quebra o livelock? (Essa é a mesma ideia do *backoff* exponencial aleatório usado pelo Ethernet quando há colisão.)
 
-  ==resposta:== 
+  ==resposta:== Cai. Por que a aleatoriedade é justamente a descincronização com isso os processos não esperam um tempo fixo e isso acelera a funcionaliade dos 
 
 ---
 
-  
-
 ## 7. Parte 3 — Filósofos em C: a solução de Tanenbaum (estados)
-
-  
-
 A solução de Tanenbaum (livro *Sistemas Operacionais Modernos*) muda o ponto de vista: em vez de proteger cada garfo, ela guarda o **estado** de cada filósofo — `PENSANDO`, `COM_FOME` ou `COMENDO` — em um vetor protegido por um `mutex`. Um filósofo só passa para `COMENDO` se **nenhum dos dois vizinhos** estiver comendo, ou seja, pega os dois garfos **de uma vez só, ou nenhum**. Se não puder comer, ele bloqueia em um semáforo **próprio**, `s[i]`, e será acordado por um vizinho quando esse vizinho devolver os garfos.
-
-  
 
 ```
 
@@ -409,9 +406,6 @@ up(s[i])
   
 
 ### 7.1 Rodando o código base sem nenhuma sincronização
-
-  
-
 ```bash
 
 make base
@@ -420,23 +414,17 @@ make base
 
 ```
 
-  
 
 > **Pergunta 12.** Rode algumas vezes. Os erros aparecem mesmo existindo a função `testar()`, que verifica se os vizinhos estão comendo. Por que essa verificação **sozinha** não garante nada? (Dica: o que acontece hoje, no código base, quando `testar(i)` **não** consegue colocar o filósofo `i` em `COMENDO`? Ele espera?)
 
   ==resposta:== 
 
 ### 7.2 Preenchendo os TODOs
-
   
 
 Abra [`c/base/filosofos_estados.c`](c/base/filosofos_estados.c) e resolva os TODOs:
 
-  
-
-| TODO | O que fazer | Onde |
-
-|---|---|---|
+| TODO | O que fazer | Onde 
 
 | 0 / 0b | Declarar `sem_t mutex;` e `sem_t s[N_FILOSOFOS];` e inicializá-los | topo do arquivo / início de `main` |
 
@@ -454,15 +442,13 @@ Abra [`c/base/filosofos_estados.c`](c/base/filosofos_estados.c) e resolva os TOD
 
 | 7 | `sem_destroy` em todos os semáforos (boa prática) | final de `main` |
 
-  
-
 Valores iniciais corretos (TODO 0b): `mutex = 1` e `s[i] = 0` para todo `i`.
 
   
 
 > **Pergunta 13.** Rode 5 vezes (e depois 200 vezes com o laço da Seção 4). Nenhum erro e nenhum travamento devem aparecer, e `Max. filosofos comendo juntos` deve ser 2.
 
->
+==resposta:== 
 
 > **Pergunta 14.** Repare em um detalhe curioso: quando o filósofo consegue os garfos **logo de cara**, quem faz o `sem_post(&s[i])` é **ele mesmo** (dentro de `testar(i)`), e o `sem_wait(&s[i])` logo depois passa direto. Quando ele **não** consegue, quem faz o `sem_post` é um **vizinho**, dentro de `devolver_garfos`. Por que é importante que o `sem_post` "adiantado" não se perca, mesmo sendo feito **antes** do `sem_wait`? Isso funcionaria com `wait()`/`notify()` de Java?
 

@@ -114,8 +114,6 @@ lab-ipc-problemas-classicos/
 
 Vários erros deste laboratório são **probabilísticos**. Quando o roteiro pedir para rodar várias vezes, use um laço (o programa termina com código 1 quando o watchdog dispara):
 
-  
-
 ```bash
 
 for i in $(seq 1 100); do ./solucao/filosofos_garfos > /dev/null || echo "travou na execucao $i"; done
@@ -226,7 +224,6 @@ make base
 ### 6.3 Experimentos — inserindo atrasos e provocando erros
 Use sempre o mesmo procedimento: faça a alteração indicada no seu `c/base/filosofos_garfos.c` (já com os TODOs preenchidos), rode `make base && ./base/filosofos_garfos`, observe com atenção o resultado e **restaure o código antes de passar para o próximo experimento** (a não ser que o roteiro diga o contrário).
 
-  
 
 **E1 — O deadlock existe, mas é raro.**
 
@@ -262,32 +259,23 @@ para:
 
 ==resposta:== se tivesse exclusão mútua não tinha erro
 
-  
 Para os experimentos E3 a E5, **mantenha `ATRASO_ENTRE_GARFOS_US = 100000`** — assim, se a correção não funcionar, o deadlock aparece com certeza.
   
 **E3 — Quebrando a espera circular: um filósofo "canhoto".**
 Faça o **último** filósofo pegar os garfos na ordem inversa (primeiro o da direita, depois o da esquerda). Substitua as linhas dos TODOs 1 e 2 por:
 
 ```c
-
 int primeiro = GARFO_ESQ(i), segundo = GARFO_DIR(i);
 
 if (i == N_FILOSOFOS - 1) { /* o ultimo filosofo e "canhoto" */
-
 primeiro = GARFO_DIR(i);
-
 segundo = GARFO_ESQ(i);
-
 }
 
 sem_wait(&garfo[primeiro]);
-
 situacao[i] = COM_GARFO_ESQ;
-
 if (ATRASO_ENTRE_GARFOS_US > 0) usleep(ATRASO_ENTRE_GARFOS_US);
-
 sem_wait(&garfo[segundo]);
-
 ```
 
 > **Pergunta 8.** O deadlock desaparece? Qual das quatro condições de Coffman foi eliminada? Generalize: essa ideia é equivalente a **numerar os recursos e sempre pegá-los em ordem crescente** — mostre que, com essa regra, o filósofo 4 pega primeiro o garfo 0 e depois o 4. Por que essa regra torna impossível formar um ciclo?
@@ -504,12 +492,7 @@ Em `pegar_garfos`, mova o `sem_wait(&s[i]);` (TODO 4) para **antes** do `sem_pos
 ==resposta:== 
 
 ### 7.4 Consultando a solução de referência
-
-  
-
 Depois de concluir as Partes 2 e 3, compare com [`c/solucao/filosofos_garfos.c`](c/solucao/filosofos_garfos.c) e [`c/solucao/filosofos_estados.c`](c/solucao/filosofos_estados.c):
-
-  
 
 ```bash
 
@@ -532,17 +515,11 @@ make solucao
   
 
 ## 8. Parte 4 — Filósofos em Java com monitores
-
-  
-
 Em Java, a solução por estados fica bem mais curta: não é preciso `mutex` explícito (o `synchronized` já garante exclusão mútua), nem um semáforo por filósofo, nem a função `testar()` — basta o filósofo **esperar em laço** enquanto algum vizinho estiver comendo, e quem devolve os garfos avisa a todos com `notifyAll()`.
 
   
 
 ### 8.1 Rodando o código base sem sincronização
-
-  
-
 ```bash
 
 cd java/filosofos/base
@@ -560,12 +537,7 @@ java Main
   
 
 ### 8.2 Preenchendo os TODOs
-
-  
-
 Abra [`java/filosofos/base/Mesa.java`](java/filosofos/base/Mesa.java) e resolva os TODOs:
-
-  
 
 | TODO | O que fazer | Onde |
 
@@ -579,8 +551,6 @@ Abra [`java/filosofos/base/Mesa.java`](java/filosofos/base/Mesa.java) e resolva 
 
 | 4 | `notifyAll();` | final de `devolverGarfos` |
 
-  
-
 ```bash
 
 javac *.java
@@ -589,19 +559,14 @@ java Main
 
 ```
 
-  
 
 > **Pergunta 23.** Rode 5 vezes: nenhum erro, nenhum travamento e no máximo 2 comendo juntos. Agora faça a correspondência entre as duas implementações: na versão Java, o que faz o papel do `mutex`? E do `s[i]`? E da função `testar()`? Por que a versão Java **não precisa** que alguém teste os vizinhos e "autorize" quem está esperando?
 
   
 
 ### 8.3 Experimentos — inserindo atrasos e provocando erros
-
-  
-
 Faça cada alteração, rode, observe o resultado e desfaça antes do próximo experimento.
 
-  
 
 **E11 — Trocar `while` por `if` na condição de espera.**
 
@@ -624,7 +589,6 @@ Remova `synchronized` **apenas** de `devolverGarfos`.
   
 
 **E14 — Comer dentro do monitor.**
-
 Em `pegarGarfos`, logo depois de `estado[i] = COMENDO;`, acrescente:
 
 ```java
@@ -645,34 +609,18 @@ Thread.sleep(Main.TEMPO_COMER_MS);
 
 ## 9. Parte 5 — Barbeiro sonolento em C com semáforos
 
-  
-
 A solução clássica (Tanenbaum) usa **três semáforos** e um contador:
-
-  
-
 - `clientes` (contagem, inicial 0) — quantos clientes estão esperando. **O barbeiro dorme nele.**
-
 - `barbeiros` (inicial 0) — o barbeiro está pronto para atender. **O cliente espera nele** até ser chamado.
-
 - `mutex` (binário, inicial 1) — exclusão mútua no acesso a `esperando`.
-
 - `int esperando` — quantos clientes estão sentados na sala de espera (precisa existir porque **não é possível ler o valor de um semáforo** de forma confiável para decidir se o cliente desiste).
-
   
 
 ### 9.1 Rodando o código base sem nenhuma sincronização
-
-  
-
 ```bash
-
 cd c
-
 make base
-
 ./base/barbeiro
-
 ```
 
   
@@ -680,14 +628,8 @@ make base
 > **Pergunta 28.** Rode algumas vezes. O que o barbeiro faz quando não há clientes? Que valores estranhos aparecem para `esperando`? Por que o número de cortes e o número de clientes atendidos não batem? Em um sistema real, qual seria o custo de um barbeiro (servidor) que "não dorme"?
 
   
-
 ### 9.2 Preenchendo os TODOs
-
-  
-
 Abra [`c/base/barbeiro.c`](c/base/barbeiro.c) e resolva os TODOs:
-
-  
 
 | TODO | O que fazer | Onde |
 

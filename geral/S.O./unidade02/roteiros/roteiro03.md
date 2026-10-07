@@ -292,7 +292,7 @@ sem_wait(&garfo[segundo]);
 
 > **Pergunta 8.** O deadlock desaparece? Qual das quatro condições de Coffman foi eliminada? Generalize: essa ideia é equivalente a **numerar os recursos e sempre pegá-los em ordem crescente** — mostre que, com essa regra, o filósofo 4 pega primeiro o garfo 0 e depois o 4. Por que essa regra torna impossível formar um ciclo?
 
-  ==resposta:== Sim. A condição da posse e espera. ==TERMINAR ESSA AQUII ===
+  ==resposta:== Sim. A condição da posse e espera. Pois com o filósofo canhoto ele so pula sua vez na primeira rodada, nas demais ele vai pegar bem na hora que o antecessor liberar, quebrando a espera circular (deadlock)
 
 **E4 — Quebrando a posse e espera: o "garçom" (no máximo N-1 à mesa).**
 
@@ -475,7 +475,7 @@ Mantenha `ATRASO_TESTAR_US = 1000` e comente as quatro linhas `sem_wait(&mutex)`
 
 > **Pergunta 16.** Aparecem `*** ERRO ***`? Reconstrua o cenário: os filósofos 1 e 2 (vizinhos) executam `testar` ao mesmo tempo; cada um verifica que o outro **ainda não** está `COMENDO`, os dois esperam 1 ms, e então… Compare com o experimento E4 do laboratório anterior (produtor-consumidor sem `mutex`): é a mesma categoria de erro?
 
-  
+  ==resposta:== Sim. A diferença dos erros é que no E4 tinhamos um deadlock e aqui a falta de sincronização permite que dois filosofos acessem a região crítica ao mesmo tempo (quebra uma das regras lá)
 
 **E8 — Inicialização errada de `s[i]`.**
 Inicialize os semáforos dos filósofos com 1 em vez de 0: `sem_init(&s[i], 0, 1);`

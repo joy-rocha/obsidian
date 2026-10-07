@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "geral/S.O./unidade02/roteiro03.md",
+                "file": "geral/S.O./unidade02/Comunicação Iterprocessos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "roteiro03"
+              "title": "Comunicação Iterprocessos"
             }
           },
           {
@@ -55,16 +55,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "geral/S.O./unidade02/roteiro03.md",
+                "file": "geral/S.O./unidade02/Semáforos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "roteiro03"
+              "title": "Semáforos"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -243,18 +243,22 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "dc1fa653f357042e",
+  "active": "34b5a297770e0576",
   "lastOpenFiles": [
-    "geral/S.O./unidade02/Semáforos.md",
-    "geral/S.O./unidade02/roteiro03.md",
+    "geral/S.O./unidade02/Monitores.md",
+    "geral/S.O./unidade02/Comunicação Iterprocessos.md",
+    "geral/S.O./unidade02/Abordagens de Sincronização e Seus Riscos.md",
+    "geral/S.O./unidade02/roteiros/roteiro01.md",
+    "geral/S.O./unidade01/Roteiros_01.md",
+    "geral/S.O./unidade02/roteiros",
     "geral/S.O./unidade02/Problemas.md",
+    "geral/S.O./unidade02/Semáforos.md",
+    "geral/S.O./unidade02/Detalhes importantes.md",
+    "geral/S.O./unidade02/roteiros/roteito02.md",
+    "geral/S.O./unidade02/roteiros/roteiro03.md",
     "geral/TrioLink/Nó 3 - Joyce/Mão na Massa.md",
     "geral/TrioLink/Nó 3 - Joyce/LUMA.md",
     "geral/BANCO DE DADOS/FÍSICO/Modelo Físico.md",
-    "geral/S.O./unidade02/roteito02.md",
-    "geral/S.O./unidade02/Comunicação Iterprocessos.md",
-    "geral/S.O./unidade02/roteiro01.md",
-    "geral/S.O./unidade02/Monitores.md",
     "geral/BANCO DE DADOS/MR/Regras de Mapeamento - MR.md",
     "geral/BANCO DE DADOS/FÍSICO/instalando SQL.md",
     "geral/IMG/Pasted image 20261002103416.png",
@@ -274,13 +278,10 @@
     "geral/TrioLink/Nó 1 - Luis.md",
     "geral/BANCO DE DADOS/ER/Modelo ER Estendido.md",
     "geral/BANCO DE DADOS/MR/Modelo Relacional (MR).md",
-    "geral/TrioLink/Normas Assert.md",
     "geral/IMG/Pasted image 20260917133456.png",
     "geral/IMG/Pasted image 20260917172944.png",
     "geral/IMG/Pasted image 20260917172640.png",
     "geral/IMG/Pasted image 20260917165842.png",
-    "geral/TrioLink/Nó 2 - Caio.md",
-    "geral/BANCO DE DADOS/SGBD.md",
     "geral/S.O./unidade02",
     "geral/S.O./unidade01",
     "geral/BANCO DE DADOS/FÍSICO",
@@ -290,7 +291,6 @@
     "Nó 2 - Caio",
     "geral/TrioLink",
     "geral/ELETRÔNICA/Componentes",
-    "geral/ELETRÔNICA",
     "Sem título.canvas"
   ]
 }

@@ -1,6 +1,5 @@
 # Laboratório: Problemas Clássicos de IPC — Jantar dos Filósofos e Barbeiro Sonolento
 
-  
 
 ## 1. Objetivos
 Ao final deste laboratório você deve ser capaz de:  
@@ -446,7 +445,6 @@ Abra [`c/base/filosofos_estados.c`](c/base/filosofos_estados.c) e resolva os TOD
 | 7 | `sem_destroy` em todos os semáforos (boa prática) | final de `main` |
 
 Valores iniciais corretos (TODO 0b): `mutex = 1` e `s[i] = 0` para todo `i`.
-
   
 
 > **Pergunta 13.** Rode 5 vezes (e depois 200 vezes com o laço da Seção 4). Nenhum erro e nenhum travamento devem aparecer, e `Max. filosofos comendo juntos` deve ser 2.
@@ -455,7 +453,11 @@ Valores iniciais corretos (TODO 0b): `mutex = 1` e `s[i] = 0` para todo `i`.
 
 > **Pergunta 14.** Repare em um detalhe curioso: quando o filósofo consegue os garfos **logo de cara**, quem faz o `sem_post(&s[i])` é **ele mesmo** (dentro de `testar(i)`), e o `sem_wait(&s[i])` logo depois passa direto. Quando ele **não** consegue, quem faz o `sem_post` é um **vizinho**, dentro de `devolver_garfos`. Por que é importante que o `sem_post` "adiantado" não se perca, mesmo sendo feito **antes** do `sem_wait`? Isso funcionaria com `wait()`/`notify()` de Java?
 
-==resposta:== 
+==resposta:== A preservação do `sem_post` "adiantado" é fundamental para evitar que o filósofo fique bloqueado indevidamente ao tentar comer. Quando o filósofo obtém os garfos dentro da função `testar(i)`, o `sem_post(&s[i])` incrementa o contador interno do semáforo de 0 para 1. Ao executar o `sem_wait(&s[i])` logo a seguir, o semáforo decrementa para 0 e a _thread_ prossegue sem bloquear. Se esse sinal fosse perdido, o filósofo ficaria preso no `sem_wait`, apesar de ter permissão e estar no estado `COMENDO`.
+
+### ==🟢ATENÇÃO==
+**`wait()` / `notify()` (Java):** **Não possuem memória**
+**Semáforos (C / POSIX):** Possuem **estado/memória (contador interno)**
 
 ### 7.3 Experimentos — inserindo atrasos e provocando erros
 Mesmo procedimento: altere, rode, observe e **restaure** antes do próximo.
@@ -465,7 +467,7 @@ Mude `#define ATRASO_TESTAR_US 0` para `1000` (1 ms). Esse atraso fica **entre**
 
 > **Pergunta 15.** O resultado continua correto? O que mudou no tempo total? Explique por que esse atraso não causa erro **enquanto o `mutex` estiver lá**.
 
-==resposta:== 
+==resposta:== O resultado continua correto ($0$ erros, máximo $2$ filósofos a comer juntos), mas o tempo total de execução aumentou devido ao atraso introduzido. O atraso de $1\text{ ms}$ ocorre **dentro da região crítica** protegida pelo `mutex`. Enquanto um filósofo está a aguardar dentro do `testar()`, ele retém a posse do `mutex`. Isso impede que qualquer outro filósofo vizinho execute `testar()` ou altere o vetor `estado[]` ao mesmo tempo, garantindo que a verificação e a mudança de estado continuem a ser uma operação atómica.
   
 
 **E7 — Removendo o `mutex`, mantendo `s[i]`.**

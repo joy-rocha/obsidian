@@ -73,6 +73,8 @@ Para que ocorra um deadlock no sistema operacional, **todas as 4 condições pre
 - **Garante a Exclusão Mútua:**  Ao contrário da variável de trava pura em software, o TSL resolve o problema de dois processos entrarem juntos na região crítica.
 - **Auxílio de Hardware:** O TSL é uma instrução de montador/código de máquina fornecida diretamente pelo processador.
 
+![[Pasted image 20261014082404.png]]
+
 ### Como o TSL funciona de verdade (para a prova)
 
 A instrução `TSL RX, LOCK` faz duas coisas de forma **atômica** (indivisível) em nível de hardware:
@@ -82,11 +84,10 @@ A instrução `TSL RX, LOCK` faz duas coisas de forma **atômica** (indivisível
 Como o processador **tranca o barramento de memória** enquanto executa essa instrução, nenhuma outra CPU ou dispositivo consegue acessar aquela posição de memória naquele exato instante. Isso impede a condição de corrida no momento do teste da trava, sem precisar mexer nas interrupções do sistema.
 
 ---
+**`wait()` / `notify()` (Java):** **Não possuem memória**
+**Semáforos (C / POSIX):** Possuem **estado/memória (contador interno)**
+
 ==SUGESTÃO DE LEITURA==
 pág 82-89
-
-
-
-
 
 

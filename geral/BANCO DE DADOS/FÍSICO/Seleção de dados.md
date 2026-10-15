@@ -15,6 +15,8 @@ SELECT dpto, salário FROM empregado GROUP BY dpto HAVING SUN(salário)>1000;
 SELECT nome FROM empregado WHERE salario BETWEEN 1000 AND 2000;
 SELECT * FROM empregado WHERE data_nasc BETWEEN (19700101 AND 19791231);
 //mostra as pessoas que nasceram na década de 70
+SELECT matrícula, nome FROM empregado WHERE nome like '%Silva';
+//ve se o ultimo nome do meu empregado termina com silva
 ```
 
 ### **Funções Embutidas**
@@ -31,7 +33,7 @@ SELECT * FROM empregado WHERE data_nasc BETWEEN (19700101 AND 19791231);
 
 ### **Operadores de Comparação**
 - **BETWEEN** - entre
-- **LIKE** - 
+- **LIKE** - é o 'como' ou 'semelhante a'. É usado em strings e tem o carácter % e o __ reservados. Onde o % substitui um intervalo, já o __ substitui um só caractere
 -  **YEAR, MONTH, DAY** - seleciona apenas o ano, mês ou dia de uma data 
 
 ### **Operadores Aritiméticos**

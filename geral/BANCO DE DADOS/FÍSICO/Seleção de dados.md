@@ -15,8 +15,10 @@ SELECT dpto, salário FROM empregado GROUP BY dpto HAVING SUN(salário)>1000;
 SELECT nome FROM empregado WHERE salario BETWEEN 1000 AND 2000;
 SELECT * FROM empregado WHERE data_nasc BETWEEN (19700101 AND 19791231);
 //mostra as pessoas que nasceram na década de 70
-SELECT matrícula, nome FROM empregado WHERE nome like '%Silva';
+SELECT matrícula, nome FROM empregado WHERE nome LIKE '%Silva';
 //ve se o ultimo nome do meu empregado termina com silva
+SELECT código,nome FROM empregado WHERE codigo NOT LIKE '_A%'
+//exibir codigo e nomes de todos os empregados, exceto os que tem 'A' no segundo caractere
 ```
 
 ### **Funções Embutidas**

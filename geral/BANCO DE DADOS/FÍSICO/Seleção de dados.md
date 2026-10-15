@@ -5,13 +5,16 @@ SELECT SUN(salário) FROM empregado;
 SELECT MIN(data_nasc) FROM empregado WHERE lsexo = 'M';
 SELECT COUNT(*) FROM empregado;
 SELECT AVG(salário) FROM empregado WHERE dpto = 125;
-SELECT dpto, COUNT(*), AVG(salário) FROM empregado GROUP BY dpto
+SELECT dpto, COUNT(*), AVG(salário) FROM empregado GROUP BY dpto;
 //para cada departamento selecione o codigo do departamento, a quantidade de empregados e a média salarial
-SELECT dpto, COUNT(*) AS "Total de empregados", AVG(salário) FROM empregado GROUP BY dpto
-SELECT sexo, COUNT(*) FROM empregado GROUP BY sexo
+SELECT dpto, COUNT(*) AS "Total de empregados", AVG(salário) FROM empregado GROUP BY dpto;
+SELECT sexo, COUNT(*) FROM empregado GROUP BY sexo;
 //mostra quantas pessoas tem em cada categoria do sexo ('M' e 'F')
-SELECT dpto, salário FROM empregado GROUP BY dpto HAVING SUN(salário)>1000
+SELECT dpto, salário FROM empregado GROUP BY dpto HAVING SUN(salário)>1000;
 //para cada departamento que a soma dos salários pagos é maior que 1000 liste o departamento e o valor pago.
+SELECT nome FROM empregado WHERE salario BETWEEN 1000 AND 2000;
+SELECT * FROM empregado WHERE data_nasc BETWEEN (19700101 AND 19791231);
+//mostra as pessoas que nasceram na década de 70
 ```
 
 ### **Funções Embutidas**
@@ -26,5 +29,11 @@ SELECT dpto, salário FROM empregado GROUP BY dpto HAVING SUN(salário)>1000
 -  ***OR*** - função de **OU**
 - ***HAVING*** - só é usada junto com o GROUP BY, essa função serve pra dizer um limite de agrupamento, por exemplo agrupe os salários maiores que 1000, é uma condição para que o agrupamento aconteça
 
+### **Operadores de Comparação**
+- **BETWEEN** - entre
+- **LIKE** - 
+-  **YEAR, MONTH, DAY** - seleciona apenas o ano, mês ou dia de uma data 
 
+### **Operadores Aritiméticos**
+### **+, -, \*, /**
 

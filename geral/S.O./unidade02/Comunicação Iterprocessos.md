@@ -84,8 +84,18 @@ A instrução `TSL RX, LOCK` faz duas coisas de forma **atômica** (indivisível
 Como o processador **tranca o barramento de memória** enquanto executa essa instrução, nenhuma outra CPU ou dispositivo consegue acessar aquela posição de memória naquele exato instante. Isso impede a condição de corrida no momento do teste da trava, sem precisar mexer nas interrupções do sistema.
 
 ---
-**`wait()` / `notify()` (Java):** **Não possuem memória**
-**Semáforos (C / POSIX):** Possuem **estado/memória (contador interno)**
+>**`wait()` / `notify()` (Java):** **Não possuem memória**
+  **Semáforos (C / POSIX):** Possuem **estado/memória (contador interno)**
+
+>Uma **Barreira de Memória** (_Memory Barrier_ ou _Memory Fence_) é uma instrução de hardware (ou diretiva do compilador) que **impede a reordenação de operações de leitura e escrita na memória** antes e depois dela.
+OU SEJA, 
+Barreira de Memória é um mecanismo de sincronização de baixo nível que **garante a ordem e a visibilidade** das operações de leitura/escrita de memória entre múltiplos núcleos de CPU, impedindo que o compilador e o hardware reordenem instruções de forma prejudicial à concorrência.
+
+
+O **Thundering Herd Problem** (_Problema da Manada Embravecida_ ou _Manada em Disparada_) ocorre quando **muitas threads (ou processos) que estavam dormindo são acordadas simultaneamente por um único evento, mas apenas UMA delas consegue processar o recurso.**
+As outras.  $N-1$ threads acordam, gastam CPU disputando a trava, descobrem que o recurso já foi pego por outra thread, e são forçadas a **voltar a dormir**.
+
+---
 
 ==SUGESTÃO DE LEITURA==
 pág 82-89

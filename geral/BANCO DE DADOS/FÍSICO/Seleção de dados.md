@@ -19,6 +19,7 @@ SELECT matrícula, nome FROM empregado WHERE nome LIKE '%Silva';
 //ve se o ultimo nome do meu empregado termina com silva
 SELECT código,nome FROM empregado WHERE codigo NOT LIKE '_A%'
 //exibir codigo e nomes de todos os empregados, exceto os que tem 'A' no segundo caractere
+
 ```
 
 ### **Funções Embutidas**

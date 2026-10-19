@@ -62,9 +62,37 @@
               "icon": "lucide-file",
               "title": "PROTOCOLO CAN"
             }
+          },
+          {
+            "id": "b12a338ea20e1279",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "geral/S.O./unidade03/Gerência de memória.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Gerência de memória"
+            }
+          },
+          {
+            "id": "c3c682cf1eb85ffb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algoritmos de alocação.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Algoritmos de alocação"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -243,11 +271,14 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "f87c22f4733de391",
+  "active": "c3c682cf1eb85ffb",
   "lastOpenFiles": [
+    "geral/S.O./unidade03/Gerência de memória.md",
+    "Algoritmos de alocação.md",
+    "PROTOCOLO CAN.md",
+    "geral/S.O./unidade03",
     "geral/BANCO DE DADOS/FÍSICO/Seleção de dados.md",
     "geral/BANCO DE DADOS/FÍSICO/Modelo Físico.md",
-    "PROTOCOLO CAN.md",
     "Pasted image 20261017164006.png",
     "Pasted image 20261017164003.png",
     "geral/TrioLink/Nó 3 - Joyce/Desafio.md",
@@ -281,7 +312,6 @@
     "geral/IMG/Pasted image 20260927174122.png",
     "geral/IMG/Pasted image 20260925214326.png",
     "geral/IMG/Pasted image 20260927174213.png",
-    "geral/TrioLink/Nó 3 - Joyce/Backlog nó 3.md",
     "geral/S.O./unidade02",
     "geral/S.O./unidade01",
     "geral/BANCO DE DADOS/FÍSICO",
@@ -289,7 +319,6 @@
     "geral/BANCO DE DADOS/ER",
     "geral/TrioLink/Nó 3 - Joyce",
     "Nó 2 - Caio",
-    "geral/TrioLink",
     "Sem título.canvas"
   ]
 }

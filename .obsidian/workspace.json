@@ -83,7 +83,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algoritmos de alocação.md",
+                "file": "geral/S.O./unidade03/Algoritmos de alocação.md",
                 "mode": "source",
                 "source": false
               },
@@ -91,8 +91,7 @@
               "title": "Algoritmos de alocação"
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -271,10 +270,10 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "c3c682cf1eb85ffb",
+  "active": "2371206bf3c81a48",
   "lastOpenFiles": [
+    "geral/S.O./unidade03/Algoritmos de alocação.md",
     "geral/S.O./unidade03/Gerência de memória.md",
-    "Algoritmos de alocação.md",
     "PROTOCOLO CAN.md",
     "geral/S.O./unidade03",
     "geral/BANCO DE DADOS/FÍSICO/Seleção de dados.md",

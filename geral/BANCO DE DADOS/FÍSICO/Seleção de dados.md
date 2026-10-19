@@ -32,7 +32,8 @@ SELECT código,nome FROM empregado WHERE codigo NOT LIKE '_A%'
 -  ***AS*** - nomeia as colunas para facilitar a visualização dos valores impressos no select
 -  ***AND*** - função de **E** 
 -  ***OR*** - função de **OU**
-- ***HAVING*** - só é usada junto com o GROUP BY, essa função serve pra dizer um limite de agrupamento, por exemplo agrupe os salários maiores que 1000, é uma condição para que o agrupamento aconteça
+- ***HAVING*** - só é usada junto com o GROUP BY, essa função serve pra dizer um limite de agrupamento, por exemplo agrupe os salários maiores que 1000, é uma condição para que o agrupamento aconteça.
+- ATENÇÃO: *o HAVING so serve pra funções de agregação (COUNT, SUM, AVG)*
 
 ### **Operadores de Comparação**
 - **BETWEEN** - entre

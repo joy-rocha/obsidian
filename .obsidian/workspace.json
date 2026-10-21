@@ -63,7 +63,8 @@
               "title": "MANUTENÇÃO"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -242,18 +243,18 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "3cceaad815dd68ce",
+  "active": "4ee05aaf3569171d",
   "lastOpenFiles": [
+    "geral/S.O./unidade03/Memória virtual e paginação.md",
+    "geral/S.O./unidade03/Gerência de memória.md",
     "geral/S.O./unidade03/Algoritmos de substituição de páginas.md",
     "geral/TrioLink/Normas Assert.md",
     "geral/TrioLink/normasAssert.md",
     "geral/S.O./unidade03/Algoritmos de alocação.md",
-    "geral/S.O./unidade03/Memória virtual e paginação.md",
     "geral/OUTROS/MANUTENÇÃO.md",
     "geral/OUTROS",
     "geral/OUTROS/LATEX.md",
     "geral/OUTROS/COMANDU.md",
-    "geral/S.O./unidade03/Gerência de memória.md",
     "PROTOCOLO CAN.md",
     "geral/IMG/Pasted image 20261017164006.png",
     "geral/BANCO DE DADOS/FÍSICO/Seleção de dados.md",

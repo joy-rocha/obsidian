@@ -28,12 +28,14 @@ SELECT código,nome FROM empregado WHERE codigo NOT LIKE '_A%'
 -  ***MAX()*** - retorna o maior valor
 -  ***COUNT()*** - conta as linhas especificadas (conta coisas repetidas pois ele olha só a linha e não o conteúdo)
 -  ***AVG()*** - calcula a média do campo
+
+### **Funções **
 -  ***GROUP BY*** - agrupa linhas da consulta (PARA CADA valor da coluna aplique) .Ele sempre imprime em ordem alfabética
 -  ***AS*** - nomeia as colunas para facilitar a visualização dos valores impressos no select
 -  ***AND*** - função de **E** 
 -  ***OR*** - função de **OU**
 - ***HAVING*** - só é usada junto com o GROUP BY, essa função serve pra dizer um limite de agrupamento, por exemplo agrupe os salários maiores que 1000, é uma condição para que o agrupamento aconteça.
-	- ATENÇÃO: *o HAVING so serve pra funções de agregação (COUNT, SUM, AVG)*
+	- ==🟠ATENÇÃO: *o HAVING so serve pra funções de agregação (COUNT, SUM, AVG)*==
 
 ### **Operadores de Comparação**
 - **BETWEEN** - entre

@@ -22,7 +22,6 @@ Os **subgrupos da linguagem SQL** são divisões funcionais que organizam os com
 
 ---
 
-
 **Os comandos básicos da linguagem **SQL** são divididos de acordo com a função que desempenham no banco de dados através dos seus **subgrupos funcionais**.
 
 ---
@@ -81,4 +80,5 @@ Gerencia a execução e o controle de transações dentro do banco de dados:
 
 ---
 
-
+ordem dos subgrupos SQL
+# D-M-Q-C-T

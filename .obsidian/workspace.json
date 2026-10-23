@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "geral/S.O./unidade03/Algoritmos de substituição de páginas.md",
+                "file": "geral/BANCO DE DADOS/FÍSICO/Seleção de dados.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Algoritmos de substituição de páginas"
+              "title": "Seleção de dados"
             }
           },
           {
@@ -245,9 +245,12 @@
   },
   "active": "4ee05aaf3569171d",
   "lastOpenFiles": [
+    "geral/BANCO DE DADOS/FÍSICO/Modelo Físico.md",
+    "geral/BANCO DE DADOS/FÍSICO/Seleção de dados.md",
+    "geral/BANCO DE DADOS/FÍSICO/instalando SQL.md",
+    "geral/S.O./unidade03/Algoritmos de substituição de páginas.md",
     "geral/S.O./unidade03/Memória virtual e paginação.md",
     "geral/S.O./unidade03/Gerência de memória.md",
-    "geral/S.O./unidade03/Algoritmos de substituição de páginas.md",
     "geral/TrioLink/Normas Assert.md",
     "geral/TrioLink/normasAssert.md",
     "geral/S.O./unidade03/Algoritmos de alocação.md",
@@ -257,15 +260,12 @@
     "geral/OUTROS/COMANDU.md",
     "PROTOCOLO CAN.md",
     "geral/IMG/Pasted image 20261017164006.png",
-    "geral/BANCO DE DADOS/FÍSICO/Seleção de dados.md",
     "geral/S.O./unidade03",
-    "geral/BANCO DE DADOS/FÍSICO/Modelo Físico.md",
     "geral/IMG/Pasted image 20261017164003.png",
     "geral/TrioLink/Nó 3 - Joyce/Desafio.md",
     "geral/TrioLink/Nó 3 - Joyce/Mão na Massa.md",
     "geral/IMG/Pasted image 20261014074150.png",
     "geral/IMG/Pasted image 20261014082404.png",
-    "geral/BANCO DE DADOS/FÍSICO/instalando SQL.md",
     "geral/S.O./unidade02/Comunicação Iterprocessos.md",
     "geral/S.O./unidade02/Semáforos.md",
     "geral/S.O./unidade02/Monitores.md",

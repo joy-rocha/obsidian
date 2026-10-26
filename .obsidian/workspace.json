@@ -25,14 +25,12 @@
             "id": "4ee05aaf3569171d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "geral/BANCO DE DADOS/FÍSICO/Seleção de dados.md",
-                "mode": "source",
-                "source": false
+                "file": "geral/S.O./unidade03/Apostila_Gerenciamento_de_Memoria.html.pdf"
               },
-              "icon": "lucide-file",
-              "title": "Seleção de dados"
+              "icon": "lucide-file-text",
+              "title": "Apostila_Gerenciamento_de_Memoria.html"
             }
           },
           {
@@ -245,16 +243,17 @@
   },
   "active": "4ee05aaf3569171d",
   "lastOpenFiles": [
+    "geral/S.O./unidade03/Memória virtual e paginação.md",
+    "geral/S.O./unidade03/Apostila_Gerenciamento_de_Memoria.html.pdf",
+    "geral/S.O./unidade03/Gerência de memória.md",
+    "geral/S.O./unidade03/Algoritmos de substituição de páginas.md",
+    "geral/S.O./unidade03/Algoritmos de alocação.md",
+    "geral/BANCO DE DADOS/FÍSICO/Seleção de dados.md",
     "geral/BANCO DE DADOS/FÍSICO/Modelo Físico.md",
     "geral/BANCO DE DADOS/FÍSICO/RESUMÃO.md",
-    "geral/BANCO DE DADOS/FÍSICO/Seleção de dados.md",
     "geral/BANCO DE DADOS/FÍSICO/instalando SQL.md",
-    "geral/S.O./unidade03/Algoritmos de substituição de páginas.md",
-    "geral/S.O./unidade03/Memória virtual e paginação.md",
-    "geral/S.O./unidade03/Gerência de memória.md",
     "geral/TrioLink/Normas Assert.md",
     "geral/TrioLink/normasAssert.md",
-    "geral/S.O./unidade03/Algoritmos de alocação.md",
     "geral/OUTROS/MANUTENÇÃO.md",
     "geral/OUTROS",
     "geral/OUTROS/LATEX.md",
@@ -277,7 +276,6 @@
     "geral/TrioLink/Nó 3 - Joyce/LUMA.md",
     "geral/S.O./unidade02/Abordagens de Sincronização e Seus Riscos.md",
     "geral/S.O./unidade02/roteiros/roteiro01.md",
-    "geral/S.O./unidade01/Roteiros_01.md",
     "geral/S.O./unidade02/roteiros",
     "geral/IMG/Pasted image 20261002103416.png",
     "geral/IMG/Pasted image 20261002101538.png",
@@ -290,7 +288,6 @@
     "geral/BANCO DE DADOS/FÍSICO",
     "geral/BANCO DE DADOS/MR",
     "geral/BANCO DE DADOS/ER",
-    "geral/TrioLink/Nó 3 - Joyce",
     "Sem título.canvas"
   ]
 }

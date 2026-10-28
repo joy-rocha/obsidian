@@ -30,3 +30,7 @@ numero de segmento e o endereço dentro do segmento é fornecido pelo programa p
 
 - tem um processo e um segmenteo de biblioteca e outro processo que tmbém usa a biblioteca entt eu não ŕeciso que cada segmento guarde o mesmo esndereço duas vezes so preciso de um e os dois podem acessar ela . por isso diferentes tipos de segmentos podem ter diferentes tipos de proteção
 
+# sla esse topico
+- implementação de segmentação pura (professor nem deu muita importancia ora isso)
+- paginação mais segmentação
+- 

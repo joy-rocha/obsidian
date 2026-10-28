@@ -9,7 +9,7 @@ se a $\sum \vec{Fr} = 0$ temos dois cenários:
 
 ---
 # 2° LEI - PRINCÍPIO FUNDAMENTAL DA DINÂMICA
-> Força de velocidade são diretamente proporcionais
+> A Força Resultante e a Aceleração possuem a mesma direção, mesmo sentido e são diretamente proporcionais ($\vec{F}_r = m \cdot \vec{a}$).
 
 A $\vec{Fr}$ (Força resultante ) é igual a soma de todas as forças aplicadas no corpo:
 $$\vec{F}_r = \sum_{i=1}^{N} \vec{F}_i$$

@@ -278,3 +278,19 @@ _Consultar a tabela de páginas na RAM a cada instrução deixaria o sistema len
     - _Para que serve?_ Essencial quando a página mapeia hardware de Entrada/Saída (I/O), onde a leitura deve ser feita sempre em tempo real do periférico e não da memória cache.
 
 ---
+# ==🟢DA UMA OLHADA NISSO AQUII==
+# Tamanho da Página
+-  é escolhido pelo SO, entre os tamanhos que o hardware suporta
+-  fragmentação interna: a última pagina de cada segmento fica, em média meio vazia, slaa (estudar isso)
+-  páginas menores diminuem os efeios da fragmntação, mas pequenas páginas-> mais paginas -> tabelas de páginas maiores
+- memorias maiores -> paginas maiores, mas não linearmente
+
+
+==🔴antenção nesse aqui que tem conta e até derivada==
+# quantidade de páginas por processos
+
+$$P= \sqrt{2 \cdot se}$$
+
+
+derivando em relação a p temos: $$ -se/p² +1/2$$
+

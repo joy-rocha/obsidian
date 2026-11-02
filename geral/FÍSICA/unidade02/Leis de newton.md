@@ -39,6 +39,11 @@ $$\vec{P} = m \cdot g$$
 **NORMAL ($N$)**
 >  Força de contato que uma superfície faz sobre um objeto, empurrando-o para "fora" dela, perpendicularmente (fazendo um ângulo de 90°) à superfície de apoio.
 
+| ![[Pasted image 20261102154756.png\|132]]  | ![[Pasted image 20261102154655.png\|137]]                     | ![[Pasted image 20261102155122.png\|267]]                  | ![[Pasted image 20261102155527.png\|221]] |
+| ------------------------------------------ | ------------------------------------------------------------- | ---------------------------------------------------------- | ----------------------------------------- |
+| $\vec N = \vec P$<br>$\vec N =  m \cdot g$ | $\vec P + \vec N =  \vec F$<br>$\vec N = \vec F - \vec P$<br> | $\vec N = \vec Py$<br>$\vec N = \vec P \cdot \cos(\theta)$ | $\vec F = \vec N$<br>$\vec N = m \cdot a$ |
+
+
 
 **ATRITO**
 > Forças que se opõe ao deslizamento de um corpo em contato com uma superfície, que pode ser dinâmico ou estático
@@ -52,4 +57,26 @@ $$\vec{Fat} = \mu \cdot N$$
 _Força elástica é igual a constante elástica, vezes a deformação_
 $$\vec{Fel} = K \cdot X$$
 
+**TENSÃO**
+> Corpo pendurado em repouso (equilíbrio)
+$$(T=P=m\cdot g)$$
+
+
+Imagine três situações para entender por que a Tensão ($T$) **não é igual ao Peso total ($P$)**:
+### 1. Bloco pendurado no teto (Vertical - 90°)
+- Não existe chão/superfície para apoiar o bloco
+- A corda precisa segurar **100% do peso** sozinho.
+- **Resultado:** $T = P$ (a tensão é igual ao peso total).
+### 2. Bloco em cima de uma mesa reta (Horizontal - 0°)
+- A mesa apoia o bloco totalmente por baixo (Normal $N$).
+- Se você prender uma corda no topo e não puxar, a corda não precisa fazer força nenhuma.
+- **Resultado:** $N = P$ e $T = 0$.
+### 3. Bloco na rampa (Plano Inclinado - 30°)
+A rampa fica entre o chão reto e o teto vertical. Por isso, o trabalho de segurar o bloco é **dividido em dois**:
+  
+1. **A Rampa segura uma parte do Peso ($P_y$):** A rampa empurra o bloco para cima perpendicularmente através da força **Normal ($N$)**. A rampa literalmente "carrega nas costas" a maior parte do peso ($N = P_y = m \cdot g \cdot \cos 30^\circ$).
+    
+2. **A Corda segura apenas a outra parte ($P_x$):** A gravidade tenta fazer o bloco escorregar **rampa abaixo** com a componente $P_x = m \cdot g \cdot \operatorname{sen} 30^\circ$. Como a corda está presa no topo da rampa, ela é esticada e puxa o bloco **rampa acima**.
+
 ---
+

@@ -17,6 +17,9 @@ $Px = Fat$
 ***SACADA:** a aceleração de um corpo em equilíbrio é 0*
 
 
+---
 
+# Plano inclinado com polias
 
+$$T= \sqrt{\frac{2⋅𝑆}{a}}$$
 

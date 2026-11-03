@@ -531,7 +531,7 @@ https://chatgpt.com/c/6ab970ea-eb68-83e9-9674-0e1f3bca5531
 | **LCD_D5**           | Digital 5          | **GPIO 21**                | Pino 40               |
 | **LCD_D6**           | Digital 6          | **GPIO 26**                | Pino 37               |
 | **LCD_D7**           | Digital 7          | **GPIO 27**                | Pino 13               |
-
+![[Pasted image 20260917165742.png|551]]
 ```bash
 sudo apt update
 sudo apt install -y build-essential liblgpio-dev libfreetype6-dev pkg-config fonts-dejavu

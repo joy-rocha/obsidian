@@ -109,7 +109,7 @@ baixo impar
 
 ![[Pasted image 20260917165842.png|400]]
 
-d
+
 
 | **Pino no Display** | **Função / Tipo do Pino**     | **Pino Físico (RPi 5)** | **Nome da GPIO** | **Posição no Conector da RPi 5**  |
 | ------------------- | ----------------------------- | ----------------------- | ---------------- | --------------------------------- |

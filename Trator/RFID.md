@@ -1,0 +1,1 @@
+==é **RFID** (e não RD ID)==. O **cartão RFID é um tipo específico de cartão de proximidade que possui um chip e uma antena interna invisíveis**, permitindo que ele libere catracas, portas ou registre pontos apenas sendo aproximado de um leitor

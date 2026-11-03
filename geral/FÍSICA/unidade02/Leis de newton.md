@@ -23,6 +23,8 @@ _ATENÇÃO AS UNIDADES DE MEDIDA:_ $\vec{Fr}(N) = m  (Kg)\cdot \vec{a}(m/s²)$
 # 3° LEI - AÇÃO E REAÇÃO
 > Toda força de AÇÃO é correspondida com uma força de REAÇÃO
 
+![[Pasted image 20261102162813.png|193]]
+
 - as forças possuem mesma intensidade, mesma direção, mas **sentidos opostos**
 - ação e reação estão sempre aplicadas em corpos distintos, portanto NUNCA se anulam
 

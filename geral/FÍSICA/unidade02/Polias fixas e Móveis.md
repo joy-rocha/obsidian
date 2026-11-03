@@ -7,4 +7,4 @@
 
 ![[Pasted image 20261102161715.png|267]]
 
-# $\vec F = \frac{P}{2^n}$
+$$F = \frac{P}{2^n} \quad (n = \text{número de polias móveis})$$

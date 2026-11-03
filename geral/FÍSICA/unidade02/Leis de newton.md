@@ -25,8 +25,8 @@ _ATENÇÃO AS UNIDADES DE MEDIDA:_ $\vec{Fr}(N) = m  (Kg)\cdot \vec{a}(m/s²)$
 
 ![[Pasted image 20261102162813.png|193]]
 
-- as forças possuem mesma intensidade, mesma direção, mas **sentidos opostos**
-- ação e reação estão sempre aplicadas em corpos distintos, portanto NUNCA se anulam
+-  As forças possuem mesma intensidade, mesma direção, mas **sentidos opostos**
+-  Ação e reação estão sempre aplicadas em corpos distintos, portanto NUNCA se anulam
 
 ---
 
@@ -44,7 +44,6 @@ $$\vec{P} = m \cdot g$$
 | ![[Pasted image 20261102154756.png\|132]]  | ![[Pasted image 20261102154655.png\|137]]                     | ![[Pasted image 20261102155122.png\|267]]                  | ![[Pasted image 20261102155527.png\|221]] |
 | ------------------------------------------ | ------------------------------------------------------------- | ---------------------------------------------------------- | ----------------------------------------- |
 | $\vec N = \vec P$<br>$\vec N =  m \cdot g$ | $\vec P + \vec N =  \vec F$<br>$\vec N = \vec F - \vec P$<br> | $\vec N = \vec Py$<br>$\vec N = \vec P \cdot \cos(\theta)$ | $\vec F = \vec N$<br>$\vec N = m \cdot a$ |
-
 
 
 **ATRITO**

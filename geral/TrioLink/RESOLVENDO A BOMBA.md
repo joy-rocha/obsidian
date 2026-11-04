@@ -45,3 +45,7 @@ Se der erro de permissão no GPIO, use `sudo ./monitor`.
 Não alterei a pasta `cod/` (os arquivos Python e o `cJSON` duplicado), nem apliquei o `PATCH_main.c.txt` do site. O `monitor` ainda não grava o `/tmp/triolink.json` que o site lê. Se quiser, aplico esse patch.
 
 Se aparecer algum erro na compilação, me mande a saída do `make`.
+
+----
+
+https://gemini.google.com/u/1/app/c5c4c47248475869?utm_source=app_launcher&utm_medium=owned&utm_campaign=base_all

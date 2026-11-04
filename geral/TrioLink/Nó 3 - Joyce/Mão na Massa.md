@@ -534,6 +534,9 @@ https://chatgpt.com/c/6ab970ea-eb68-83e9-9674-0e1f3bca5531
 
 ![[Pasted image 20260917165742.png|551]]
 
+- **Botão Preto:** Pino Físico **11** (GPIO 17) e GND.
+- **Botão Vermelho:** Pino Físico **15** (GPIO 22) e GND.
+
 ```bash
 sudo apt update
 sudo apt install -y build-essential liblgpio-dev libfreetype6-dev pkg-config fonts-dejavu

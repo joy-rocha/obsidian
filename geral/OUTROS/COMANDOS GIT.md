@@ -98,3 +98,12 @@ git add nome-da-pasta/
 git commit -m "mensagem"
 git push
 ```
+
+
+# 6) Clonar um repo em um commit específico
+```shell
+git clone <"link do repositorio do git">
+cd <"Pasta_do_projeto">
+git checkout <"SHA do commit">
+```
+

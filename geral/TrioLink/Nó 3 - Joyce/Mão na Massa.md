@@ -812,10 +812,6 @@ Outras funções: `desligar_sistema` mostra "DESLIGANDO..." e executa `shutdown`
 
 É a receita de compilação: lista os arquivos `.c`, as flags (`-O2` otimiza, `-Wall -Wextra` mostram avisos) e as bibliotecas. `make` compila tudo e gera o programa `monitor`; `make clean` apaga o `monitor` para recompilar do zero.
 
-## Arquivos que não vi
-
-`cJSON.c`/`cJSON.h` são a biblioteca de JSON. `DecodeBMP.c`, `DecodeMPU.c` e `Decoders.h` são seus: pegam os dados brutos do sensor e geram um JSON processado com `pressao`, `temperatura`, `estado`, etc. Não os vi, então só sei o que o `main.c` espera deles.
-
 ## O caminho completo
 
 ```
@@ -825,3 +821,4 @@ Botão apertado → thread (debounce) → fila → main → ui_next/ui_enter
 ```
 
 Se quiser, posso mostrar como ler um sensor de verdade no lugar do JSON de teste, ou explicar com mais calma a parte do `lcd.c`, que é a mais difícil.
+

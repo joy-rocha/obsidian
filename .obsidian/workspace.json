@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "geral/TrioLink/Mapeamento da pinagem.md",
+                "file": "geral/OUTROS/COMANDOS GIT.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Mapeamento da pinagem"
+              "title": "COMANDOS GIT"
             }
           }
         ],
@@ -140,7 +140,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 327.71015548706055
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "c2eb1dba97099ac1",
@@ -259,12 +260,12 @@
   },
   "active": "816d67595484507c",
   "lastOpenFiles": [
+    "geral/TrioLink/Mapeamento da pinagem.md",
     "geral/TrioLink/normasAssert.md",
     "geral/TrioLink/Nó 3 - Joyce/Mão na Massa.md",
     "geral/TrioLink/RESOLVENDO A BOMBA.md",
     "geral/TrioLink/Normas Assert.md",
     "geral/TrioLink/Nó 2 - Caio.md",
-    "geral/TrioLink/Mapeamento da pinagem.md",
     "geral/OUTROS/COMANDOS GIT.md",
     "geral/Trator/RFID.md",
     "geral/S.O./unidade03/Roteiro 01.md",

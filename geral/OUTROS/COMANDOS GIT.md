@@ -107,3 +107,11 @@ cd <"Pasta_do_projeto">
 git checkout <"SHA do commit">
 ```
 
+
+# 7) Clonar um branch em um commit específico
+```shell
+git clone -b NO3 <"link do repositorio do git">
+cd TrioLink
+git checkout <"SHA-do-commit">
+```
+

@@ -256,7 +256,6 @@ scp -r ~/Documentos/TrioLink/cod joyce@rpi5-joyce.local:~/
 
 ```shell
 //  instala o venv
-sudo apt update && sudo apt install -y python3-pip python3-venv
 
 //  Crie uma pasta de ambiente virtual chamada `env` e ative-a
 python3 -m venv env

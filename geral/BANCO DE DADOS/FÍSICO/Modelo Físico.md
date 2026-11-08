@@ -54,7 +54,7 @@ Responsável exclusivamente por realizar consultas e seleção de informações 
 - **`SELECT`**: Recupera dados das tabelas. É frequentemente acompanhado por:
     - **Filtros e Operadores**: `WHERE`, `DISTINCT`, `IS NULL`, `BETWEEN`, `LIKE`.
     - **Ordenação**: `ORDER BY` (`ASC` / `DESC`).
-    - **Funções Embutidas**: `COUNT`, `SUM`, `AVG`, `MIN`, `MAX`.
+	    - **Funções Embutidas**: `COUNT`, `SUM`, `AVG`, `MIN`, `MAX`.;
     - **Agrupamento**: `GROUP BY` e `HAVING`.
 
 _(Nota: Alguns autores consideram o comando `SELECT` como parte integrante da DML)._

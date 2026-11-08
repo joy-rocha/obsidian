@@ -69,16 +69,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "geral/TrioLink/Mapeamento da pinagem.md",
+                "file": "geral/BANCO DE DADOS/FÍSICO/Seleção de dados.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Mapeamento da pinagem"
+              "title": "Seleção de dados"
+            }
+          },
+          {
+            "id": "7424a749ffa1aedd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "geral/Trator/RFID.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "RFID"
+            }
+          },
+          {
+            "id": "90e40868a6c1b275",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "GPS.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "GPS"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -257,42 +285,42 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "a20c9ec4ee19ce84",
+  "active": "90e40868a6c1b275",
   "lastOpenFiles": [
+    "Pasted image 20261108184912.png",
+    "geral/Trator/RFID.md",
+    "GPS.md",
+    "geral/Trator/Geral.md",
+    "geral/BANCO DE DADOS/FÍSICO/JOIN.md",
+    "geral/BANCO DE DADOS/FÍSICO/Seleção de dados.md",
+    "geral/BANCO DE DADOS/FÍSICO/Modelo Físico.md",
+    "geral/BANCO DE DADOS/FÍSICO/RESUMÃO.md",
     "geral/TrioLink/Mapeamento da pinagem.md",
-    "geral/OUTROS/COMANDOS GIT.md",
+    "geral/TrioLink/Nó 3 - Joyce/LUMA.md",
+    "geral/TrioLink/Nó 3 - Joyce/Desafio.md",
+    "geral/TrioLink/Nó 3 - Joyce/Backlog nó 3.md",
+    "reunião.md",
     "geral/TrioLink/Nó 3 - Joyce/Mão na Massa.md",
+    "geral/OUTROS/COMANDOS GIT.md",
     "geral/TrioLink/normasAssert.md",
     "geral/TrioLink/RESOLVENDO A BOMBA.md",
     "geral/TrioLink/Normas Assert.md",
     "geral/TrioLink/Nó 2 - Caio.md",
-    "geral/Trator/RFID.md",
     "geral/S.O./unidade03/Roteiro 01.md",
     "geral/FÍSICA/unidade02/Polias fixas e Móveis.md",
     "geral/FÍSICA/unidade02/Leis de newton.md",
-    "geral/Trator/Geral.md",
     "geral/Trator",
     "geral/FÍSICA/unidade02/Força em trajetórias curvas.md",
     "geral/FÍSICA/unidade02/MACETES.md",
     "geral/FÍSICA/unidade02/Plano inclinado com atrito.md",
     "geral/FÍSICA/unidade02/Força de Resistência do ar.md",
-    "geral/FÍSICA/unidade02/Foças curvilínias.md",
-    "geral/FÍSICA/unidade02/Força de Atrito.md",
-    "geral/FÍSICA/unidade02/DETALHES.md",
-    "RESOLVENDO A BOMBA.md",
-    "Trator/Geral.md",
-    "Trator/RFID.md",
-    "geral/TrioLink/Nó 3 - Joyce/Desafio.md",
-    "geral/S.O./unidade03/Memória virtual e Paginação.md",
     "geral/S.O./unidade03/Apostila_Gerenciamento_de_Memoria.html.pdf",
     "geral/IMG/Pasted image 20261103111916.png",
     "Trator",
-    "geral/TrioLink/Nó 3 - Joyce/LUMA.md",
     "geral/IMG/Pasted image 20261102163116.png",
     "geral/IMG/Pasted image 20261102162813.png",
     "geral/IMG/Pasted image 20261102161715.png",
     "geral/IMG/Pasted image 20261102161555.png",
-    "geral/S.O./unidade03/Segmentação.md",
     "geral/IMG/Pasted image 20261102154756.png",
     "geral/IMG/Pasted image 20261102154439.png",
     "geral/IMG/Pasted image 20261102150643.png",

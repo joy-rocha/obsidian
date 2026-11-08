@@ -22,3 +22,10 @@ Aqui está o guia direto de quando usar cada um:
     - **Use `FULL OUTER JOIN`**. Assim você vê alunos que não se matricularam em nada e também cursos que ainda estão vazios, tudo na mesma consulta.
 
 Quer que eu monte um exemplo de código comparando o resultado de um **INNER JOIN** e de um **LEFT JOIN** usando o seu cenário de **clientes e pedidos** para ficar mais claro?
+
+
+---
+
+# ANOTAÇÕES IMPORTANTES PARA A PROVA
+
+	

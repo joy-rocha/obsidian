@@ -35,3 +35,26 @@ sudo apt update && sudo apt install -y libcjson-dev liblgpio-dev libfreetype6-de
 - **Terra (GND) Comum:** **Pino Físico 6** (ou qualquer pino GND da placa).
 
 
+sudo apt update && sudo apt install libgpiod-dev
+
+---
+
+| Sinal no display | Pino físico da Pi |
+| ---------------- | ----------------: |
+| LCD_D0           |                32 |
+| LCD_D1           |                33 |
+| LCD_D2           |                36 |
+| LCD_D3           |                35 |
+| LCD_D4           |                38 |
+| LCD_D5           |                40 |
+| LCD_D6           |                37 |
+| LCD_D7           |                13 |
+
+| Sinal   |                    Pino físico |
+| ------- | -----------------------------: |
+| LCD_RST |                             22 |
+| LCD_CS  |                             24 |
+| LCD_RS  |                             18 |
+| LCD_WR  |                             16 |
+| LCD_RD  |                        1 ou 17 |
+| GND     | 6, 9, 14, 20, 25, 30, 34 ou 39 |

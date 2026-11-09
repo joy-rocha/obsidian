@@ -7,23 +7,24 @@
 ---
 ``` c
 ASSERT/
-├── Main.c
-├── Makefile
 │
-├── BspDisplay.c
-├── BspDisplay.h
-├── Bsp_Button.c
-├── Bsp_Button.h
+├── Main.c
+│
+├── Fusion.c
+├── Fusion.h
 │
 ├── Imagem.c
 ├── Imagem.h
 │
-├── DecodeBmp.c
-├── DecodeMpu.c
-├── Decoders.h
+├── BspDisplay.c
+├── BspDisplay.h
 │
-├── MqttWrapper.c
-└── MqttWrapper.h
+├── Bsp_Button.c
+├── Bsp_Button.h
+│
+├── Makefile
+│
+└── README.txt
 ```
 
 ```bash
@@ -39,3 +40,47 @@ ls
 caminho do projeto no pc: /home/joycinha/Músicas/ASSERT
 
 ```
+
+| Arquivo           | Responsabilidade                                               |
+| ----------------- | -------------------------------------------------------------- |
+| `Main.c`          | Controla a aplicação, MQTT, navegação e atualização das telas. |
+| `Fusion.c/.h`     | Recebe o JSON e extrai os dados dos sensores.                  |
+| `Imagem.c/.h`     | Desenha e organiza os elementos visuais das telas.             |
+| `BspDisplay.c/.h` | Controla diretamente o display TFT usando GPIO e lgpio.        |
+| `Bsp_Button.c/.h` | Controla os botões físicos, leitura e debounce.                |
+| `Makefile`        | Compila todos os arquivos e gera o executável.                 |
+| `README.txt`      | Instruções de instalação e execução.                           |
+**Observação:** a interface recebe o tópico `fusion/final`. O processamento de fusão dos sensores deve ser realizado pelo publicador responsável por esse tópico, não pelo módulo `Fusion.c` da interface. Esse módulo apenas interpreta o JSON recebido.
+
+
+***DEPENDÊNCIAS***
+```bash
+sudo apt install -y \
+build-essential \
+liblgpio-dev \
+libmosquitto-dev \
+libcjson-dev \
+mosquitto-clients
+```
+
+---
+
+| Sinal do display | Função                        |
+| ---------------- | ----------------------------- |
+| D0 a D7          | Barramento paralelo de dados  |
+| WR               | Escrita de dados              |
+| RD               | Leitura de dados              |
+| CS               | Seleção do display            |
+| DC               | Seleção entre comando e dados |
+| RESET            | Reinicialização               |
+| VCC              | Alimentação                   |
+| GND              | Terra                         |
+| LED/BL           | Iluminação de fundo           |
+
+
+Bsp - lgpiod para a configuração de todos os pinos do projeto
+BspScreen -  criação das funções de abstração do c puro para a interface
+interface - usa a BspScreen para gerar o modelo da interface
+fusion - recebe os mqtts dos outros nós 
+main - integra tudo
+makefile - compila tudo e gera os executáveis

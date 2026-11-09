@@ -95,10 +95,14 @@
             "id": "f1d3af78152a1688",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "geral/TrioLink/Mapeamento da pinagem.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nova aba"
+              "title": "Mapeamento da pinagem"
             }
           },
           {
@@ -107,16 +111,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sistema do Display.md",
+                "file": "geral/TrioLink/Nó 3 - Joyce/Desafio.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sistema do Display"
+              "title": "Desafio"
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -295,14 +299,17 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "66fa0076efedba90",
+  "active": "f1d3af78152a1688",
   "lastOpenFiles": [
-    "Sistema do Display.md",
-    "geral/TrioLink/Nó 3 - Joyce/LUMA.md",
+    "geral/TrioLink/Normas Assert.md",
+    "geral/TrioLink/normasAssert.md",
     "geral/TrioLink/Nó 3 - Joyce/Desafio.md",
+    "geral/TrioLink/Nó 3 - Joyce/Backlog nó 3.md",
+    "geral/TrioLink/Mapeamento da pinagem.md",
+    "geral/TrioLink/Nó 3 - Joyce/LUMA.md",
+    "Sistema do Display.md",
     "geral/TrioLink/Nó 3 - Joyce/Mão na Massa.md",
     "geral/TrioLink/Nó 2 - Caio.md",
-    "geral/TrioLink/Mapeamento da pinagem.md",
     "geral/IMG/Pasted image 20261108184912.png",
     "geral/Trator/RFID.md",
     "geral/Trator/GPS.md",
@@ -311,12 +318,9 @@
     "geral/BANCO DE DADOS/FÍSICO/Seleção de dados.md",
     "geral/BANCO DE DADOS/FÍSICO/Modelo Físico.md",
     "geral/BANCO DE DADOS/FÍSICO/RESUMÃO.md",
-    "geral/TrioLink/Nó 3 - Joyce/Backlog nó 3.md",
     "reunião.md",
     "geral/OUTROS/COMANDOS GIT.md",
-    "geral/TrioLink/normasAssert.md",
     "geral/TrioLink/RESOLVENDO A BOMBA.md",
-    "geral/TrioLink/Normas Assert.md",
     "geral/S.O./unidade03/Roteiro 01.md",
     "geral/FÍSICA/unidade02/Polias fixas e Móveis.md",
     "geral/FÍSICA/unidade02/Leis de newton.md",

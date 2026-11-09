@@ -22,9 +22,7 @@ ASSERT/
 ├── Bsp_Button.c
 ├── Bsp_Button.h
 │
-├── Makefile
-│
-└── README.txt
+└── Makefile
 ```
 
 ```bash
@@ -77,10 +75,11 @@ mosquitto-clients
 | GND              | Terra                         |
 | LED/BL           | Iluminação de fundo           |
 
+***Funcionamento do projeto:***
+- **BspGpio** - lgpiod para a configuração de todos os pinos do projeto
+- **BspScreen** -  criação das funções de abstração do c puro para a interface
+ - **Display** - usa a BspScreen para gerar o modelo da interface
+- **Fusion** - recebe os MQTTs dos outros nós 
+- **Main** - integra tudo
+- **Makefile** - compila tudo e gera os executáveis
 
-Bsp - lgpiod para a configuração de todos os pinos do projeto
-BspScreen -  criação das funções de abstração do c puro para a interface
-interface - usa a BspScreen para gerar o modelo da interface
-fusion - recebe os mqtts dos outros nós 
-main - integra tudo
-makefile - compila tudo e gera os executáveis

@@ -58,3 +58,11 @@ sudo apt update && sudo apt install libgpiod-dev
 | LCD_WR  |                             16 |
 | LCD_RD  |                        1 ou 17 |
 | GND     | 6, 9, 14, 20, 25, 30, 34 ou 39 |
+
+
+---
+# Lib gráfica GTK
+
+```bash
+sudo apt install libgtk-4-dev pkg-config build-essential
+```

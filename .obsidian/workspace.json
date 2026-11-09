@@ -25,14 +25,10 @@
             "id": "37c2e8b4708cd7ad",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Trator/Geral.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Geral"
+              "title": "Nova aba"
             }
           },
           {
@@ -83,12 +79,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "geral/TrioLink/Nó 3 - Joyce/LUMA.md",
+                "file": "geral/TrioLink/Nó 3 - Joyce/Desafio.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LUMA"
+              "title": "Desafio"
             }
           },
           {
@@ -111,16 +107,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "geral/TrioLink/Nó 3 - Joyce/Desafio.md",
+                "file": "Sistema do Display.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Desafio"
+              "title": "Sistema do Display"
+            }
+          },
+          {
+            "id": "96ac32051158e9e4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "projeto - NO3.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "projeto - NO3"
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -299,27 +309,28 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "f1d3af78152a1688",
+  "active": "96ac32051158e9e4",
   "lastOpenFiles": [
+    "Sistema do Display.md",
+    "projeto - NO3.md",
+    "geral/TrioLink/Nó 3 - Joyce/Desafio.md",
+    "geral/TrioLink/Mapeamento da pinagem.md",
+    "geral/BANCO DE DADOS/FÍSICO/Seleção de dados.md",
+    "geral/TrioLink/Nó 3 - Joyce/Mão na Massa.md",
+    "geral/OUTROS/COMANDOS GIT.md",
+    "geral/TrioLink/Nó 3 - Joyce/LUMA.md",
     "geral/TrioLink/Normas Assert.md",
     "geral/TrioLink/normasAssert.md",
-    "geral/TrioLink/Nó 3 - Joyce/Desafio.md",
     "geral/TrioLink/Nó 3 - Joyce/Backlog nó 3.md",
-    "geral/TrioLink/Mapeamento da pinagem.md",
-    "geral/TrioLink/Nó 3 - Joyce/LUMA.md",
-    "Sistema do Display.md",
-    "geral/TrioLink/Nó 3 - Joyce/Mão na Massa.md",
     "geral/TrioLink/Nó 2 - Caio.md",
     "geral/IMG/Pasted image 20261108184912.png",
     "geral/Trator/RFID.md",
     "geral/Trator/GPS.md",
     "geral/Trator/Geral.md",
     "geral/BANCO DE DADOS/FÍSICO/JOIN.md",
-    "geral/BANCO DE DADOS/FÍSICO/Seleção de dados.md",
     "geral/BANCO DE DADOS/FÍSICO/Modelo Físico.md",
     "geral/BANCO DE DADOS/FÍSICO/RESUMÃO.md",
     "reunião.md",
-    "geral/OUTROS/COMANDOS GIT.md",
     "geral/TrioLink/RESOLVENDO A BOMBA.md",
     "geral/S.O./unidade03/Roteiro 01.md",
     "geral/FÍSICA/unidade02/Polias fixas e Móveis.md",
@@ -328,7 +339,6 @@
     "geral/FÍSICA/unidade02/Força em trajetórias curvas.md",
     "geral/FÍSICA/unidade02/MACETES.md",
     "geral/FÍSICA/unidade02/Plano inclinado com atrito.md",
-    "geral/FÍSICA/unidade02/Força de Resistência do ar.md",
     "geral/S.O./unidade03/Apostila_Gerenciamento_de_Memoria.html.pdf",
     "geral/IMG/Pasted image 20261103111916.png",
     "Trator",

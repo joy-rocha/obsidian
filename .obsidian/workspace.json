@@ -78,35 +78,45 @@
             }
           },
           {
-            "id": "7424a749ffa1aedd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "geral/Trator/RFID.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "RFID"
-            }
-          },
-          {
             "id": "90e40868a6c1b275",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GPS.md",
+                "file": "geral/TrioLink/Nó 3 - Joyce/LUMA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GPS"
+              "title": "LUMA"
+            }
+          },
+          {
+            "id": "f1d3af78152a1688",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Nova aba"
+            }
+          },
+          {
+            "id": "66fa0076efedba90",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Sistema do Display.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Sistema do Display"
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -285,27 +295,28 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "90e40868a6c1b275",
+  "active": "66fa0076efedba90",
   "lastOpenFiles": [
-    "Pasted image 20261108184912.png",
+    "Sistema do Display.md",
+    "geral/TrioLink/Nó 3 - Joyce/LUMA.md",
+    "geral/TrioLink/Nó 3 - Joyce/Desafio.md",
+    "geral/TrioLink/Nó 3 - Joyce/Mão na Massa.md",
+    "geral/TrioLink/Nó 2 - Caio.md",
+    "geral/TrioLink/Mapeamento da pinagem.md",
+    "geral/IMG/Pasted image 20261108184912.png",
     "geral/Trator/RFID.md",
-    "GPS.md",
+    "geral/Trator/GPS.md",
     "geral/Trator/Geral.md",
     "geral/BANCO DE DADOS/FÍSICO/JOIN.md",
     "geral/BANCO DE DADOS/FÍSICO/Seleção de dados.md",
     "geral/BANCO DE DADOS/FÍSICO/Modelo Físico.md",
     "geral/BANCO DE DADOS/FÍSICO/RESUMÃO.md",
-    "geral/TrioLink/Mapeamento da pinagem.md",
-    "geral/TrioLink/Nó 3 - Joyce/LUMA.md",
-    "geral/TrioLink/Nó 3 - Joyce/Desafio.md",
     "geral/TrioLink/Nó 3 - Joyce/Backlog nó 3.md",
     "reunião.md",
-    "geral/TrioLink/Nó 3 - Joyce/Mão na Massa.md",
     "geral/OUTROS/COMANDOS GIT.md",
     "geral/TrioLink/normasAssert.md",
     "geral/TrioLink/RESOLVENDO A BOMBA.md",
     "geral/TrioLink/Normas Assert.md",
-    "geral/TrioLink/Nó 2 - Caio.md",
     "geral/S.O./unidade03/Roteiro 01.md",
     "geral/FÍSICA/unidade02/Polias fixas e Móveis.md",
     "geral/FÍSICA/unidade02/Leis de newton.md",
@@ -325,7 +336,6 @@
     "geral/IMG/Pasted image 20261102154439.png",
     "geral/IMG/Pasted image 20261102150643.png",
     "geral/IMG/Pasted image 20261102154655.png",
-    "geral/IMG/Pasted image 20261102155527.png",
     "geral/FÍSICA/unidade02",
     "geral/FÍSICA/unidade01",
     "geral/OUTROS",

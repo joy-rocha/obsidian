@@ -1,42 +1,52 @@
 O projeto consiste em 3 unidades de  Raspberry pi 5 uma conectada a um sensor MPU, uma coctadaa um sensor BMP e outra conectada a um display, a tela deve mostrar os dados coletados pelos sensores e elas vão se comunicar via MQTT. Os dados vão ser recebidos em formato Json como definidos no arquivo de Schema.md.
 
-O que quero pra este projeto é um sistema simples e funcional no padrão ASSERT, sua linguagem deve ser 100% em C. Também deve ter o uso das libs descritas mais abaixo
+O que quero pra este projeto é um sistema simples e funcional no padrão ASSERT, sua linguagem deve ser 100% em C. Também deve ter o uso das libs descritas mais abaixo.
 
-***Expectativa de funcionamento do projeto:*** 
+os botões devem ser da seguinte forma, o de SELEÇÃO vai meio que selecionar um dos 3 botões da tela e vai trocando pro outro quando clico, já o de ENTER vai confirmar o botão que ta selecionado e manda pra outra tela correspondente.
+
+as telas do projeto vão ser simples uma inicial com 2 "botões" (botões representativos na interface) a de selecionar o sensor 1 (BMP), o sensor 2 (MPU) e na tela de cada sensor tem um botão de voltar que é pra voltar pra tela inicial e mostrando seus dados recebidos do json.
+
+*especificação:*
+	_na tela dos sensores deve ter uma parte que mostra o stadodo sensor, e no codigo deve ser feita uma simples verificação se os dados são considerados normais no geral ou anormais, tipo uma temperatur ambiente ta a 100°C é meio anormal entt isso deve ser analisado de maneira simples dentro da próprio arquivo Fusion, considere que os sensores estarão em local ambiente normal_
+
+---
+# Detalhes da criação dos arquivos
+
+***Divisão de arquivos do projeto:*** 
 - **BspGpio** - lgpiod para a configuração de todos os pinos do projeto
+- **BspButton** - responsável pela configuração dos pinos e funcionamento dos botões
 - **BspScreen** -  utilização da lib GTX para criação da interface limpa
 - **Fusion** - recebe os MQTTs dos outros nós 
 - **Main** - integra tudo
 - **Makefile** - compila tudo e gera os executáveis
 
-
 ---
 
-# Pinagem física 
+# Pinagem física a ser considerada
 
-| Pino no Display    | Função                            | Pino GPIO (RPi 5)           | Pino Físico na Placa (40-pin) |
-| ------------------ | --------------------------------- | --------------------------- | ----------------------------- |
-| **D0**             | Bit de dados 0                    | **GPIO 16**                 | Pino 36                       |
-| **D1**             | Bit de dados 1                    | **GPIO 17**                 | Pino 11                       |
-| **D2**             | Bit de dados 2                    | **GPIO 18**                 | Pino 12                       |
-| **D3**             | Bit de dados 3                    | **GPIO 19**                 | Pino 35                       |
-| **D4**             | Bit de dados 4                    | **GPIO 20**                 | Pino 38                       |
-| **D5**             | Bit de dados 5                    | **GPIO 21**                 | Pino 40                       |
-| **D6**             | Bit de dados 6                    | **GPIO 22**                 | Pino 15                       |
-| **D7**             | Bit de dados 7                    | **GPIO 23**                 | Pino 16                       |
-| **LCD_RST**        | Reset do Display                  | GPIO 27                     | Pino 13                       |
-| **LCD_CS**         | Chip Select (Habilita o display)  | GPIO 5                      | Pino 29                       |
-| **LCD_RS** (ou DC) | Register Select (Comando / Dados) | GPIO 24                     | Pino 18                       |
-| **LCD_WR**         | Write (Sinal de escrita)          | GPIO 25                     | Pino 22                       |
-| **LCD_RD**         | Read (Sinal de leitura)           | GPIO 26 _(ou fixo em 3.3V)_ | Pino 37 _(ou Pino 1 / 17)_    |
-| **GND**            | Referência de Terra (0V)          | GND                         | Pino 14, 34 ou 39             |
+| Pino no Display    | Função                            | Pino GPIO (RPi 5)           | Pino Físico na Placa (40-pin) |     |
+| ------------------ | --------------------------------- | --------------------------- | ----------------------------- | --- |
+| **D0**             | Bit de dados 0                    | **GPIO 16**                 | Pino 36                       |     |
+| **D1**             | Bit de dados 1                    | **GPIO 17**                 | Pino 11                       |     |
+| **D2**             | Bit de dados 2                    | **GPIO 18**                 | Pino 12                       |     |
+| **D3**             | Bit de dados 3                    | **GPIO 19**                 | Pino 35                       |     |
+| **D4**             | Bit de dados 4                    | **GPIO 20**                 | Pino 38                       |     |
+| **D5**             | Bit de dados 5                    | **GPIO 21**                 | Pino 40                       |     |
+| **D6**             | Bit de dados 6                    | **GPIO 22**                 | Pino 15                       |     |
+| **D7**             | Bit de dados 7                    | **GPIO 23**                 | Pino 16                       |     |
+| **LCD_RST**        | Reset do Display                  | GPIO 27                     | Pino 13                       |     |
+| **LCD_CS**         | Chip Select (Habilita o display)  | GPIO 5                      | Pino 29                       |     |
+| **LCD_RS** (ou DC) | Register Select (Comando / Dados) | GPIO 24                     | Pino 18                       |     |
+| **LCD_WR**         | Write (Sinal de escrita)          | GPIO 25                     | Pino 22                       |     |
+| **LCD_RD**         | Read (Sinal de leitura)           | GPIO 26 _(ou fixo em 3.3V)_ | Pino 37 _(ou Pino 1 / 17)_    |     |
+| **GND**            | Referência de Terra (0V)          | GND                         | Pino 14, 34 ou 39             |     |
 
 _Os botões consistem em um de ENTER e um de SELECÃO, um passa selecionando os botões na tela e o outro confirma.
 
-|**Botão**|**Pino GPIO Recomendado (RPi 5)**|**Pino Físico na Placa**|**Pino GND Adjacente**|
-|---|---|---|---|
-|**Botão 1**|GPIO 4|**Pino 7**|Pino 9 (GND)|
-|**Botão 2**|GPIO 6|**Pino 31**|Pino 30 (GND)|
+| **Botão**          | Função     | **Pino GPIO Recomendado (RPi 5)** | **Pino Físico na Placa** | **Pino GND Adjacente** |
+| ------------------ | ---------- | --------------------------------- | ------------------------ | ---------------------- |
+| **Botão vermelho** | ENTER      | GPIO 4                            | **Pino 7**               | Pino 9 (GND)           |
+| **Botão preto**    | SELECIONAR | GPIO 6                            | **Pino 31**              | Pino 30 (GND)          |
 
 ![[Pasted image 20260917165742.png|620]]
 
@@ -77,7 +87,7 @@ https://www.lcdwiki.com/2.4inch_Arduino_Display
 
 ---
 # Atenção
-- verifique a orientação da tela, deve ser horizontal e os pixels certos
+- verifique a orientação da tela, deve ser horizontal e os pixels certos, cuidado pra não sair espelhado
 
  
 ```bash
@@ -163,5 +173,7 @@ gpiochip0 - 54 lines:
 
 ---
 # interface limpa e simples
-![[Pasted image 20261110075412.png]]
+![[Pasted image 20261110154546.png]]
+
+---
 

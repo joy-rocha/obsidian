@@ -90,3 +90,6 @@ if (gps.speed.isValid()) {
   float velocidade_kmh = gps.speed.kmph();
 }
 ```
+
+---
+

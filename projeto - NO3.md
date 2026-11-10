@@ -31,6 +31,8 @@ O que quero pra este projeto é um sistema simples e funcional no padrão ASSERT
 | **LCD_RD**         | Read (Sinal de leitura)           | GPIO 26 _(ou fixo em 3.3V)_ | Pino 37 _(ou Pino 1 / 17)_    |
 | **GND**            | Referência de Terra (0V)          | GND                         | Pino 14, 34 ou 39             |
 
+_Os botões consistem em um de ENTER e um de SELECÃO, um passa selecionando os botões na tela e o outro confirma.
+
 |**Botão**|**Pino GPIO Recomendado (RPi 5)**|**Pino Físico na Placa**|**Pino GND Adjacente**|
 |---|---|---|---|
 |**Botão 1**|GPIO 4|**Pino 7**|Pino 9 (GND)|
@@ -160,5 +162,6 @@ gpiochip0 - 54 lines:
 ```
 
 ---
-
+# interface limpa e simples
 ![[Pasted image 20261110075412.png]]
+

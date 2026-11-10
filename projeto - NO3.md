@@ -22,7 +22,23 @@ as telas do projeto vão ser simples uma inicial com 2 "botões" (botões repres
 - **Makefile** - compila tudo e gera os executáveis
 
 ---
+```
+cascata/
+├── Makefile
+├── inc/
+│   ├── BspGpio.h
+│   ├── BspButton.h
+│   ├── BspScreen.h
+│   └── Fusion.h
+└── src/
+    ├── BspGpio.c
+    ├── BspButton.c
+    ├── BspScreen.c
+    ├── Fusion.c
+    └── Main.c
+```
 
+---
 # Pinagem física a ser considerada
 
 | Pino no Display    | Função                            | Pino GPIO (RPi 5)           | Pino Físico na Placa (40-pin) |     |
@@ -85,6 +101,16 @@ https://www.lcdwiki.com/2.4inch_Arduino_Display
 | **Sinais de Controle**       | LCD_WR, LCD_RD, LCD_RS, LCD_CS, LCD_RST                                               |
 | **Orientação (Rotate)**      | 0 (Retrato), 1 (Paisagem - 90°), 2 (Retrato Invertido), 3 (Paisagem Invertida - 270°) |
 | **Profundidade de Cor**      | RGB565 (16-bit / 65.536 cores)                                                        |
+
+--- 
+# Informações da tela
+
+- **Janela:** 320x240 (paisagem), sem redimensionar, então não sai espelhada. Existe um `dSCREEN_FULLSCREEN` para ligar tela cheia depois.
+- **Navegação:** na tela inicial, SELECIONAR alterna entre MPU e BMP (o selecionado ganha borda azul) e ENTER abre a tela. Nas telas dos sensores, o VOLTAR está sempre selecionado, então ENTER volta para a inicial.
+- **Indicador de conexão:** `● ONLINE` (verde) ou `● OFFLINE` (vermelho), vindo do `Status` do JSON.
+- **Estado:** `NORMAL` (verde), `ANORMAL` (vermelho), `DADO OBSOLETO` ou `SEM DADOS` (amarelo). Em dado obsoleto, o último valor continua na tela.
+- **Teclado para teste:** `Espaço` = SELECIONAR e `Enter` = ENTER, para testar sem os botões físicos.
+- **MPU:** a tela mostra os eixos x, y e z da aceleração, como no esboço.
 
 ---
 # Atenção
@@ -175,6 +201,13 @@ gpiochip0 - 54 lines:
 ---
 # interface limpa e simples
 ![[Pasted image 20261110154546.png]]
+
+---
+compilar e executar o projeto:
+
+```bash
+make clean && make ./build/cascata
+```
 
 ---
 

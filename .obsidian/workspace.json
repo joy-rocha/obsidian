@@ -100,6 +100,20 @@
               "icon": "lucide-file",
               "title": "projeto - NO3"
             }
+          },
+          {
+            "id": "fd3c87c022592e77",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "file:/home/joycinha/Downloads/Schemas.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Schemas"
+            }
           }
         ],
         "currentTab": 6
@@ -283,11 +297,12 @@
   },
   "active": "f1d3af78152a1688",
   "lastOpenFiles": [
+    "file:/home/joycinha/Downloads/Schemas.md",
+    "projeto - NO3.md",
     "Pasted image 20261110154546.png",
     "Excalidraw/interface.md",
     "Excalidraw/diagrama de estados.md",
     "Excalidraw/Drawing 2026-11-10 07.58.08.excalidraw.md",
-    "projeto - NO3.md",
     "geral/TrioLink/Mapeamento da pinagem.md",
     "geral/Trator/GPS.md",
     "Sistema do Display.md",
@@ -321,7 +336,6 @@
     "geral/IMG/Pasted image 20261102161555.png",
     "geral/IMG/Pasted image 20261102154756.png",
     "geral/IMG/Pasted image 20261102154439.png",
-    "geral/IMG/Pasted image 20261102150643.png",
     "geral/FÍSICA/unidade02",
     "geral/FÍSICA/unidade01",
     "geral/OUTROS",

@@ -7,7 +7,8 @@ os botões devem ser da seguinte forma, o de SELEÇÃO vai meio que selecionar u
 as telas do projeto vão ser simples uma inicial com 2 "botões" (botões representativos na interface) a de selecionar o sensor 1 (BMP), o sensor 2 (MPU) e na tela de cada sensor tem um botão de voltar que é pra voltar pra tela inicial e mostrando seus dados recebidos do json.
 
 *especificação:*
-	_na tela dos sensores deve ter uma parte que mostra o stadodo sensor, e no codigo deve ser feita uma simples verificação se os dados são considerados normais no geral ou anormais, tipo uma temperatur ambiente ta a 100°C é meio anormal entt isso deve ser analisado de maneira simples dentro da próprio arquivo Fusion, considere que os sensores estarão em local ambiente normal_
+	- _na tela dos sensores deve ter uma parte que mostra o stadodo sensor, e no codigo deve ser feita uma simples verificação se os dados são considerados normais no geral ou anormais, tipo uma temperatur ambiente ta a 100°C é meio anormal entt isso deve ser analisado de maneira simples dentro da próprio arquivo Fusion, considere que os sensores estarão em local ambiente normal
+	- também em cada sensor vai ter um identificador de conexão, vou receber no json o status e ele dever ser mostrado de forma visual se o sensor 1 ta conectado ou não e se o sensor 2 ta conectado ou não_
 
 ---
 # Detalhes da criação dos arquivos

@@ -211,3 +211,19 @@ make clean && make ./build/cascata
 
 ---
 
+acesso da rpi5 do NO3:
+```bash 
+ssh joyce@192.168.10.141
+```
+
+envio de arquivos para a rasp:
+```bash
+scp -r caminho_do_arquivo joyce@192.168.10.141 local_para_receber_arquivo
+
+scp -r Músicas/NO3_final joyce@192.168.10.141: ~/
+```
+
+[diagnostico de erros](https://claude.ai/chat/bd6f4328-0eb1-4493-ae76-515307e39977)
+
+---
+

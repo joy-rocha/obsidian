@@ -80,8 +80,6 @@ gcc -I../inc teste.c BspGpio.c BspButton.c -o teste $(pkg-config --cflags --libs
 ---
 # Parte3: Fusion
 
-
-
 O `Fusion` conecta ao broker MQTT, faz o parse dos JSONs com cJSON, aplica a regra de staleness e a análise normal/anormal. A lib mosquitto roda em uma thread própria, então os dados ficam protegidos por mutex e a tela só consulta por `Fusion_GetBmp()` e `Fusion_GetMpu()`.
 
 Decisões:
@@ -205,3 +203,4 @@ gcc -I../inc teste.c BspGpio.c BspButton.c Fusion.c BspScreen.c -o teste $(pkg-c
 ```
 
 ---
+

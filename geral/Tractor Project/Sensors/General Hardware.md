@@ -32,11 +32,11 @@ Esse componente é um **Módulo Leitor e Gravador RFID**, modelo **[RFID-RC522](
 | ------------------ | -------------------- | -------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
 | **3.3V**           | Alimentação Positiva | **3.3V**                         | Fornece energia para o circuito funcionar (não deve ser ligado em 5V).                                           |
 | **GND**            | Terra (0V)           | **GND**                          | Referência negativa da alimentação elétrica.                                                                     |
-| **SDA**            | Slave Select (SS)    | **Pino Digital 53**              | Ativa ou desativa a comunicação com o leitor no barramento SPI; o pino 53 é o SS nativo do Mega.                 |
-| **SCK**            | Serial Clock         | **Pino Digital 52**              | Sincroniza a transmissão de dados enviando pulsos de clock pelo barramento SPI de hardware.                      |
-| **MOSI**           | Master Out Slave In  | **Pino Digital 51**              | Envia comandos e dados do Arduino Mega (Mestre) para o leitor RFID (Escravo).                                    |
-| **MISO**           | Master In Slave Out  | **Pino Digital 50**              | Envia os dados lidos da tag/cartão RFID de volta para o Arduino Mega.                                            |
-| **RST**            | Reset                | **Pino Digital 49**              | Reinicia o módulo ou o coloca em modo de economia de energia, posicionado fisicamente ao lado do barramento SPI. |
+| **SDA**            | Slave Select (SS)    | **Pino Digital 36**              | Ativa ou desativa a comunicação com o leitor no barramento SPI; o pino 53 é o SS nativo do Mega.                 |
+| **SCK**            | Serial Clock         | **Pino Digital 37**              | Sincroniza a transmissão de dados enviando pulsos de clock pelo barramento SPI de hardware.                      |
+| **MOSI**           | Master Out Slave In  | **Pino Digital 38**              | Envia comandos e dados do Arduino Mega (Mestre) para o leitor RFID (Escravo).                                    |
+| **MISO**           | Master In Slave Out  | **Pino Digital 39**              | Envia os dados lidos da tag/cartão RFID de volta para o Arduino Mega.                                            |
+| **RST**            | Reset                | **Pino Digital 40**              | Reinicia o módulo ou o coloca em modo de economia de energia, posicionado fisicamente ao lado do barramento SPI. |
 | **IRQ**            | Interrupt Request    | **Não conectar**                 | Avisa quando um cartão entra no campo de leitura, mas é mantido desconectado na operação padrão.                 |
 _**atenção:** O leitor RFID utiliza o protocolo  SPI. No Arduino Mega, os pinos físicos desse barramento ficam na fileira dupla traseira (pinos 50 a 53), liberando os pinos digitais frontais.
 

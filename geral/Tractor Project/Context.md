@@ -59,3 +59,8 @@ GpsDriver{
 | **Rede (MQTT)**     | SPI ou UART      | _Depende do módulo_                                                                          | Se usar **Ethernet Shield**, ele encaixa direto em cima do Mega (usa SPI + pino 10). Se usar **ESP8266 / ESP-01**, vai na **Serial2 (pinos 16 e 17)**. |
 
 ---
+# Libs usadas
+
+- **MFRC522**
+- **TinyGPSplus**
+

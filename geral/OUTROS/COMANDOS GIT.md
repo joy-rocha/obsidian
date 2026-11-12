@@ -115,3 +115,13 @@ cd TrioLink
 git checkout <"SHA-do-commit">
 ```
 
+
+# 8) dar o 1° push numa branch em um repo que nn pertence ao meu github (contribuíção)
+```bash
+git clone <cole-o-link-aqui>
+cd <nome-da-pasta-do-projeto>
+git switch -c <nome-da-sua-branch>
+git add .
+git commit -m "Adiciona novos arquivos"
+git push -u origin <nome-da-sua-branch>
+```

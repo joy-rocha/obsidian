@@ -69,6 +69,11 @@ O sistema vai ser integrado da seguinte forma, teremos um arquivo para definir a
 
 O sistema deve contar com o protocolo de comunicação mqtt. Como broker teremos o sistema de dasboard web que vai receber os dados de um aquivo Fusion, responsável pela junção dos valores coletados nos sensores e os transformar num json para serem enviados ao broker, que lá desempacota e expõe dos dados na tela.
 
+**(Fusion.c) ──> (Main_mqtt.c)**
+```json
+[ Sensores (JSON) ] ──(Serial)──> [ Fusion ] ──> [ TractorMqtt ] ──> [ Broker MQTT ]
+```
+
 ---
 # Dashboard 
 
@@ -78,7 +83,7 @@ A apresentação dos dados coletados nos sensores conectados ao trator serão de
 ![[Pasted image 20261115191558.png|353]]
 
 ---
-# Libs usadas
+# Libs sugeridas
 
 - **MFRC522** - rfid
 - **TinyGPSplus** - gps
@@ -86,3 +91,25 @@ A apresentação dos dados coletados nos sensores conectados ao trator serão de
 - **Adafruit_BMP280** - bmp
 
 ---
+# Main e seu fluxo de execução
+
+```txt
+loop() infinito:
+ ├── 1. Motion_Loop()        -> Roda o tempo todo (controle contínuo dos motores/encoders)
+ ├── 2. TractorMqtt_Loop()   -> Roda o tempo todo (mantém conexão e reconecta se cair)
+ ├── 3. GpsDriver_Update()   -> Roda o tempo todo (esvazia a Serial do GPS sem perder bytes)
+ ├── 4. Rfid_Task()          -> A cada 100 ms (lê tag MFRC522 e envia evento imediato)
+ └── 5. Telemetry_Task()     -> A cada 2000 ms (lê DHT + BMP + GPS e envia telemetria)
+```
+
+---
+
+## Três Cuidados Práticos no ATmega2560
+
+- **Conflito no barramento SPI:** O módulo Ethernet (W5100/W5500) e o leitor RFID (MFRC522) compartilham os pinos SPI do Mega (`50`, `51`, `52`). Mantenha os pinos `CS` separados (`10` e `53`) e coloque ambos em `HIGH` antes de inicializar qualquer um dos dois, exatamente como está no `setup()`.
+    
+- **Conversão `dtostrf()` obrigatória:** No compilador AVR do Arduino Mega, `snprintf` com `%.2f` imprime `?` em vez do número para economizar memória flash. Usar `dtostrf()` garante que os floats virem números válidos no JSON.
+    
+- **Intervalo do DHT (`2000 ms`):** Sensores DHT11/DHT22 exigem cerca de 1,5 s a 2 s entre leituras físicas. Manter `Telemetry_Task()` em `2000 ms` evita leituras falhas (`null`) sem atrasar o movimento do trator.
+ 
+ ---

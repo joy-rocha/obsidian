@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "file:/home/joycinha/Downloads/Schemas.md",
+                "file": "Schema.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Schemas"
+              "title": "Schema"
             }
           },
           {
@@ -90,9 +90,21 @@
               "icon": "lucide-file",
               "title": "General Hardware"
             }
+          },
+          {
+            "id": "442af3d6c8396a06",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/site_trator.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "site_trator"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -271,17 +283,20 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "a9d14965e59db4ff",
+  "active": "25c957570a99c8f7",
   "lastOpenFiles": [
-    "geral/OUTROS/COMANDOS GIT.md",
-    "geral/Tractor Project/Sensors/General Hardware.md",
+    "Schema.md",
+    "file:/home/joycinha/Downloads/Schemas.md",
     "geral/Tractor Project/Context.md",
+    "Pasted image 20261115191558.png",
+    "geral/Tractor Project/Sensors/General Hardware.md",
+    "Excalidraw/site_trator.md",
+    "geral/OUTROS/COMANDOS GIT.md",
     "Pasted image 20261113075645.png",
     "geral/ELETRÔNICA/Protocolos de Comunicação.md",
     "projeto - NO3.md",
     "Pinout tactor.md",
     "geral/TrioLink/Nó 3 - Joyce/Mão na Massa.md",
-    "file:/home/joycinha/Downloads/Schemas.md",
     "GPS.md",
     "RFID.md",
     "geral/Tractor Project/Sensors",
@@ -302,8 +317,6 @@
     "geral/IMG/Pasted image 20261110154546.png",
     "Excalidraw/interface.md",
     "Excalidraw/diagrama de estados.md",
-    "Excalidraw/Drawing 2026-11-10 07.58.08.excalidraw.md",
-    "geral/TrioLink/Mapeamento da pinagem.md",
     "geral/IMG/Pasted image 20261110075412.png",
     "geral/IMG/Pasted image 20261108184912.png",
     "geral/Tractor Project",
@@ -311,7 +324,6 @@
     "geral/IMG/Pasted image 20261103111916.png",
     "Trator",
     "geral/IMG/Pasted image 20261102163116.png",
-    "geral/IMG/Pasted image 20261102162813.png",
     "geral/FÍSICA/unidade02",
     "geral/FÍSICA/unidade01",
     "geral/OUTROS",

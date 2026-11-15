@@ -104,7 +104,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -283,13 +283,13 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "25c957570a99c8f7",
+  "active": "91d6ded966edf2b8",
   "lastOpenFiles": [
+    "geral/Tractor Project/Context.md",
     "projeto - NO3.md",
     "RFID.md",
     "Pinout tactor.md",
     "Schema.md",
-    "geral/Tractor Project/Context.md",
     "geral/TrioLink/teste das partes do projeto.md",
     "Excalidraw/site_trator.md",
     "geral/Tractor Project/Sensors/General Hardware.md",

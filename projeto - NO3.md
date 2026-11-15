@@ -226,4 +226,12 @@ scp -r Músicas/NO3_final joyce@192.168.10.141: ~/
 [diagnostico de erros](https://claude.ai/chat/bd6f4328-0eb1-4493-ae76-515307e39977)
 
 ---
+# Conexão - MQTT
+
+Para a comunicação e configuraçao do mqtt teremos um arquivo MqttWrapper.c e um .h, para o recebimento dos dados dos sensores e bublicação no broker um arquivo Fusion. Tudo usando a libmosquitto
+
+---
+# Dashboard
+
+O projeto também conta com um sistema de dashboard web para a mostragem dos dados coletados e armazenamento de histórico num servidor...
 

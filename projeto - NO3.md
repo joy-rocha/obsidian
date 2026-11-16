@@ -233,5 +233,14 @@ Para a comunicação e configuraçao do mqtt teremos um arquivo MqttWrapper.c e 
 ---
 # Dashboard
 
-O projeto também conta com um sistema de dashboard web para a mostragem dos dados coletados e armazenamento de histórico num servidor...
+O projeto também conta com um sistema de dashboard web para a mostragem dos dados coletados e armazenamento de histórico num servidor, devemos ter uma interface simples com uma parte para os dados do sensor 1 e outras para o sensor 2.
+
+Também deve conter um sistema de histórico, que funcionará da seguinte forma: Quando uma rpi5 de desconecta, ela continuará armazenando os dados coletados numa espécie de buffer e ao reconectar envia esses dados para o site numa aba de histórico. A rpi5 no3 que é o broker conectado a uma display vai sempre mostrar o dado mas atual, entt esses dados coletados durante um queda de conexão  de alguma rasp com sensor não vão ser expostos no display, mas serão armazenados no histórico do site.
+
+O sistema usado na própria rpi5 com sensor é um arquivo separado para armazenar as leituras temporariamente chamado OfflineBuffer.c e .h e um programa executável que roda no computador do site para coletar e armazenar os dados do sensor ReceptorBmp.c e ReceptorMpu.c. Os arquivos receptores ficam escutando os tópicos no broker MQTT e salvam cada JSON validado em seus respectivos arquivos `.txt` de histórico que será mostrado no site
+
+![[Pasted image 20261116075036.png|681]]
+
+
+
 

@@ -9,7 +9,7 @@
 ---
 # Sensor BMP280
 
-É o **componente físico** (o chip). Ele mede temperatura e pressão atmosférica. Para conversar com a placa (Raspberry Pi), ele usa um protocolo de comunicação serial por fios chamado **I2C**.
+É o **componente físico** (o chip). Ele mede temperatura e pressão atmosférica. 
 
 | ![[Pasted image 20260908154712.png\|130]] | ![[Pasted image 20260908154726.png\|126]] |
 | ----------------------------------------- | ----------------------------------------- |
@@ -38,7 +38,7 @@ Esse componente é um **Módulo Leitor e Gravador RFID**, modelo **[RFID-RC522](
 
 | **Pino no Módulo RFID** | **Onde ligar no Arduino Mega** |
 | ----------------------- | ------------------------------ |
-| **SDA (SS)**            | **Pino Digital 4**             |
+| **SDA (SS)**            | **Pino Digital 9**             |
 | **SCK**                 | **Pino Digital 5**             |
 | **MOSI**                | **Pino Digital 6**             |
 | **MISO**                | **Pino Digital 7**             |
@@ -46,7 +46,6 @@ Esse componente é um **Módulo Leitor e Gravador RFID**, modelo **[RFID-RC522](
 | **IRQ**                 | **Não conectar**               |
 | **3.3V**                | **3.3V (Compartilhado)**       |
 | **GND**                 | **GND livre**                  |
-_**atenção:** O leitor RFID utiliza o protocolo  SPI. No Arduino Mega, os pinos físicos desse barramento ficam na fileira dupla traseira (pinos 50 a 53), liberando os pinos digitais frontais.
 
 ---
 # Módulo DHT22

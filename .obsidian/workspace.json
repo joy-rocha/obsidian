@@ -95,16 +95,18 @@
             "id": "442af3d6c8396a06",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/site_trator.md"
+                "file": "geral/ELETRÔNICA/Protocolos de Comunicação.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "site_trator"
+              "icon": "lucide-file",
+              "title": "Protocolos de Comunicação"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -283,23 +285,23 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "91d6ded966edf2b8",
+  "active": "a9d14965e59db4ff",
   "lastOpenFiles": [
+    "projeto - NO3.md",
+    "geral/Tractor Project/Sensors/General Hardware.md",
+    "geral/ELETRÔNICA/Protocolos de Comunicação.md",
+    "Excalidraw/site_trator.md",
+    "geral/Tractor Project/Context.md",
     "Pasted image 20261116075036.png",
     "Excalidraw/site_triolink.md",
-    "projeto - NO3.md",
-    "geral/Tractor Project/Context.md",
     "RFID.md",
     "Pinout tactor.md",
     "Schema.md",
     "geral/TrioLink/teste das partes do projeto.md",
-    "Excalidraw/site_trator.md",
-    "geral/Tractor Project/Sensors/General Hardware.md",
     "geral/IMG/Pasted image 20261115191558.png",
     "geral/IMG/Pasted image 20261113075645.png",
     "file:/home/joycinha/Downloads/Schemas.md",
     "geral/OUTROS/COMANDOS GIT.md",
-    "geral/ELETRÔNICA/Protocolos de Comunicação.md",
     "geral/TrioLink/Nó 3 - Joyce/Mão na Massa.md",
     "GPS.md",
     "geral/Tractor Project/Sensors",
@@ -324,7 +326,6 @@
     "geral/S.O./unidade03/Apostila_Gerenciamento_de_Memoria.html.pdf",
     "geral/IMG/Pasted image 20261103111916.png",
     "Trator",
-    "geral/IMG/Pasted image 20261102163116.png",
     "geral/FÍSICA/unidade02",
     "geral/FÍSICA/unidade01",
     "geral/OUTROS",

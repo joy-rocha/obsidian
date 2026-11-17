@@ -241,8 +241,9 @@ A rpi5 no3 que é o broker conectado a uma display vai sempre mostrar o dado mas
 
 ![[Pasted image 20261116075036.png|681]]
 
-
-
+# Acesso do site 
+http://ip_rasp:8080/
+http://192.168.10.82:8080/
 
 
 

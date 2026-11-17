@@ -106,7 +106,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -285,10 +285,10 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "a9d14965e59db4ff",
+  "active": "91d6ded966edf2b8",
   "lastOpenFiles": [
-    "projeto - NO3.md",
     "geral/Tractor Project/Sensors/General Hardware.md",
+    "projeto - NO3.md",
     "geral/ELETRÔNICA/Protocolos de Comunicação.md",
     "Excalidraw/site_trator.md",
     "geral/Tractor Project/Context.md",

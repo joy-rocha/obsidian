@@ -81,3 +81,9 @@ _**atenção:** O DHT22 transmite seus dados em formato digital por um único fi
 _**atenção:** O GPS utiliza comunicação serial e deve ser ligado à porta **Serial1** dedicada do Arduino Mega para não disputar processamento com os outros sensores
 
 ---
+|Sensor|Pinos no Mega|
+|
+|GPS|Serial1 (19 e 18), 9600 baud|
+|DHT22|2|
+|BMP280|CS 24, SCK 26, MOSI 28, MISO 30|
+|RFID|SS 9, SCK 5, MOSI 6, MISO 7, RST 8|

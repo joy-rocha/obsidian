@@ -72,12 +72,12 @@ _**atenção:** O DHT22 transmite seus dados em formato digital por um único fi
 
 ## (Barramento UART / Serial1)
 
-|**Pino no Módulo**|**Função**|**Onde conectar (Arduino Mega)**|**Explicação da Conexão**|
-|---|---|---|---|
-|**VCC**|Alimentação Positiva|**5V**|Fornece energia ao módulo, que aceita de 3,3V a 5V graças ao regulador de tensão interno.|
-|**GND**|Terra (0V)|**GND**|Referência negativa da alimentação elétrica.|
-|**TX**|Transmissão Serial|**Pino 19 (RX1)**|Envia os dados de localização (protocolo NMEA) do GPS para o microcontrolador, exigindo ligação cruzada com o pino de recepção (RX) da placa.|
-|**RX**|Recepção Serial|**Pino 18 (TX1)**|Recebe comandos e configurações enviados pelo microcontrolador, exigindo ligação cruzada com o pino de transmissão (TX) da placa.|
+| **Pino no Módulo** | **Função**           | **Onde conectar (Arduino Mega)** | **Explicação da Conexão**                                                                                                                     |
+| ------------------ | -------------------- | -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| **VCC**            | Alimentação Positiva | **5V**                           | Fornece energia ao módulo, que aceita de 3,3V a 5V graças ao regulador de tensão interno.                                                     |
+| **GND**            | Terra (0V)           | **GND**                          | Referência negativa da alimentação elétrica.                                                                                                  |
+| **TX**             | Transmissão Serial   | **Pino 19 (RX1)**                | Envia os dados de localização (protocolo NMEA) do GPS para o microcontrolador, exigindo ligação cruzada com o pino de recepção (RX) da placa. |
+| **RX**             | Recepção Serial      | **Pino 18 (TX1)**                | Recebe comandos e configurações enviados pelo microcontrolador, exigindo ligação cruzada com o pino de transmissão (TX) da placa.             |
 _**atenção:** O GPS utiliza comunicação serial e deve ser ligado à porta **Serial1** dedicada do Arduino Mega para não disputar processamento com os outros sensores
 
 ---

@@ -41,3 +41,6 @@ dispositivos dedicados são usados por um usuario por vez , já os compartilhaod
 	- desvantagem: precisa de hardware adcional
 
 **quanto menos a CPU participa, mains preciso é o hardware
+
+
+Ao usar um dispositivo E/S como um teclado por exemplo, ao apertar a tecla um sinal elétrioco é gerado esse sinal é lido pelo driver e enviado o sinal parao SO 

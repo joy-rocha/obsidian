@@ -125,3 +125,23 @@ git add .
 git commit -m "Adiciona novos arquivos"
 git push -u origin <nome-da-sua-branch>
 ```
+
+# 9) Como transformar uma pasta com git em uma branch nova e vincular ela a um repo existente
+```shell
+cd /caminho/do/seu-repositorio
+git fetch origin
+git worktree add -b feature/nova-branch ../pasta-nova-branch origin/main
+cd ../pasta-nova-branch
+git push -u origin feature/nova-branch
+```
+
+# 10) Como criar uma branch
+```shell
+#entre na pasta que vc quer colocar dentro da branch
+git init
+git remote add origin https://github.com
+git checkout -b robo-fazendeiro
+git add .
+git commit -m "Adiciona projeto robo fazendeiro"
+git push -u origin robo-fazendeiro
+```

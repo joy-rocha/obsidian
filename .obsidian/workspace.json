@@ -154,8 +154,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "c2eb1dba97099ac1",
@@ -272,7 +271,7 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "b8f1f3ce33729339",
+  "active": "da28f35e30637da8",
   "lastOpenFiles": [
     "geral/S.O./unidade03/Gerenciamentos de Entrada e Saída.md",
     "geral/IMG/Pasted image 20261116075036.png",

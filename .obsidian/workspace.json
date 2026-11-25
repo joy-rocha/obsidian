@@ -25,10 +25,14 @@
             "id": "b2295fa55d617527",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "geral/Tractor Project/Context.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nova aba"
+              "title": "Context"
             }
           },
           {
@@ -282,15 +286,15 @@
   },
   "active": "25c957570a99c8f7",
   "lastOpenFiles": [
+    "geral/Tractor Project/Context.md",
+    "geral/Tractor Project/Modificações de hardware.md",
+    "geral/Tractor Project/Sensors/General Hardware.md",
     "Pasted image 20261125143758.png",
     "Pasted image 20261125143739.png",
     "Pasted image 20261125143727.png",
     "Pasted image 20261125143704.png",
     "Pasted image 20261125143631.png",
-    "geral/Tractor Project/Context.md",
-    "geral/Tractor Project/Modificações de hardware.md",
     "geral/S.O./unidade03/Gerenciamentos de Entrada e Saída.md",
-    "geral/Tractor Project/Sensors/General Hardware.md",
     "Softwares de E S.md",
     "geral/S.O./unidade03/DMA - Acesso Direto à Memória.md",
     "projeto - NO3.md",
@@ -315,7 +319,6 @@
     "geral/IMG/Pasted image 20261111090925.png",
     "geral/S.O./unidade03/importante.md",
     "geral/TrioLink/Nó 1 - Luis.md",
-    "geral/IMG/Pasted image 20261111085514.png",
     "geral/BANCO DE DADOS/FÍSICO/Modelo Físico.md",
     "geral/BANCO DE DADOS/RESUMO.md",
     "bd.md",

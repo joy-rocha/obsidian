@@ -83,12 +83,14 @@ A apresentação dos dados coletados nos sensores conectados ao trator serão de
 ![[Pasted image 20261115191558.png|353]]
 
 ---
-# Libs sugeridas
+# Libs usadas
 
-- **MFRC522** - rfid
-- **TinyGPSplus** - gps
-- **DTHSensorLibrary** - dth
-- **Adafruit_BMP280** - bmp
+- **MFRC522** - RFID RC522
+- **TinyGPSplus** - GPS
+- **DTHSensorLibrary** - DHT22
+-  **Adafruit_BMP280** - BMP280
+-  **Adafruit Unified Sensor** - dependência necessária para os sensores da Adafruit funcionarem
+-  **ArduinoJson** - para criar e ler dados no formato JSON
 
 ---
 # Main e seu fluxo de execução
@@ -103,13 +105,3 @@ loop() infinito:
 ```
 
 ---
-
-## Três Cuidados Práticos no ATmega2560
-
-- **Conflito no barramento SPI:** O módulo Ethernet (W5100/W5500) e o leitor RFID (MFRC522) compartilham os pinos SPI do Mega (`50`, `51`, `52`). Mantenha os pinos `CS` separados (`10` e `53`) e coloque ambos em `HIGH` antes de inicializar qualquer um dos dois, exatamente como está no `setup()`.
-    
-- **Conversão `dtostrf()` obrigatória:** No compilador AVR do Arduino Mega, `snprintf` com `%.2f` imprime `?` em vez do número para economizar memória flash. Usar `dtostrf()` garante que os floats virem números válidos no JSON.
-    
-- **Intervalo do DHT (`2000 ms`):** Sensores DHT11/DHT22 exigem cerca de 1,5 s a 2 s entre leituras físicas. Manter `Telemetry_Task()` em `2000 ms` evita leituras falhas (`null`) sem atrasar o movimento do trator.
- 
- ---

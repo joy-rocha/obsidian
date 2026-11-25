@@ -56,11 +56,11 @@ Esse componente é um **Módulo Leitor e Gravador RFID**, modelo **[RFID-RC522](
 
 ## (Pino Digital)
 
-|**Pino no Módulo**|**Função**|**Onde conectar (Arduino Mega)**|**Explicação da Conexão**|
-|---|---|---|---|
-|**VCC**|Alimentação Positiva|**5V**|Fornece energia para o circuito interno do sensor funcionar, aceitando de 3,3V a 5V.|
-|**GND**|Terra (0V)|**GND**|Referência negativa da alimentação elétrica.|
-|**DAT**|Dados Digitais|**Pino Digital 2**|Transmite os sinais digitais com os valores de temperatura e umidade relativa do ar lidos pelo sensor.|
+| **Pino no Módulo** | **Função**           | **Onde conectar (Arduino Mega)** | **Explicação da Conexão**                                                                              |
+| ------------------ | -------------------- | -------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| **VCC**            | Alimentação Positiva | **5V**                           | Fornece energia para o circuito interno do sensor funcionar, aceitando de 3,3V a 5V.                   |
+| **GND**            | Terra (0V)           | **GND**                          | Referência negativa da alimentação elétrica.                                                           |
+| **DAT**            | Dados Digitais       | **Pino Digital 2**               | Transmite os sinais digitais com os valores de temperatura e umidade relativa do ar lidos pelo sensor. |
 _**atenção:** O DHT22 transmite seus dados em formato digital por um único fio, sendo alocado no início da régua de comunicação digital do Mega.
 
 ---

@@ -55,13 +55,15 @@
 ### 6. Gerenciamento de Espaço Livre: Bitmaps vs. Listas Encadeadas
 
 - **Mapa de Bits (_Bitmaps_):** A memória é fatiada em unidades fixas; cada bit indica se o bloco está livre (0) ou ocupado (1). O tamanho do bitmap é diretamente proporcional ao tamanho da memória alocada.
-==🔴o problema dos mapas é que como ele é proporcional ao tamanho da memoria locada se ela for muito grande o mapa tbm fica gigante ocupando muito espaço pra ser armazenado gastando da propria memoria==
+
+==🟢o problema dos mapas é que como ele é proporcional ao tamanho da memoria locada se ela for muito grande o mapa tbm fica gigante ocupando muito espaço pra ser armazenado gastando da propria memoria==
 
 - **Listas Encadeadas:** Nós encadeados e ordenados por endereço indicam se o segmento é Processo (`P`) ou Lacuna (`L`), o endereço inicial e o tamanho.
-==🔴seria [0,5[ a ocupação né?==
+
+==🟢seria a ocupação. Na representação por lista encadeada `[P · início · tamanho]`, o nó `[P · 0 · 5]` indica um processo `P` que começa na unidade `0` e possui tamanho==
 
 - **Fusão de Lacunas (_Coalescing_):** Ao liberar um processo (`mem_libera`), a nova lacuna criada deve ser fundida obrigatoriamente com vizinhos livres imediatos (à esquerda, à direita ou ambos) para evitar que a lista fique repleta de nós fragmentados.
-==🔴lacuninhas  adjacentes viram uma lacunona==
+==🟢lacuninhas  adjacentes viram uma lacunona==
 
 ---
 

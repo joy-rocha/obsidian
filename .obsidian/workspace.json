@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "resumo S.O.md",
+                "file": "geral/Tractor Project/Modificações de hardware.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "resumo S.O"
+              "title": "Modificações de hardware"
             }
           }
         ],
@@ -245,6 +245,7 @@
   },
   "active": "f01f5a26be09e100",
   "lastOpenFiles": [
+    "resumo S.O.md",
     "geral/S.O./unidade03/Gerência de Memória.md",
     "geral/S.O./unidade03/Gerenciamentos de Entrada e Saída.md",
     "geral/S.O./unidade03/importante.md",
@@ -254,7 +255,6 @@
     "geral/S.O./unidade03/Alocação de memória.md",
     "geral/S.O./unidade03/Apostila_Gerenciamento_de_Memoria.html.pdf",
     "geral/S.O./unidade03/DMA - Acesso Direto à Memória.md",
-    "resumo S.O.md",
     "geral/S.O./unidade03/Softwares de E S.md",
     "geral/S.O./unidade03/Roteiro 01.md",
     "geral/S.O./unidade03/Exercicios.md",

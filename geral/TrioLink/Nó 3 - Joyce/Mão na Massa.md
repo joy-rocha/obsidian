@@ -821,3 +821,16 @@ Botão apertado → thread (debounce) → fila → main → ui_next/ui_enter
 
 Se quiser, posso mostrar como ler um sensor de verdade no lugar do JSON de teste, ou explicar com mais calma a parte do `lcd.c`, que é a mais difícil.
 
+---
+
+# Acesso e configuração para DASH-BOARD
+
+dentro da pasta onde se encontra os '.json' do index execute o seguinte:
+```bash
+so executa na primeira vez:
+sudo apt update && sudo apt install -y nodejs npm #instala o nodejs
+npm install #instala dependêcias do projeto
+
+nano config.json #abre as configurações do node js
+npm start #inicia o servidor
+```

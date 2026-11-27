@@ -155,3 +155,26 @@ A arquitetura de software de E/S é estruturada em camadas em que a solicitaçã
 - **Hardware:** O controlador eletrônico e o dispositivo periférico propriamente dito.
 
 ---
+
+#### 1. Algoritmos de Substituição de Páginas (Simulação Prática)
+
+Você já entende o que é um _Page Fault_, mas ainda precisa praticar como o Sistema Operacional escolhe a "página vítima" quando a RAM está cheia:
+
+- **NUR / NRU (Não Usada Recentemente):** Classificação das páginas em 4 categorias com base nos bits \(R\) e \(M\).
+- **FIFO, Segunda Chance e Relógio (_Clock_):** Uso do bit \(R\) em lista circular para dar uma "segunda chance" antes da remoção.
+- **LRU (_Least Recently Used_):** Implementações por hardware usando **contador de 64 bits** ou **matriz \(n \times n\)**.
+- **NFU e Envelhecimento (_Aging_):** Uso de contadores em software com deslocamento de bits à direita para priorizar acessos recentes.
+- **WSClock e Conjunto de Trabalho (_Working Set_):** Conceito de _Thrashing_ (hiperpaginação) e pré-paginação.
+
+#### 2. Segmentação e Paginação + Segmentação
+
+- **Segmentação Pura:** Divisão da memória em espaços de endereçamento independentes baseados na visão do programador (código, dados, pilha, tabela de símbolos).
+- **Tradução:** Uso de pares `(número do segmento, deslocamento)` e checagem na Tabela de Segmentos (base e limite por segmento).
+- **Comparativo Paginação \(\times\) Segmentação:** Diferenças de transparência, tipos de fragmentação e tabelas.
+- **Paginação + Segmentação:** Combinação das duas técnicas (como no MULTICS e arquiteturas x86) para alinhar a modularidade da segmentação com o gerenciamento uniforme da paginação.
+
+#### 3. Cálculo do Tamanho Ótimo de Página
+
+- **Fórmula de Minimização de Desperdício:** Dedução por derivada do tamanho ótimo da página: \[p = \sqrt{2 \cdot s \cdot e}\] _(onde \(s\) é o tamanho médio do processo e \(e\) o tamanho de uma entrada da tabela de páginas)_.
+
+---

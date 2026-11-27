@@ -102,9 +102,37 @@
               "icon": "lucide-file",
               "title": "src"
             }
+          },
+          {
+            "id": "4b56c6d45e9d11ad",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inc.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "inc"
+            }
+          },
+          {
+            "id": "d7432f3f924dca59",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MakeFile.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "MakeFile"
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -283,8 +311,10 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "f3b03066917ddebc",
+  "active": "d7432f3f924dca59",
   "lastOpenFiles": [
+    "MakeFile.md",
+    "inc.md",
     "src.md",
     "geral/S.O./unidade03/Apostila_Gerenciamento_de_Memoria.html.pdf",
     "file:/home/joycinha/Músicas/TRIO_LINK/TrioLink/no3/painel-fusion/LEIA-ME.md",
@@ -316,8 +346,6 @@
     "geral/IMG/Pasted image 20261125143727.png",
     "geral/IMG/Pasted image 20261125143704.png",
     "geral/IMG/Pasted image 20261125143631.png",
-    "projeto - NO3.md",
-    "geral/ELETRÔNICA/Protocolos de Comunicação.md",
     "geral/IMG/Pasted image 20261115191558.png",
     "geral/IMG/Pasted image 20261113075645.png",
     "geral/Tractor Project/Sensors",
